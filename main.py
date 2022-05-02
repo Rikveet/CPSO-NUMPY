@@ -82,9 +82,10 @@ class Cpso:
         self.dimension = len(self.contextVector)
         # pprint(self.contextVector)
         layers = 2 + network_config[2]  # input layer + hidden layers + output layer
+        # decomposition = self.psoDecompose()
         # decomposition = self.layerDecompose(1, layers)
-        # decomposition = self.factorizedLayerDecompose(1, network_config[3], layers)
-        decomposition = self.nodeDecompose(network_config[1], network_config[3], layers)
+        decomposition = self.factorizedLayerDecompose(1, network_config[3], layers)
+        # decomposition = self.nodeDecompose(network_config[1], network_config[3], layers)
         # decomposition = self.factorizedNodeDecompose(network_config[1], network_config[3], layers)
         self.swarms = []
         self.createSwarms(decomposition)
@@ -92,7 +93,13 @@ class Cpso:
         self.optimize()
 
     def psoDecompose(self):
-        pass
+        decomposition = []
+        cv = self.contextVector
+        swarm = []
+        for weightParticles in cv:
+            swarm.append(copy.deepcopy(weightParticles))
+        decomposition.append(swarm)
+        return decomposition
 
     def layerDecompose(self, startLayer: int, layers: int) -> [[]]:
         decomposition = []
@@ -101,9 +108,11 @@ class Cpso:
         for layer in range(startLayer, layers):
             temp = []
             for weightParticles in cv:
-                if weightParticles[0]["layer"] == layer - 1:
+                if (weightParticles[0]["layer"] == layer - 1 and weightParticles[0]["j"] != -1) or \
+                        (weightParticles[0]["layer"] == layer and weightParticles[0]["j"] == -1):  # input or bias
                     temp.append(copy.deepcopy(weightParticles))
             decomposition.append(temp)
+
         return decomposition
 
     def factorizedLayerDecompose(self, startLayer: int, num_output_nodes: int, layers: int):
@@ -111,17 +120,28 @@ class Cpso:
         cv = self.contextVector
         for jNode in range(num_output_nodes):
             temp = []
-            # all weights connecting layers in-between input layer and hidden layer.
+            # all weights & biases connecting layers in-between input layer and hidden layer.
             for layer in range(startLayer, layers - 1):
                 for weightParticles in cv:
-                    if weightParticles[0]["layer"] == layer - 1:
+                    if (weightParticles[0]["layer"] == layer - 1 and weightParticles[0]["j"] != -1) or \
+                            (weightParticles[0]["layer"] == layer and weightParticles[0]["j"] == -1):
                         temp.append(copy.deepcopy(weightParticles))
             # output layer weights input for a node.
             for weightParticles in cv:
-                if weightParticles[0]["layer"] == layers - 2 and weightParticles[0]["j"] == jNode:
-                    # - 2 to get last hidden layer
+                if (weightParticles[0]["layer"] == layers - 2 and weightParticles[0]["j"] == jNode) or \
+                        (weightParticles[0]["layer"] == layers - 1 and weightParticles[0]["node"] == jNode and
+                         weightParticles[0]["j"] == -1):
+                    # -2 to get last hidden layer, -1 for output layer.
                     temp.append(copy.deepcopy(weightParticles))
             decomposition.append(temp)
+        # additional sub swarm for Hidden to output node.
+        temp = []
+        for weightParticles in cv:
+            if (weightParticles[0]["layer"] == layers - 2 and weightParticles[0]["j"] != -1) or \
+                    (weightParticles[0]["layer"] == layers - 1 and weightParticles[0]["j"] == -1):
+                # -2 to get last hidden layer, -1 for output layer.
+                temp.append(copy.deepcopy(weightParticles))
+        decomposition.append(temp)
         return decomposition
 
     def nodeDecompose(self, num_hidden_nodes: int, num_output_nodes: int, layers: int) -> [[]]:
@@ -222,7 +242,7 @@ class Cpso:
         pass
 
     def optimize(self):
-        iterations = 100
+        iterations = 200
         max_velocity = 0.14286
         c1 = 1.49618
         c2 = 1.49618
