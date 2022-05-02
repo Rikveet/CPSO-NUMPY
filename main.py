@@ -78,18 +78,54 @@ class Cpso:
         random.seed(10)
         particles = 20
         network_config, self.data = data_loader.get_iris_data()
+        self.input_nodes = network_config[0]
+        self.hidden_nodes = network_config[1]
+        self.output_nodes = network_config[3]
         self.contextVector = generateOneVec(network_config)
         self.dimension = len(self.contextVector)
         # pprint(self.contextVector)
-        layers = 2 + network_config[2]  # input layer + hidden layers + output layer
-        # decomposition = self.psoDecompose()
-        # decomposition = self.layerDecompose(1, layers)
-        decomposition = self.factorizedLayerDecompose(1, network_config[3], layers)
-        # decomposition = self.nodeDecompose(network_config[1], network_config[3], layers)
-        # decomposition = self.factorizedNodeDecompose(network_config[1], network_config[3], layers)
+        self.layers = 2 + network_config[2]  # input layer + hidden layers + output layer
+        decomposition = self.psoDecompose()
+        # decomposition = self.layerDecompose()
+        # decomposition = self.factorizedLayerDecompose()
+        # decomposition = self.nodeDecompose()
+        # decomposition = self.factorizedNodeDecompose()
         self.swarms = []
-        self.createSwarms(decomposition)
+        self.swarms = self.createSwarms(decomposition)
         self.net = Network(network_config, self.data)
+        self.iterations = 200
+        self.merge_nr = 2
+        self.do_merge = False
+        self.merge_iter = math.floor(self.iterations / (1 + (math.log(self.dimension) / math.log(self.merge_nr))))
+
+        decomposition_type = "node_factorized"
+        self.decom_func = None
+        decomDict = {
+            "layer": {
+                "function": self.layerDecompose,
+                "sub_swarm_size": self.layers - 1
+            },
+            "layer_factorized": {
+                "function": self.factorizedLayerDecompose,
+                "sub_swarm_size": self.output_nodes + 1
+            },
+            "node": {
+                "function": self.nodeDecompose,
+                "sub_swarm_size": self.hidden_nodes + self.output_nodes
+            },
+            "node_factorized": {
+                "function": self.factorizedNodeDecompose,
+                "sub_swarm_size": self.hidden_nodes + self.output_nodes
+            }
+        }
+        self.do_decompose = True
+        if self.do_decompose and (decomposition_type in decomDict.keys()):
+            self.decom_func = decomDict[decomposition_type]["function"]
+            self.decompose_iter = math.floor(
+                self.iterations /
+                (1 + (math.log(self.dimension) / math.log(decomDict[decomposition_type]["sub_swarm_size"]))))
+        else:
+            self.do_decompose = False
         self.optimize()
 
     def psoDecompose(self):
@@ -101,11 +137,11 @@ class Cpso:
         decomposition.append(swarm)
         return decomposition
 
-    def layerDecompose(self, startLayer: int, layers: int) -> [[]]:
+    def layerDecompose(self) -> [[]]:
         decomposition = []
         cv = self.contextVector
         # all inputs from hidden to output layer.
-        for layer in range(startLayer, layers):
+        for layer in range(1, self.layers):
             temp = []
             for weightParticles in cv:
                 if (weightParticles[0]["layer"] == layer - 1 and weightParticles[0]["j"] != -1) or \
@@ -115,13 +151,14 @@ class Cpso:
 
         return decomposition
 
-    def factorizedLayerDecompose(self, startLayer: int, num_output_nodes: int, layers: int):
+    def factorizedLayerDecompose(self):
         decomposition = []
+        layers = self.layers
         cv = self.contextVector
-        for jNode in range(num_output_nodes):
+        for jNode in range(self.output_nodes):
             temp = []
             # all weights & biases connecting layers in-between input layer and hidden layer.
-            for layer in range(startLayer, layers - 1):
+            for layer in range(1, layers - 1):
                 for weightParticles in cv:
                     if (weightParticles[0]["layer"] == layer - 1 and weightParticles[0]["j"] != -1) or \
                             (weightParticles[0]["layer"] == layer and weightParticles[0]["j"] == -1):
@@ -144,33 +181,39 @@ class Cpso:
         decomposition.append(temp)
         return decomposition
 
-    def nodeDecompose(self, num_hidden_nodes: int, num_output_nodes: int, layers: int) -> [[]]:
+    def nodeDecompose(self) -> [[]]:
         decomposition = []
         cv = self.contextVector
+        layers = self.layers
         # hidden layers
         for layer in range(1, layers - 1):
-            for node in range(num_hidden_nodes):
+            for node in range(self.hidden_nodes):
                 temp = []
                 for weightParticles in cv:
-                    if weightParticles[0]["layer"] == layer - 1 and weightParticles[0]["j"] == node:
+                    if (weightParticles[0]["layer"] == layer - 1 and weightParticles[0]["j"] == node) or (
+                            weightParticles[0]["layer"] == layer and weightParticles[0]["node"] == node and
+                            weightParticles[0]["j"] == -1):  # input or bias
                         temp.append(copy.deepcopy(weightParticles))
                 decomposition.append(temp)
         # output layer
-        for node in range(num_output_nodes):
+        for node in range(self.output_nodes):
             temp = []
             for weightParticles in cv:
-                if weightParticles[0]["layer"] == layers - 2 and weightParticles[0]["j"] == node:
+                if (weightParticles[0]["layer"] == layers - 2 and weightParticles[0]["j"] == node) or (
+                        weightParticles[0]["layer"] == layers - 1 and weightParticles[0]["node"] == node and
+                        weightParticles[0]["j"] == -1):
                     # - 2 to get last hidden layer
                     temp.append(copy.deepcopy(weightParticles))
             decomposition.append(temp)
         return decomposition
 
-    def factorizedNodeDecompose(self, num_hidden_nodes: int, num_output_nodes: int, layers: int) -> [[]]:
+    def factorizedNodeDecompose(self) -> [[]]:
         decomposition = []
         cv = self.contextVector
+        layers = self.layers
         # hidden layers
         for layer in range(1, layers - 1):
-            for node in range(num_hidden_nodes):
+            for node in range(self.hidden_nodes):
                 temp = []
                 for weightParticles in cv:
                     if (weightParticles[0]["layer"] == layer - 1 and weightParticles[0]["j"] == node) or \
@@ -178,16 +221,18 @@ class Cpso:
                         temp.append(copy.deepcopy(weightParticles))
                 decomposition.append(temp)
         # output layer
-        for node in range(num_output_nodes):
+        for node in range(self.output_nodes):
             temp = []
             for weightParticles in cv:
-                if weightParticles[0]["layer"] == layers - 2 and weightParticles[0]["j"] == node:
-                    # - 2 to get last hidden layer
+                if (weightParticles[0]["layer"] == layers - 2 and weightParticles[0]["j"] == node) or \
+                        (weightParticles[0]["layer"] == layers - 1 and weightParticles[0]["node"] == node):
+                    # -2 to get last hidden layer, -1 for output layer. Weight and bias.
                     temp.append(copy.deepcopy(weightParticles))
             decomposition.append(temp)
         return decomposition
 
-    def createSwarms(self, config: [[]]) -> [[]]:
+    @staticmethod
+    def createSwarms(config: [[]]):
         swarms = []
         for subSwarm in config:
             subSwarmValues = {}
@@ -196,7 +241,7 @@ class Cpso:
                                                              "f": math.inf}  # local best fitness
             swarms.append({"values": subSwarmValues,
                            "particles": subSwarm})
-        self.swarms = swarms
+        return swarms
 
     def merge(self):
         if len(self.swarms) > 1:
@@ -238,25 +283,29 @@ class Cpso:
         print("Current swarms :", len(self.swarms))
 
     def decompose(self):
-
-        pass
+        decomposition = self.decom_func()
+        values = self.swarms[0]["values"]  # global best for a swarm
+        swarms = self.createSwarms(decomposition)
+        for swarm in swarms:  # keep the global best values.
+            for value in swarm["values"]:
+                swarm["values"][value] = copy.deepcopy(values[value])
+        self.swarms = swarms
+        self.do_decompose = False
 
     def optimize(self):
-        iterations = 200
         max_velocity = 0.14286
         c1 = 1.49618
         c2 = 1.49618
         w = 0.729844
         lda = 0.001  # lambda
         y_values = []
-        n_r = 2
-        do_merge = True
-        merge_iter = math.floor(iterations / (1 + (math.log(self.dimension) / math.log(n_r))))
-        decompose_iter = 0
+        iterations = self.iterations
         for iteration in range(iterations):
             self.net.create_batch()
-            if do_merge and iteration % merge_iter == 0 and iteration != 0:
+            if self.do_merge and iteration % self.merge_iter == 0 and iteration != 0:
                 self.merge()
+            elif self.do_decompose and iteration % self.decompose_iter == 0 and iteration != 0:
+                self.decompose()
             for subSwarm in self.swarms:
                 # update best local values and personal values
                 for particle in subSwarm["particles"]:

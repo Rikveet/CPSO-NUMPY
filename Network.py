@@ -74,8 +74,6 @@ class Network:
         layer, node, out_node = params
         if out_node == -1:  # if it is a bias
             self.network_biases[layer - 1][0, node] = value
-            # -1 because biases start from hidden layer.
-            #  Bias at current layer is at -1 in the array.
         else:
             self.network_weights[layer][node, out_node] = value
 
@@ -83,8 +81,6 @@ class Network:
         layer, node, out_node = params
         if out_node == -1:
             current_value = self.network_biases[layer - 1][0, node]
-            # -1 because biases start from hidden layer.
-            #  Bias at current layer is at -1 in the array.
             self.network_biases[layer - 1][0, node] = value
             test_value = self.feed_forward()
             self.network_biases[layer - 1][0, node] = current_value
