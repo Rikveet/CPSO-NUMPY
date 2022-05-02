@@ -91,6 +91,9 @@ class Cpso:
         self.net = Network(network_config, self.data)
         self.optimize()
 
+    def psoDecompose(self):
+        pass
+
     def layerDecompose(self, startLayer: int, layers: int) -> [[]]:
         decomposition = []
         cv = self.contextVector
@@ -213,6 +216,10 @@ class Cpso:
             self.swarms = swarms
 
         print("Current swarms :", len(self.swarms))
+
+    def decompose(self):
+
+        pass
 
     def optimize(self):
         iterations = 100
