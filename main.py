@@ -1,6 +1,6 @@
 import copy
 import math
-import random
+from random import Random as Rand
 
 import matplotlib.pyplot as plt
 import numpy as np
@@ -9,90 +9,28 @@ import data_loader
 from Network import Network
 
 
-# from pprint import pprint
-
-
-def createWeight(index: int, layer: int, node: int, j: int) -> {}:
-    """
-    This method creates a weight object.
-    :param index: key for accessing global values such as weight and fitness.
-    :param layer: layer in which node is present
-    :param node: the node for which weight is being generated
-    :param j: the node to which the weight is connected in the next layer
-    :return: A dictionary of layer, node, j and initialized weight with range -1,1 and 0 velocity.
-    """
-    return [{"key": index,
-             "layer": layer,
-             "node": node,
-             "j": j,
-             "w": random.uniform(-1, 1),  # current weight
-             "bw": random.uniform(-1, 1),  # current best weight
-             "f": math.inf,  # personal best fitness.
-             "v": 0
-             } for _ in range(20)]
-
-
-def generateOneVec(networkConfig: (int, int, int, int)) -> []:
-    """
-    This method returns a context vector(list), each value in the vector is a weight with layer,node,j, weight value
-    and velocity.
-    :param networkConfig: a tuple storing network configuration.
-    :return: one vector storing all the weights in a network.
-    """
-    vector = []
-    num_input_nodes, num_hidden_nodes, num_hidden_layers, num_output_nodes = networkConfig
-    # input layer
-    weight_index = 0
-    layer = 0
-    for i in range(num_input_nodes):
-        for j in range(num_hidden_nodes):
-            vector.append(createWeight(weight_index, layer, i, j))
-            weight_index += 1
-    layer = 1
-    while num_hidden_layers > 1:
-        for i in range(num_hidden_nodes):
-            vector.append(createWeight(weight_index, layer, i, -1))  # bias
-            weight_index += 1
-            for j in range(num_hidden_nodes):
-                vector.append(createWeight(weight_index, layer, i, j))  # weights
-                weight_index += 1
-        layer += 1
-        num_hidden_layers -= 1
-    for i in range(num_hidden_nodes):
-        vector.append(createWeight(weight_index, layer, i, -1))
-        weight_index += 1
-        for j in range(num_output_nodes):
-            vector.append(createWeight(weight_index, layer, i, j))
-            weight_index += 1
-    layer += 1
-    # output layer biases
-    for i in range(num_output_nodes):
-        vector.append(createWeight(weight_index, layer, i, -1))
-        weight_index += 1
-    return vector
-
-
 class Cpso:
 
     def __init__(self):
-        random.seed(69)
+        self.random = Rand()
+        self.random.seed(10)
         particles = 20
         network_config, self.data = data_loader.get_breast_cancer_data()
         self.input_nodes = network_config[0]
         self.hidden_nodes = network_config[1]
         self.output_nodes = network_config[3]
-        self.contextVector = generateOneVec(network_config)
+        self.contextVector = self.generateOneVec(network_config)
         self.dimension = len(self.contextVector)
         # pprint(self.contextVector)
         self.layers = 2 + network_config[2]  # input layer + hidden layers + output layer
         # decomposition = self.psoDecompose()
         # decomposition = self.layerDecompose()
         # decomposition = self.factorizedLayerDecompose()
-        decomposition = self.nodeDecompose()
-        # decomposition = self.factorizedNodeDecompose()
+        # decomposition = self.nodeDecompose()
+        decomposition = self.factorizedNodeDecompose()
         self.swarms = []
         self.swarms = self.createSwarms(decomposition)
-        self.net = Network(network_config, self.data)
+        self.net = Network(self.random, network_config, self.data)
         self.iterations = 200
         self.merge_nr = 2
         self.do_merge = False
@@ -128,6 +66,78 @@ class Cpso:
             self.do_decompose = False
         self.optimize()
 
+    def createWeight(self, index: int, layer: int, node: int, j: int, max_particle_value: float,
+                     min_particle_value: float) -> {}:
+        """
+        This method creates a weight object.
+        :param min_particle_value:
+        :param max_particle_value:
+        :param index: key for accessing global values such as weight and fitness.
+        :param layer: layer in which node is present
+        :param node: the node for which weight is being generated
+        :param j: the node to which the weight is connected in the next layer
+        :return: A dictionary of layer, node, j and initialized weight with range -1,1 and 0 velocity.
+        """
+        return [{"key": index,
+                 "layer": layer,
+                 "node": node,
+                 "j": j,
+                 "w": self.random.uniform(min_particle_value, max_particle_value),  # current weight
+                 "bw": self.random.uniform(min_particle_value, max_particle_value),  # current best weight
+                 "f": math.inf,  # personal best fitness.
+                 "v": 0
+                 } for _ in range(20)]
+
+    def generateOneVec(self, networkConfig: (int, int, int, int)) -> []:
+        """
+        This method returns a context vector(list), each value in the vector is a weight with layer,node,j, weight value
+        and velocity.
+        :param networkConfig: a tuple storing network configuration.
+        :return: one vector storing all the weights in a network.
+        """
+        vector = []
+        num_input_nodes, num_hidden_nodes, num_hidden_layers, num_output_nodes = networkConfig
+        # input layer
+        min_weight = -1
+        max_weight = 1
+        min_bias = -0.5
+        max_bias = 0.5
+        weight_index = 0
+        layer = 0
+        for i in range(num_input_nodes):
+            for j in range(num_hidden_nodes):
+                vector.append(
+                    self.createWeight(weight_index, layer, i, j, min_weight, max_weight))  # input to hidden weights
+                weight_index += 1
+
+        for i in range(num_hidden_nodes):
+            vector.append(self.createWeight(weight_index, layer, i, -1, min_bias, max_bias))  # input to hidden bias
+            weight_index += 1
+        # hidden layers
+        layer = 1
+        while num_hidden_layers > 1:
+            for i in range(num_hidden_nodes):
+                vector.append(
+                    self.createWeight(weight_index, layer, i, -1, min_bias, max_bias))  # hidden to hidden bias
+                weight_index += 1
+                for j in range(num_hidden_nodes):
+                    vector.append(
+                        self.createWeight(weight_index, layer, i, j, min_weight,
+                                          max_weight))  # hidden to hidden weights
+                    weight_index += 1
+            layer += 1
+            num_hidden_layers -= 1
+        # hidden to output layers
+        for i in range(num_hidden_nodes):
+            for j in range(num_output_nodes):
+                vector.append(
+                    self.createWeight(weight_index, layer, i, j, min_weight, max_weight))  # hidden to output weights
+                weight_index += 1
+        for i in range(num_output_nodes):
+            vector.append(self.createWeight(weight_index, layer, i, -1, min_bias, max_bias))  # hidden to output bias
+            weight_index += 1
+        return vector
+
     def psoDecompose(self):
         decomposition = []
         cv = self.contextVector
@@ -144,8 +154,7 @@ class Cpso:
         for layer in range(1, self.layers):
             temp = []
             for weightParticles in cv:
-                if (weightParticles[0]["layer"] == layer - 1 and weightParticles[0]["j"] != -1) or \
-                        (weightParticles[0]["layer"] == layer and weightParticles[0]["j"] == -1):  # input or bias
+                if weightParticles[0]["layer"] == layer - 1:  # input or bias
                     temp.append(copy.deepcopy(weightParticles))
             decomposition.append(temp)
 
@@ -160,23 +169,21 @@ class Cpso:
             # all weights & biases connecting layers in-between input layer and hidden layer.
             for layer in range(1, layers - 1):
                 for weightParticles in cv:
-                    if (weightParticles[0]["layer"] == layer - 1 and weightParticles[0]["j"] != -1) or \
-                            (weightParticles[0]["layer"] == layer and weightParticles[0]["j"] == -1):
+                    if weightParticles[0]["layer"] == layer - 1:
                         temp.append(copy.deepcopy(weightParticles))
             # output layer weights input for a node.
             for weightParticles in cv:
                 if (weightParticles[0]["layer"] == layers - 2 and weightParticles[0]["j"] == jNode) or \
-                        (weightParticles[0]["layer"] == layers - 1 and weightParticles[0]["node"] == jNode and
+                        (weightParticles[0]["layer"] == layers - 2 and weightParticles[0]["node"] == jNode and
                          weightParticles[0]["j"] == -1):
-                    # -2 to get last hidden layer, -1 for output layer.
+                    # -2 to get last hidden layer
                     temp.append(copy.deepcopy(weightParticles))
             decomposition.append(temp)
         # additional sub swarm for Hidden to output node.
         temp = []
         for weightParticles in cv:
-            if (weightParticles[0]["layer"] == layers - 2 and weightParticles[0]["j"] != -1) or \
-                    (weightParticles[0]["layer"] == layers - 1 and weightParticles[0]["j"] == -1):
-                # -2 to get last hidden layer, -1 for output layer.
+            if weightParticles[0]["layer"] == layers - 2:
+                # -2 to get last hidden layer.
                 temp.append(copy.deepcopy(weightParticles))
         decomposition.append(temp)
         return decomposition
@@ -191,7 +198,7 @@ class Cpso:
                 temp = []
                 for weightParticles in cv:
                     if (weightParticles[0]["layer"] == layer - 1 and weightParticles[0]["j"] == node) or (
-                            weightParticles[0]["layer"] == layer and weightParticles[0]["node"] == node and
+                            weightParticles[0]["layer"] == layer - 1 and weightParticles[0]["node"] == node and
                             weightParticles[0]["j"] == -1):  # input or bias
                         temp.append(copy.deepcopy(weightParticles))
                 decomposition.append(temp)
@@ -200,7 +207,7 @@ class Cpso:
             temp = []
             for weightParticles in cv:
                 if (weightParticles[0]["layer"] == layers - 2 and weightParticles[0]["j"] == node) or (
-                        weightParticles[0]["layer"] == layers - 1 and weightParticles[0]["node"] == node and
+                        weightParticles[0]["layer"] == layers - 2 and weightParticles[0]["node"] == node and
                         weightParticles[0]["j"] == -1):
                     # - 2 to get last hidden layer
                     temp.append(copy.deepcopy(weightParticles))
@@ -216,16 +223,22 @@ class Cpso:
             for node in range(self.hidden_nodes):
                 temp = []
                 for weightParticles in cv:
-                    if (weightParticles[0]["layer"] == layer - 1 and weightParticles[0]["j"] == node) or \
-                            (weightParticles[0]["layer"] == layer and weightParticles[0]["node"] == node):
+                    # input weights or biases and output weights
+                    if (weightParticles[0]["layer"] == layer - 1 and weightParticles[0]["j"] == node) \
+                            or (weightParticles[0]["layer"] == layer - 1 and weightParticles[0]["node"] == node
+                                and weightParticles[0]["j"] == -1) \
+                            or (weightParticles[0]["layer"] == layer and weightParticles[0]["node"] == node
+                                and weightParticles[0]["j"] != -1):
                         temp.append(copy.deepcopy(weightParticles))
                 decomposition.append(temp)
         # output layer
         for node in range(self.output_nodes):
             temp = []
             for weightParticles in cv:
-                if (weightParticles[0]["layer"] == layers - 2 and weightParticles[0]["j"] == node) or \
-                        (weightParticles[0]["layer"] == layers - 1 and weightParticles[0]["node"] == node):
+                # Input weights or biases
+                if (weightParticles[0]["layer"] == layers - 2 and weightParticles[0]["j"] == node) \
+                        or (weightParticles[0]["layer"] == layers - 2 and weightParticles[0]["node"] == node
+                            and weightParticles[0]["j"] == -1):
                     # -2 to get last hidden layer, -1 for output layer. Weight and bias.
                     temp.append(copy.deepcopy(weightParticles))
             decomposition.append(temp)
@@ -274,8 +287,8 @@ class Cpso:
                         #              "bw" # current best weight
                         #              "f"  # personal best fitness.
                         #              "v"  # velocity.
-                        swarms[i]["particles"][j][p]["w"] = random.uniform(-1, 1)
-                        swarms[i]["particles"][j][p]["bw"] = random.uniform(-1, 1)
+                        swarms[i]["particles"][j][p]["w"] = self.random.uniform(-1, 1)
+                        swarms[i]["particles"][j][p]["bw"] = self.random.uniform(-1, 1)
                         swarms[i]["particles"][j][p]["f"] = math.inf
                         swarms[i]["particles"][j][p]["v"] = 0
             self.swarms = swarms
@@ -308,8 +321,8 @@ class Cpso:
                 self.decompose()
             for subSwarm in self.swarms:
                 # update best local values and personal values
-                for particle in subSwarm["particles"]:
-                    for i in range(20):
+                for i in range(20):
+                    for particle in subSwarm["particles"]:
                         node_params = (particle[i]["layer"], particle[i]["node"], particle[i]["j"])
                         fitness = self.net.test(node_params, particle[i]["w"])
                         if fitness <= particle[i]["f"]:
@@ -320,17 +333,18 @@ class Cpso:
                             subSwarm["values"][particle[i]["key"]]["f"] = fitness
                             self.net.update_weights(node_params, particle[i]["w"])
                 # update velocity and position
-                for particle in subSwarm["particles"]:
-                    w_sum = self.net.get_weight_decay()
-                    wd = lda * (w_sum / (w_sum + 1))
-                    for i in range(20):
+                for i in range(20):
+                    for particle in subSwarm["particles"]:
+                        w_sum = self.net.get_weight_decay()
+                        wd = lda * (w_sum / (w_sum + 1))
                         v = (w * particle[i]["v"]) + (
-                                c1 * random.uniform(0, 1) * (particle[i]["bw"] - particle[i]["w"])) + \
-                            (c2 * random.uniform(0, 1) * (
+                                c1 * self.random.uniform(0, 1) * (particle[i]["bw"] - particle[i]["w"])) + \
+                            (c2 * self.random.uniform(0, 1) * (
                                     subSwarm["values"][particle[i]["key"]]["lbw"] - particle[i]["w"]))
                         v = min(max(-max_velocity, v), max_velocity)
                         particle[i]["v"] = v
                         particle[i]["w"] += v + wd
+                        particle[i]["w"] = min(max(-1, particle[i]["w"]), 1)
             fitness = self.net.feed_forward()
             print("Iteration", iteration, " Fitness: ", fitness)
             y_values.append(fitness)

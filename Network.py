@@ -1,11 +1,10 @@
-from random import shuffle
-
 import numpy
 import numpy as np
 
 
 class Network:
-    def __init__(self, nodes_config, data):
+    def __init__(self, random, nodes_config, data):
+        self.random = random
         np.random.seed(10)
         self.train_output_data = None
         self.train_input_data = None
@@ -17,13 +16,14 @@ class Network:
         # create weights and biases
         self.network_weights, self.network_biases = [], []
 
-        # input layer
+        # input layer weight and bias
         self.network_weights \
             .append(np.random.uniform(low=min_weight, high=max_weight, size=(input_layer_nodes, hidden_layer_nodes))
                     .astype('float32'))
-
-        # hidden layer
         self.network_biases.append(np.full((1, hidden_layer_nodes), 0.1).astype('float32'))
+
+        # hidden layer weight and bias
+        self.network_biases.append(np.full((1, output_layer_nodes), 0.1).astype('float32'))
         for _ in range(num_hidden_layers - 1):
             self.network_weights \
                 .append(np.random.uniform(low=min_weight, high=max_weight,
@@ -34,13 +34,12 @@ class Network:
         self.network_weights \
             .append(np.random.uniform(low=min_weight, high=max_weight, size=(hidden_layer_nodes, output_layer_nodes))
                     .astype('float32'))
-        self.network_biases.append(np.full((1, output_layer_nodes), 0.1).astype('float32'))
 
         np.set_printoptions(precision=2)
         print("Network initialized")
 
     def shuffle_data(self):
-        shuffle(self.data)
+        self.random.shuffle(self.data)
 
     def create_batch(self):
         self.shuffle_data()
@@ -67,23 +66,24 @@ class Network:
         value += np.sum(np.square(value_layer - self.train_output_data))
         if show:
             for i in range(100):
-                print(self.train_input_data[i], "::", self.train_output_data[i], "::", value_layer[i])  # )
+                print("{}..".format(str(self.train_input_data[i])[:4]), "::", self.train_output_data[i], "::",
+                      value_layer[i])  # )
         return value / (self.out_layer * 100)
 
     def update_weights(self, params, value):
         layer, node, out_node = params
         if out_node == -1:  # if it is a bias
-            self.network_biases[layer - 1][0, node] = value
+            self.network_biases[layer][0, node] = value
         else:
             self.network_weights[layer][node, out_node] = value
 
     def test(self, params, value):
         layer, node, out_node = params
         if out_node == -1:
-            current_value = self.network_biases[layer - 1][0, node]
-            self.network_biases[layer - 1][0, node] = value
+            current_value = self.network_biases[layer][0, node]
+            self.network_biases[layer][0, node] = value
             test_value = self.feed_forward()
-            self.network_biases[layer - 1][0, node] = current_value
+            self.network_biases[layer][0, node] = current_value
         else:
             current_value = self.network_weights[layer][node, out_node]
             self.network_weights[layer][node, out_node] = value
