@@ -75,9 +75,9 @@ def generateOneVec(networkConfig: (int, int, int, int)) -> []:
 class Cpso:
 
     def __init__(self):
-        random.seed(10)
+        random.seed(69)
         particles = 20
-        network_config, self.data = data_loader.get_iris_data()
+        network_config, self.data = data_loader.get_breast_cancer_data()
         self.input_nodes = network_config[0]
         self.hidden_nodes = network_config[1]
         self.output_nodes = network_config[3]
@@ -85,10 +85,10 @@ class Cpso:
         self.dimension = len(self.contextVector)
         # pprint(self.contextVector)
         self.layers = 2 + network_config[2]  # input layer + hidden layers + output layer
-        decomposition = self.psoDecompose()
+        # decomposition = self.psoDecompose()
         # decomposition = self.layerDecompose()
         # decomposition = self.factorizedLayerDecompose()
-        # decomposition = self.nodeDecompose()
+        decomposition = self.nodeDecompose()
         # decomposition = self.factorizedNodeDecompose()
         self.swarms = []
         self.swarms = self.createSwarms(decomposition)
@@ -118,7 +118,7 @@ class Cpso:
                 "sub_swarm_size": self.hidden_nodes + self.output_nodes
             }
         }
-        self.do_decompose = True
+        self.do_decompose = False
         if self.do_decompose and (decomposition_type in decomDict.keys()):
             self.decom_func = decomDict[decomposition_type]["function"]
             self.decompose_iter = math.floor(
@@ -343,4 +343,5 @@ class Cpso:
 
 
 if __name__ == "__main__":
+    np.set_printoptions(suppress=True)
     Cpso()

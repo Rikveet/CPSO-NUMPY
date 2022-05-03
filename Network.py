@@ -1,4 +1,4 @@
-from random import uniform, shuffle
+from random import shuffle
 
 import numpy
 import numpy as np
