@@ -442,8 +442,7 @@ class Cpso(threading.Thread):
                             particle[i]["f"] = fitness
 
             global_fitness = self.net.feed_forward_global()
-            if iteration % 25 == 0:
-                print(self.key, " Iteration: ", iteration, " Fitness: ", global_fitness)
+            print(self.key, " Iteration: ", iteration, " Fitness: ", global_fitness)
             y_values.append(global_fitness)
         global_fitness = self.net.feed_forward_global()
         global_test_fitness = self.net.feed_forward_global_test()
