@@ -15,32 +15,49 @@ class Cpso(threading.Thread):
 
     def __init__(self, variant_parameter):
         threading.Thread.__init__(self)
-        seeds = [10402, 10418, 10598, 10859, 11177, 11447, 12129, 12497, 13213, 13431, 13815, 14573, 15010, 15095,
-                 15259, 16148, 17020, 17172, 17265, 17291, 17307, 17591, 17987, 18284, 18700, 18906, 19406, 19457,
-                 19482, 19894]
-        self.ready_to_run = False
-        self.key = ""
-        decomposition_type = None
-        if "decomposition" in variant_parameter.keys():
-            self.key = variant_parameter["variant"] + "_" + variant_parameter["decomposition"] + "_" + \
-                       variant_parameter["data_set"]
-            decomposition_type = variant_parameter["decomposition"]
-        else:
-            self.key = variant_parameter["variant"] + "_" + variant_parameter["data_set"]
+        self.iterations = None
+        self.input_nodes = None
+        self.hidden_nodes = None
+        self.output_nodes = None
+        self.layers = None
+        self.dimension = None
+        self.contextVector = None
+        self.net = None
+        self.swarms = None
+        self.merge_iter = None
+        self.do_merge = None
+        self.decompose_iter = None
+        self.decom_func = None
+        self.do_decompose = None
+        self.variant_parameter = variant_parameter
+        self.key = None
+        self.random = Rand()
         self.result = {
             "iterations": [],
             "train": [],
             "test": []
         }
+        
+    def run(self):
+        seeds = [10402, 10418, 10598, 10859, 11177, 11447, 12129, 12497, 13213, 13431, 13815, 14573, 15010, 15095,
+                 15259, 16148, 17020, 17172, 17265, 17291, 17307, 17591, 17987, 18284, 18700, 18906, 19406, 19457,
+                 19482, 19894]
+        decomposition_type = None
+        if "decomposition" in self.variant_parameter.keys():
+            self.key = self.variant_parameter["variant"] + "_" + self.variant_parameter["decomposition"] + "_" + \
+                       self.variant_parameter["data_set"]
+            decomposition_type = self.variant_parameter["decomposition"]
+        else:
+            self.key = self.variant_parameter["variant"] + "_" + self.variant_parameter["data_set"]
         data_dict = {
             "iris": data_loader.get_iris_data,
             "wine": data_loader.get_wine_data,
             "cancer": data_loader.get_breast_cancer_data
         }
-        if variant_parameter["data_set"] is not None and variant_parameter["data_set"] in data_dict.keys():
-            network_config, self.data = data_dict[variant_parameter["data_set"]]()
+        if self.variant_parameter["data_set"] is not None and self.variant_parameter["data_set"] in data_dict.keys():
+            network_config, data = data_dict[self.variant_parameter["data_set"]]()
             for seed in seeds:
-                self.random = Rand()
+                
                 self.random.seed(seed)
                 lda = 0.001  # lambda
                 self.input_nodes = network_config[0]
@@ -53,7 +70,7 @@ class Cpso(threading.Thread):
                 self.decom_func = False
                 self.do_decompose = False
                 self.do_merge = False
-                self.iterations = variant_parameter["iterations"]
+                self.iterations = self.variant_parameter["iterations"]
                 decomDict = {
                     "layer": {
                         "function": self.layerDecompose,
@@ -72,11 +89,11 @@ class Cpso(threading.Thread):
                         "sub_swarm_size": self.hidden_nodes + self.output_nodes
                     }
                 }
-                if variant_parameter["variant"] == "pso":
+                if self.variant_parameter["variant"] == "pso":
                     decomposition = self.psoDecompose()
                 else:
                     if decomposition_type is not None and decomposition_type in decomDict.keys():
-                        if variant_parameter["variant"] == "dcpso":
+                        if self.variant_parameter["variant"] == "dcpso":
                             decomposition = self.psoDecompose()
                             self.do_decompose = True
                             self.decom_func = decomDict[decomposition_type]["function"]
@@ -84,16 +101,16 @@ class Cpso(threading.Thread):
                                 self.iterations /
                                 (1 + (math.log(self.dimension) / math.log(
                                     decomDict[decomposition_type]["sub_swarm_size"]))))
-                        elif variant_parameter["variant"] == "cpso":
+                        elif self.variant_parameter["variant"] == "cpso":
                             decomposition = decomDict[decomposition_type]["function"]()
-                        elif variant_parameter["variant"] == "mcpso":
+                        elif self.variant_parameter["variant"] == "mcpso":
                             decomposition = decomDict[decomposition_type]["function"]()
                             self.do_merge = True
-                            self.merge_nr = 2
+                            merge_nr = 2
                             self.merge_iter = math.floor(
-                                self.iterations / (1 + (math.log(self.dimension) / math.log(self.merge_nr))))
+                                self.iterations / (1 + (math.log(self.dimension) / math.log(merge_nr))))
                         else:
-                            print("Invalid variant: ", variant_parameter["variant"],
+                            print("Invalid variant: ", self.variant_parameter["variant"],
                                   " Available variants: pso, dcpso, cpso, mcpso(case sensitive)")
                     else:
                         print("Invalid decomposition ", decomposition_type, " Available options are: ",
@@ -101,20 +118,21 @@ class Cpso(threading.Thread):
                 if decomposition is not None:
                     self.swarms = []
                     self.swarms = self.createSwarms(decomposition)
-                    self.net = Network(self.random, network_config, lda, self.data)
-                    self.ready_to_run = True
+                    self.net = Network(self.random, network_config, lda, data)
+                    print("Starting to optimize: ", self.key, "\n")
+                    self.optimize()
                 else:
-                    print("Invalid Decomposition: ", variant_parameter["decomposition"])
+                    print("Invalid Decomposition: ", self.variant_parameter["decomposition"])
             avg_result = {
                 "iterations": np.average(np.array(self.result["iterations"]), axis=0),
                 "train": np.average(np.array(self.result["train"]), axis=0),
                 "test": np.average(np.array(self.result["test"]), axis=0)
             }
-            interation_plot = np.arange(0, variant_parameter["iterations"] + 1, 1)
+            interation_plot = np.arange(0, self.variant_parameter["iterations"] + 1, 1)
             plt.clf()
             plt.plot(interation_plot, avg_result["iterations"])
-            plt.title("Mse over training set for " + variant_parameter["data_set"] + " data set with " +
-                      variant_parameter["variant"] + " variant.")
+            plt.title("Mse over training set for " + self.variant_parameter["data_set"] + " data set with " +
+                      self.variant_parameter["variant"] + " variant.")
             plt.xlabel("Iterations")
             plt.ylabel("Training Mse")
             plt.savefig("./Results/" + self.key, dpi=300)
@@ -133,15 +151,9 @@ class Cpso(threading.Thread):
                 writer.writerow(["average test"])
                 writer.writerow([avg_result["test"].tolist()])
         else:
-            print("Invalid data set named: ", variant_parameter["data_set"], " Available data-sets are ",
+            print("Invalid data set named: ", self.variant_parameter["data_set"], " Available data-sets are ",
                   data_dict.keys())
-
-    def run(self):
-        if self.ready_to_run:
             print("Running for, ", self.key)
-            self.optimize()
-        else:
-            print("Did not run!, parameters incorrect.")
 
     def createWeight(self, index: int, layer: int, node: int, j: int, max_particle_value: float,
                      min_particle_value: float) -> {}:
@@ -447,7 +459,7 @@ if __name__ == "__main__":
     np.set_printoptions(suppress=True)
     iters = 200
     data_sets = ["iris", "wine", "cancer"]
-
+    threads = []
     for data_set in data_sets:
         parameters = [
             {
@@ -529,4 +541,8 @@ if __name__ == "__main__":
             }
         ]
         for parameter in parameters:
-            Cpso(parameter)
+            threads.append(Cpso(parameter))
+    for thread in threads:
+        thread.start()
+    for thread in threads:
+        thread.join()

@@ -24,7 +24,7 @@ def get_iris_data():
     for i in range(len(data)):
         for v in range(len(data[i][0])):
             data[i][0][v] = (data[i][0][v] - min_value) / (max_value - min_value)
-    print("iris data loaded")
+    # print("iris data loaded")
     return (num_input_nodes, num_hidden_nodes, num_hidden_layers, num_output_nodes), data
 
 
@@ -50,7 +50,7 @@ def get_cnae9_data():
         out[int(line[0]) - 1] = 1
         output_layer = numpy.array(out)
         data.append((input_layer, output_layer))
-    print("CNAE9 data loaded")
+    # print("CNAE9 data loaded")
     return (num_input_nodes, num_hidden_nodes, num_hidden_layers, num_output_nodes), data
 
 
@@ -75,7 +75,7 @@ def get_wine_data():
     for i in range(len(data)):
         for v in range(len(data[i][0])):
             data[i][0][v] = (data[i][0][v] - min_value) / (max_value - min_value)
-    print("wine data loaded")
+    # print("wine data loaded")
     return (num_input_nodes, num_hidden_nodes, num_hidden_layers, num_output_nodes), data
 
 
@@ -103,5 +103,5 @@ def get_breast_cancer_data():
     for i in range(len(data)):
         for v in range(len(data[i][0])):
             data[i][0][v] = (data[i][0][v] - min_value) / (max_value - min_value)
-    print("Breast cancer data loaded")
+    # print("Breast cancer data loaded")
     return (num_input_nodes, num_hidden_nodes, num_hidden_layers, num_output_nodes), data
