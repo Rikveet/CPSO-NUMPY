@@ -37,7 +37,7 @@ class Cpso(threading.Thread):
             "train": [],
             "test": []
         }
-        
+
     def run(self):
         seeds = [10402, 10418, 10598, 10859, 11177, 11447, 12129, 12497, 13213, 13431, 13815, 14573, 15010, 15095,
                  15259, 16148, 17020, 17172, 17265, 17291, 17307, 17591, 17987, 18284, 18700, 18906, 19406, 19457,
@@ -57,7 +57,7 @@ class Cpso(threading.Thread):
         if self.variant_parameter["data_set"] is not None and self.variant_parameter["data_set"] in data_dict.keys():
             network_config, data = data_dict[self.variant_parameter["data_set"]]()
             for seed in seeds:
-                
+
                 self.random.seed(seed)
                 lda = 0.001  # lambda
                 self.input_nodes = network_config[0]
@@ -442,14 +442,13 @@ class Cpso(threading.Thread):
                             particle[i]["f"] = fitness
 
             global_fitness = self.net.feed_forward_global()
-            # print("Iteration", iteration, " Fitness: ", global_fitness)
+            if iteration % 25 == 0:
+                print(self.key, " Iteration: ", iteration, " Fitness: ", global_fitness)
             y_values.append(global_fitness)
-        print("Training Complete, output:->")
         global_fitness = self.net.feed_forward_global()
-        print("Testing output:->")
         global_test_fitness = self.net.feed_forward_global_test()
-        print("Final train fitness:", global_fitness)
-        print("Final test fitness:", global_test_fitness)
+        print(self.key, " Final train fitness:", global_fitness)
+        print(self.key, " Final test fitness:", global_test_fitness)
         self.result["iterations"].append(y_values)
         self.result["train"].append(global_fitness)
         self.result["test"].append(global_test_fitness)
@@ -457,7 +456,7 @@ class Cpso(threading.Thread):
 
 if __name__ == "__main__":
     np.set_printoptions(suppress=True)
-    iters = 200
+    iters = 500
     data_sets = ["iris", "wine", "cancer"]
     threads = []
     for data_set in data_sets:
