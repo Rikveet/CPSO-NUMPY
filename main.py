@@ -442,7 +442,8 @@ class Cpso(threading.Thread):
                             particle[i]["f"] = fitness
 
             global_fitness = self.net.feed_forward_global()
-            print(self.key, " Iteration: ", iteration, " Fitness: ", global_fitness)
+            if iteration % 10 == 0:
+                print(self.key, " Iteration: ", iteration, " Fitness: ", global_fitness)
             y_values.append(global_fitness)
         global_fitness = self.net.feed_forward_global()
         global_test_fitness = self.net.feed_forward_global_test()
@@ -455,7 +456,7 @@ class Cpso(threading.Thread):
 
 if __name__ == "__main__":
     np.set_printoptions(suppress=True)
-    iters = 500
+    iters = 200
     data_sets = ["iris", "wine", "cancer"]
     threads = []
     for data_set in data_sets:
