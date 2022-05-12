@@ -43,7 +43,6 @@ class Network:
                     .astype('float32'))
         self.update_weight_decay()
         np.set_printoptions(precision=2)
-        print("Network initialized")
 
     def shuffle_data(self):
         self.random.shuffle(self.data)
