@@ -458,8 +458,8 @@ if __name__ == "__main__":
     np.set_printoptions(suppress=True)
     iters = 200
     data_sets = ["iris", "wine", "cancer"]
-    threads = []
     for data_set in data_sets:
+        threads = []
         parameters = [
             {
                 "variant": "pso",
@@ -541,7 +541,7 @@ if __name__ == "__main__":
         ]
         for parameter in parameters:
             threads.append(Cpso(parameter))
-    for thread in threads:
-        thread.start()
-    for thread in threads:
-        thread.join()
+        for thread in threads:
+            thread.start()
+        for thread in threads:
+            thread.join()
