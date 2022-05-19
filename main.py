@@ -48,7 +48,8 @@ class Cpso(threading.Thread):
         data_dict = {
             "iris": data_loader.get_iris_data,
             "wine": data_loader.get_wine_data,
-            "cancer": data_loader.get_breast_cancer_data
+            "cancer": data_loader.get_breast_cancer_data,
+            "cnae9": data_loader.get_cnae9_data
         }
         if self.variant_parameter["data_set"] is not None and self.variant_parameter["data_set"] in data_dict.keys():
             network_config, data = data_dict[self.variant_parameter["data_set"]]()

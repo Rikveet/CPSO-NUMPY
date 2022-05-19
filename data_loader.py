@@ -4,7 +4,7 @@ import numpy
 
 
 def get_iris_data():
-    file = open("Data/iris.data", "r")
+    file = open("./Data/iris.data", "r")
     data = []
     num_input_nodes = 4
     num_hidden_nodes = 4
@@ -29,23 +29,19 @@ def get_iris_data():
 
 
 def get_mist100_data():
-    file = open("Data/mist100.data")
+    file = open("./Data/mist100.data")
 
 
 def get_cnae9_data():
-    file = open("Data/CNAE-9.data")
+    file = open("./Data/CNAE-9.data")
     data = []
     num_input_nodes = 856
     num_hidden_nodes = 30
     num_hidden_layers = 1
     num_output_nodes = 9
-    min_value = math.inf
-    max_value = -math.inf
     for line in file:
         line = line.strip().split(",")
         input_layer = numpy.array([float(x) for x in line[1:]])
-        min_value = min(numpy.amin(input_layer), min_value)
-        max_value = max(numpy.amax(input_layer), max_value)
         out = [0 for _ in range(9)]
         out[int(line[0]) - 1] = 1
         output_layer = numpy.array(out)
@@ -55,7 +51,7 @@ def get_cnae9_data():
 
 
 def get_wine_data():
-    file = open("Data/wine.data", "r")
+    file = open("./Data/wine.data", "r")
     data = []
     num_input_nodes = 13
     num_hidden_nodes = 10
@@ -80,7 +76,7 @@ def get_wine_data():
 
 
 def get_breast_cancer_data():
-    file = open("Data/wdbc.data", "r")
+    file = open("./Data/wdbc.data", "r")
     data = []
     num_input_nodes = 30
     num_hidden_nodes = 25
