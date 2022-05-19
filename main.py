@@ -432,7 +432,7 @@ if __name__ == "__main__":
                  "iterations": iters,
                  }
     if parameter["variant"] != "pso":
-        parameter["decomposition"] = sys.argv[3]
+        parameter["decomposition"] = sys.argv[2]
     seeds = [10402, 10418, 10598, 10859, 11177, 11447, 12129, 12497, 13213, 13431, 13815, 14573, 15010, 15095,
              15259, 16148, 17020, 17172, 17265, 17291, 17307, 17591, 17987, 18284, 18700, 18906, 19406, 19457,
              19482, 19894]
