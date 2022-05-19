@@ -6,7 +6,7 @@ import sys
 import threading
 from random import Random as Rand
 
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 import numpy as np
 
 import data_loader
@@ -454,16 +454,16 @@ if __name__ == "__main__":
         "test": np.average(np.array(result["test"]), axis=0)
     }
     interation_plot = np.arange(0, parameter["iterations"] + 1, 1)
-    plt.clf()
-    plt.plot(interation_plot, avg_result["iterations"])
-    plt.title("Mse over training set for " + parameter["data_set"] + " data set with " +
-              parameter["variant"] + " variant.")
-    plt.xlabel("Iterations")
-    plt.ylabel("Training Mse")
-    store_directory = "./Results/" + parameter["data_set"] + "/images"
-    if not os.path.exists(store_directory):
-        os.makedirs(store_directory)
-    plt.savefig(store_directory + "/" + key, dpi=300)
+    # plt.clf()
+    # plt.plot(interation_plot, avg_result["iterations"])
+    # plt.title("Mse over training set for " + parameter["data_set"] + " data set with " +
+    #           parameter["variant"] + " variant.")
+    # plt.xlabel("Iterations")
+    # plt.ylabel("Training Mse")
+    # store_directory = "./Results/" + parameter["data_set"] + "/images"
+    # if not os.path.exists(store_directory):
+    #     os.makedirs(store_directory)
+    # plt.savefig(store_directory + "/" + key, dpi=300)
     # plt.show()
     store_directory = "./Results/" + parameter["data_set"] + "/csv"
     if not os.path.exists(store_directory):
