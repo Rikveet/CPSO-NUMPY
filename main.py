@@ -1,28 +1,25 @@
+from typing import Any
+
 import copy
 import csv
 import math
 import os.path
 import sys
-import threading
+from multiprocessing import Process, Manager
 from random import Random as Rand
 
-# import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt
 import numpy as np
 
 import data_loader
 from Network import Network
 
-result = {
-    "iterations": [],
-    "train": [],
-    "test": []
-}
 
+class Cpso:
+    results: Any
 
-class Cpso(threading.Thread):
-
-    def __init__(self, variant_parameter):
-        threading.Thread.__init__(self)
+    def __init__(self, variant_parameter, results):
+        self.results = results
         self.iterations = None
         self.input_nodes = None
         self.hidden_nodes = None
@@ -45,12 +42,8 @@ class Cpso(threading.Thread):
 
     def run(self):
         decomposition_type = None
-        data_dict = {
-            "iris": data_loader.get_iris_data,
-            "wine": data_loader.get_wine_data,
-            "cancer": data_loader.get_breast_cancer_data,
-            "cnae9": data_loader.get_cnae9_data
-        }
+        data_dict = {"iris": data_loader.get_iris_data, "wine": data_loader.get_wine_data,
+                     "cancer": data_loader.get_breast_cancer_data, "cnae9": data_loader.get_cnae9_data}
         if self.variant_parameter["data_set"] is not None and self.variant_parameter["data_set"] in data_dict.keys():
             network_config, data = data_dict[self.variant_parameter["data_set"]]()
             self.random.seed(self.seed)
@@ -66,37 +59,25 @@ class Cpso(threading.Thread):
             self.do_decompose = False
             self.do_merge = False
             self.iterations = self.variant_parameter["iterations"]
-            decomDict = {
-                "layer": {
-                    "function": self.layerDecompose,
-                    "sub_swarm_size": self.layers - 1
-                },
-                "layer_factorized": {
-                    "function": self.factorizedLayerDecompose,
-                    "sub_swarm_size": self.output_nodes + 1
-                },
-                "node": {
-                    "function": self.nodeDecompose,
-                    "sub_swarm_size": self.hidden_nodes + self.output_nodes
-                },
-                "node_factorized": {
-                    "function": self.factorizedNodeDecompose,
-                    "sub_swarm_size": self.hidden_nodes + self.output_nodes
-                }
-            }
+            decomDict = {"layer": {"function": self.layerDecompose, "sub_swarm_size": self.layers - 1},
+                         "layer_factorized": {"function": self.factorizedLayerDecompose,
+                                              "sub_swarm_size": self.output_nodes + 1},
+                         "node": {"function": self.nodeDecompose,
+                                  "sub_swarm_size": self.hidden_nodes + self.output_nodes},
+                         "node_factorized": {"function": self.factorizedNodeDecompose,
+                                             "sub_swarm_size": self.hidden_nodes + self.output_nodes}}
             if self.variant_parameter["variant"] == "pso":
                 decomposition = self.psoDecompose()
             else:
-                if "decomposition" in self.variant_parameter.keys() and self.variant_parameter["decomposition"] in decomDict.keys():
+                if "decomposition" in self.variant_parameter.keys() and \
+                        self.variant_parameter["decomposition"] in decomDict.keys():
                     decomposition_type = self.variant_parameter["decomposition"]
                     if self.variant_parameter["variant"] == "dcpso":
                         decomposition = self.psoDecompose()
                         self.do_decompose = True
                         self.decom_func = decomDict[decomposition_type]["function"]
-                        self.decompose_iter = math.floor(
-                            self.iterations /
-                            (1 + (math.log(self.dimension) / math.log(
-                                decomDict[decomposition_type]["sub_swarm_size"]))))
+                        self.decompose_iter = math.floor(self.iterations / (1 + (math.log(self.dimension) / math.log(
+                            decomDict[decomposition_type]["sub_swarm_size"]))))
                     elif self.variant_parameter["variant"] == "cpso":
                         decomposition = decomDict[decomposition_type]["function"]()
                     elif self.variant_parameter["variant"] == "mcpso":
@@ -109,8 +90,8 @@ class Cpso(threading.Thread):
                         print("Invalid variant: ", self.variant_parameter["variant"],
                               " Available variants: pso, dcpso, cpso, mcpso(case sensitive)", flush=True)
                 else:
-                    print("Invalid decomposition ", decomposition_type, " Available options are: ",
-                          decomDict.keys(), flush=True)
+                    print("Invalid decomposition ", decomposition_type, " Available options are: ", decomDict.keys(),
+                          flush=True)
             if decomposition is not None:
                 self.swarms = []
                 self.swarms = self.createSwarms(decomposition)
@@ -135,15 +116,11 @@ class Cpso(threading.Thread):
         :param j: the node to which the weight is connected in the next layer
         :return: A dictionary of layer, node, j and initialized weight with range -1,1 and 0 velocity.
         """
-        return [{"key": index,
-                 "layer": layer,
-                 "node": node,
-                 "j": j,
+        return [{"key": index, "layer": layer, "node": node, "j": j,
                  "w": self.random.uniform(min_particle_value, max_particle_value),  # current weight
                  "bw": self.random.uniform(min_particle_value, max_particle_value),  # current best weight
                  "f": math.inf,  # personal best fitness.
-                 "v": 0
-                 } for _ in range(20)]
+                 "v": 0} for _ in range(20)]
 
     def generateOneVec(self, networkConfig: (int, int, int, int)) -> []:
         """
@@ -178,9 +155,8 @@ class Cpso(threading.Thread):
                     self.createWeight(weight_index, layer, i, -1, min_bias, max_bias))  # hidden to hidden bias
                 weight_index += 1
                 for j in range(num_hidden_nodes):
-                    vector.append(
-                        self.createWeight(weight_index, layer, i, j, min_weight,
-                                          max_weight))  # hidden to hidden weights
+                    vector.append(self.createWeight(weight_index, layer, i, j, min_weight,
+                                                    max_weight))  # hidden to hidden weights
                     weight_index += 1
             layer += 1
             num_hidden_layers -= 1
@@ -230,9 +206,9 @@ class Cpso(threading.Thread):
                         temp.append(copy.deepcopy(weightParticles))
             # output layer weights input for a node.
             for weightParticles in cv:
-                if (weightParticles[0]["layer"] == layers - 2 and weightParticles[0]["j"] == jNode) or \
-                        (weightParticles[0]["layer"] == layers - 2 and weightParticles[0]["node"] == jNode and
-                         weightParticles[0]["j"] == -1):
+                if (weightParticles[0]["layer"] == layers - 2 and weightParticles[0]["j"] == jNode) or (
+                        weightParticles[0]["layer"] == layers - 2 and weightParticles[0]["node"] == jNode and
+                        weightParticles[0]["j"] == -1):
                     # -2 to get last hidden layer
                     temp.append(copy.deepcopy(weightParticles))
             decomposition.append(temp)
@@ -281,11 +257,11 @@ class Cpso(threading.Thread):
                 temp = []
                 for weightParticles in cv:
                     # input weights or biases and output weights
-                    if (weightParticles[0]["layer"] == layer - 1 and weightParticles[0]["j"] == node) \
-                            or (weightParticles[0]["layer"] == layer - 1 and weightParticles[0]["node"] == node
-                                and weightParticles[0]["j"] == -1) \
-                            or (weightParticles[0]["layer"] == layer and weightParticles[0]["node"] == node
-                                and weightParticles[0]["j"] != -1):
+                    if (weightParticles[0]["layer"] == layer - 1 and weightParticles[0]["j"] == node) or (
+                            weightParticles[0]["layer"] == layer - 1 and weightParticles[0]["node"] == node and
+                            weightParticles[0]["j"] == -1) or (
+                            weightParticles[0]["layer"] == layer and weightParticles[0]["node"] == node and
+                            weightParticles[0]["j"] != -1):
                         temp.append(copy.deepcopy(weightParticles))
                 decomposition.append(temp)
         # output layer
@@ -293,9 +269,9 @@ class Cpso(threading.Thread):
             temp = []
             for weightParticles in cv:
                 # Input weights or biases
-                if (weightParticles[0]["layer"] == layers - 2 and weightParticles[0]["j"] == node) \
-                        or (weightParticles[0]["layer"] == layers - 2 and weightParticles[0]["node"] == node
-                            and weightParticles[0]["j"] == -1):
+                if (weightParticles[0]["layer"] == layers - 2 and weightParticles[0]["j"] == node) or (
+                        weightParticles[0]["layer"] == layers - 2 and weightParticles[0]["node"] == node and
+                        weightParticles[0]["j"] == -1):
                     # -2 to get last hidden layer, -1 for output layer. Weight and bias.
                     temp.append(copy.deepcopy(weightParticles))
             decomposition.append(temp)
@@ -309,8 +285,7 @@ class Cpso(threading.Thread):
             for weightParticles in subSwarm:
                 subSwarmValues[weightParticles[0]["key"]] = {"lbw": 0,  # local best weight
                                                              "f": math.inf}  # local best fitness
-            swarms.append({"values": subSwarmValues,
-                           "particles": subSwarm})
+            swarms.append({"values": subSwarmValues, "particles": subSwarm})
         return swarms
 
     def merge(self):
@@ -320,19 +295,19 @@ class Cpso(threading.Thread):
             for i in range(0, len(self.swarms), 2):
                 if i + 1 < len(self.swarms):
                     common_keys = self.swarms[i]["values"].keys() & self.swarms[i + 1]["values"].keys()
-                    for key in common_keys:
+                    for KEY in common_keys:
                         def del_key(index: int, k):
                             del self.swarms[index]["values"][k]
-                            self.swarms[index]["particles"] = [self.swarms[index]["particles"][particle_index]
-                                                               for particle_index in range(len(self.swarms[index]
-                                                                                               ["particles"]))
-                                                               if self.swarms[index]["particles"][particle_index][0]
-                                                               ["key"] != k]
+                            self.swarms[index]["particles"] = [self.swarms[index]["particles"][particle_index] for
+                                                               particle_index in
+                                                               range(len(self.swarms[index]["particles"])) if
+                                                               self.swarms[index]["particles"][particle_index][0][
+                                                                   "key"] != k]
 
-                        if self.swarms[i]["values"][key]["f"] < self.swarms[i + 1]["values"][key]["f"]:
-                            del_key(i + 1, key)
+                        if self.swarms[i]["values"][KEY]["f"] < self.swarms[i + 1]["values"][KEY]["f"]:
+                            del_key(i + 1, KEY)
                         else:
-                            del_key(i, key)
+                            del_key(i, KEY)
                     subSwarms = {"values": self.swarms[i]["values"] | self.swarms[i + 1]["values"],
                                  "particles": self.swarms[i]["particles"] + self.swarms[i + 1]["particles"]}
                     swarms.append(subSwarms)
@@ -352,8 +327,7 @@ class Cpso(threading.Thread):
             self.swarms = swarms
         else:
             self.do_merge = False
-        print("seed ", self.seed, "Merge swarms : ", prev_num_swarms, " -> ", len(self.swarms),
-              flush=True)
+        print("seed ", self.seed, "Merge swarms : ", prev_num_swarms, " -> ", len(self.swarms), flush=True)
 
     def decompose(self):
         decomposition = self.decom_func()
@@ -395,9 +369,9 @@ class Cpso(threading.Thread):
                     for particle in subSwarm["particles"]:
                         self.net.create_batch()
                         v = (w * particle[i]["v"]) + (
-                                c1 * self.random.uniform(0, 1) * (particle[i]["bw"] - particle[i]["w"])) + \
-                            (c2 * self.random.uniform(0, 1) * (
-                                    subSwarm["values"][particle[i]["key"]]["lbw"] - particle[i]["w"]))
+                                c1 * self.random.uniform(0, 1) * (particle[i]["bw"] - particle[i]["w"])) + (
+                                    c2 * self.random.uniform(0, 1) *
+                                    (subSwarm["values"][particle[i]["key"]]["lbw"] - particle[i]["w"]))
                         v = min(max(-max_velocity, v), max_velocity)
                         particle[i]["v"] = v
                         particle[i]["w"] += v
@@ -411,74 +385,72 @@ class Cpso(threading.Thread):
                             particle[i]["f"] = fitness
 
             global_fitness = self.net.feed_forward_global()
-            print("seed ", self.seed, " Iteration: ", iteration, " Fitness: ", global_fitness,
-                  flush=True)
+            print("seed ", self.seed, " Iteration: ", iteration, " Fitness: ", global_fitness, flush=True)
             y_values.append(global_fitness)
         global_fitness = self.net.feed_forward_global()
         global_test_fitness = self.net.feed_forward_global_test()
         print("seed ", self.seed, " Final train fitness:", global_fitness, flush=True)
         print("seed ", self.seed, " Final test fitness:", global_test_fitness, flush=True)
-        result["iterations"].append(y_values)
-        result["train"].append(global_fitness)
-        result["test"].append(global_test_fitness)
+        self.results["iterations"].append(y_values)
+        self.results["train"].append(global_fitness)
+        self.results["test"].append(global_test_fitness)
 
 
 if __name__ == "__main__":
-    np.set_printoptions(suppress=True)
-    iters = 200
-    threads = []
-    parameter = {"data_set": sys.argv[1],
-                 "variant": sys.argv[2],
-                 "iterations": iters,
-                 }
-    if parameter["variant"] != "pso":
-        parameter["decomposition"] = sys.argv[3]
-    seeds = [10402, 10418, 10598, 10859, 11177, 11447, 12129, 12497, 13213, 13431, 13815, 14573, 15010, 15095,
-             15259, 16148, 17020, 17172, 17265, 17291, 17307, 17591, 17987, 18284, 18700, 18906, 19406, 19457,
-             19482, 19894]
-    for seed_index, seed in enumerate(seeds):
-        parameter["seed"] = seed
-        parameter["seed_index"] = seed_index
-        threads.append(Cpso(parameter))
-    for thread in threads:
-        thread.start()
-    for thread in threads:
-        thread.join()
-    if "decomposition" in parameter.keys():
-        key = parameter["variant"] + "_" + parameter["decomposition"] + "_" + \
-              parameter["data_set"]
-    else:
-        key = parameter["variant"] + "_" + parameter["data_set"]
-    avg_result = {
-        "iterations": np.average(np.array(result["iterations"]), axis=0),
-        "train": np.average(np.array(result["train"]), axis=0),
-        "test": np.average(np.array(result["test"]), axis=0)
-    }
-    interation_plot = np.arange(0, parameter["iterations"] + 1, 1)
-    # plt.clf()
-    # plt.plot(interation_plot, avg_result["iterations"])
-    # plt.title("Mse over training set for " + parameter["data_set"] + " data set with " +
-    #           parameter["variant"] + " variant.")
-    # plt.xlabel("Iterations")
-    # plt.ylabel("Training Mse")
-    # store_directory = "./Results/" + parameter["data_set"] + "/images"
-    # if not os.path.exists(store_directory):
-    #     os.makedirs(store_directory)
-    # plt.savefig(store_directory + "/" + key, dpi=300)
-    # plt.show()
-    store_directory = "./Results/" + parameter["data_set"] + "/csv"
-    if not os.path.exists(store_directory):
-        os.makedirs(store_directory)
-    with open(store_directory + "/" + key + ".csv", "w", newline="") as f:
-        writer = csv.writer(f)
-        writer.writerow(list(interation_plot))
-        writer.writerows(result["iterations"])
-        writer.writerow(avg_result["iterations"].tolist())
-        writer.writerow(["train"])
-        writer.writerow(result["train"])
-        writer.writerow(["average train"])
-        writer.writerow([avg_result["train"].tolist()])
-        writer.writerow(["test"])
-        writer.writerow(result["test"])
-        writer.writerow(["average test"])
-        writer.writerow([avg_result["test"].tolist()])
+    with Manager() as manager:
+        result = manager.dict()
+        result["iterations"] = manager.list()
+        result["train"] = manager.list()
+        result["test"] = manager.list()
+        np.set_printoptions(suppress=True)
+        iters = 200
+        processes = []
+        parameter = {"data_set": sys.argv[1], "variant": sys.argv[2], "iterations": iters, }
+        if parameter["variant"] != "pso":
+            parameter["decomposition"] = sys.argv[3]
+        seeds = [10402, 10418, 10598, 10859, 11177, 11447, 12129, 12497, 13213, 13431, 13815, 14573, 15010, 15095,
+                 15259, 16148, 17020, 17172, 17265, 17291, 17307, 17591, 17987, 18284, 18700, 18906, 19406, 19457,
+                 19482, 19894]
+        for seed_index, seed in enumerate(seeds):
+            parameter["seed"] = seed
+            parameter["seed_index"] = seed_index
+            obj = Cpso(parameter, result)
+            processes.append(Process(target=obj.run))
+        for process in processes:
+            process.start()
+        for process in processes:
+            process.join()
+        if "decomposition" in parameter.keys():
+            key = parameter["variant"] + "_" + parameter["decomposition"] + "_" + parameter["data_set"]
+        else:
+            key = parameter["variant"] + "_" + parameter["data_set"]
+        avg_result = {"iterations": np.average(np.array(result["iterations"]), axis=0),
+                      "train": np.average(np.array(result["train"]), axis=0),
+                      "test": np.average(np.array(result["test"]), axis=0)}
+        interation_plot = np.arange(0, parameter["iterations"] + 1, 1)
+        plt.clf()
+        plt.plot(interation_plot, avg_result["iterations"])
+        plt.title("Mse over training set for " + parameter["data_set"] + " data set with " +
+                  parameter["variant"] + " variant.")
+        plt.xlabel("Iterations")
+        plt.ylabel("Training Mse")
+        store_directory = "./Results/" + parameter["data_set"] + "/images"
+        if not os.path.exists(store_directory):
+            os.makedirs(store_directory)
+        plt.savefig(store_directory + "/" + key, dpi=300)
+        store_directory = "./Results/" + parameter["data_set"] + "/csv"
+        if not os.path.exists(store_directory):
+            os.makedirs(store_directory)
+        with open(store_directory + "/" + key + ".csv", "w", newline="") as f:
+            writer = csv.writer(f)
+            writer.writerow(list(interation_plot))
+            writer.writerows(result["iterations"])
+            writer.writerow(avg_result["iterations"].tolist())
+            writer.writerow(["train"])
+            writer.writerow(result["train"])
+            writer.writerow(["average train"])
+            writer.writerow([avg_result["train"].tolist()])
+            writer.writerow(["test"])
+            writer.writerow(result["test"])
+            writer.writerow(["average test"])
+            writer.writerow([avg_result["test"].tolist()])
