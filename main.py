@@ -1,6 +1,8 @@
 import copy
 import csv
 import math
+import os.path
+import sys
 import threading
 from random import Random as Rand
 
@@ -9,6 +11,12 @@ import numpy as np
 
 import data_loader
 from Network import Network
+
+result = {
+    "iterations": [],
+    "train": [],
+    "test": []
+}
 
 
 class Cpso(threading.Thread):
@@ -31,24 +39,12 @@ class Cpso(threading.Thread):
         self.do_decompose = None
         self.variant_parameter = variant_parameter
         self.key = None
+        self.seedIndex = variant_parameter["seed_index"]
+        self.seed = variant_parameter["seed"]
         self.random = Rand()
-        self.result = {
-            "iterations": [],
-            "train": [],
-            "test": []
-        }
 
     def run(self):
-        seeds = [10402, 10418, 10598, 10859, 11177, 11447, 12129, 12497, 13213, 13431, 13815, 14573, 15010, 15095,
-                 15259, 16148, 17020, 17172, 17265, 17291, 17307, 17591, 17987, 18284, 18700, 18906, 19406, 19457,
-                 19482, 19894]
         decomposition_type = None
-        if "decomposition" in self.variant_parameter.keys():
-            self.key = self.variant_parameter["variant"] + "_" + self.variant_parameter["decomposition"] + "_" + \
-                       self.variant_parameter["data_set"]
-            decomposition_type = self.variant_parameter["decomposition"]
-        else:
-            self.key = self.variant_parameter["variant"] + "_" + self.variant_parameter["data_set"]
         data_dict = {
             "iris": data_loader.get_iris_data,
             "wine": data_loader.get_wine_data,
@@ -56,104 +52,75 @@ class Cpso(threading.Thread):
         }
         if self.variant_parameter["data_set"] is not None and self.variant_parameter["data_set"] in data_dict.keys():
             network_config, data = data_dict[self.variant_parameter["data_set"]]()
-            for seed in seeds:
-
-                self.random.seed(seed)
-                lda = 0.001  # lambda
-                self.input_nodes = network_config[0]
-                self.hidden_nodes = network_config[1]
-                self.output_nodes = network_config[3]
-                self.contextVector = self.generateOneVec(network_config)
-                self.dimension = len(self.contextVector)
-                self.layers = 2 + network_config[2]  # input layer + hidden layers + output layer
-                decomposition = None
-                self.decom_func = False
-                self.do_decompose = False
-                self.do_merge = False
-                self.iterations = self.variant_parameter["iterations"]
-                decomDict = {
-                    "layer": {
-                        "function": self.layerDecompose,
-                        "sub_swarm_size": self.layers - 1
-                    },
-                    "layer_factorized": {
-                        "function": self.factorizedLayerDecompose,
-                        "sub_swarm_size": self.output_nodes + 1
-                    },
-                    "node": {
-                        "function": self.nodeDecompose,
-                        "sub_swarm_size": self.hidden_nodes + self.output_nodes
-                    },
-                    "node_factorized": {
-                        "function": self.factorizedNodeDecompose,
-                        "sub_swarm_size": self.hidden_nodes + self.output_nodes
-                    }
+            self.random.seed(self.seed)
+            lda = 0.001  # lambda
+            self.input_nodes = network_config[0]
+            self.hidden_nodes = network_config[1]
+            self.output_nodes = network_config[3]
+            self.contextVector = self.generateOneVec(network_config)
+            self.dimension = len(self.contextVector)
+            self.layers = 2 + network_config[2]  # input layer + hidden layers + output layer
+            decomposition = None
+            self.decom_func = False
+            self.do_decompose = False
+            self.do_merge = False
+            self.iterations = self.variant_parameter["iterations"]
+            decomDict = {
+                "layer": {
+                    "function": self.layerDecompose,
+                    "sub_swarm_size": self.layers - 1
+                },
+                "layer_factorized": {
+                    "function": self.factorizedLayerDecompose,
+                    "sub_swarm_size": self.output_nodes + 1
+                },
+                "node": {
+                    "function": self.nodeDecompose,
+                    "sub_swarm_size": self.hidden_nodes + self.output_nodes
+                },
+                "node_factorized": {
+                    "function": self.factorizedNodeDecompose,
+                    "sub_swarm_size": self.hidden_nodes + self.output_nodes
                 }
-                if self.variant_parameter["variant"] == "pso":
-                    decomposition = self.psoDecompose()
-                else:
-                    if decomposition_type is not None and decomposition_type in decomDict.keys():
-                        if self.variant_parameter["variant"] == "dcpso":
-                            decomposition = self.psoDecompose()
-                            self.do_decompose = True
-                            self.decom_func = decomDict[decomposition_type]["function"]
-                            self.decompose_iter = math.floor(
-                                self.iterations /
-                                (1 + (math.log(self.dimension) / math.log(
-                                    decomDict[decomposition_type]["sub_swarm_size"]))))
-                        elif self.variant_parameter["variant"] == "cpso":
-                            decomposition = decomDict[decomposition_type]["function"]()
-                        elif self.variant_parameter["variant"] == "mcpso":
-                            decomposition = decomDict[decomposition_type]["function"]()
-                            self.do_merge = True
-                            merge_nr = 2
-                            self.merge_iter = math.floor(
-                                self.iterations / (1 + (math.log(self.dimension) / math.log(merge_nr))))
-                        else:
-                            print("Invalid variant: ", self.variant_parameter["variant"],
-                                  " Available variants: pso, dcpso, cpso, mcpso(case sensitive)")
-                    else:
-                        print("Invalid decomposition ", decomposition_type, " Available options are: ",
-                              decomDict.keys())
-                if decomposition is not None:
-                    self.swarms = []
-                    self.swarms = self.createSwarms(decomposition)
-                    self.net = Network(self.random, network_config, lda, data)
-                    print("Starting to optimize: ", self.key, "\n")
-                    self.optimize()
-                else:
-                    print("Invalid Decomposition: ", self.variant_parameter["decomposition"])
-            avg_result = {
-                "iterations": np.average(np.array(self.result["iterations"]), axis=0),
-                "train": np.average(np.array(self.result["train"]), axis=0),
-                "test": np.average(np.array(self.result["test"]), axis=0)
             }
-            interation_plot = np.arange(0, self.variant_parameter["iterations"] + 1, 1)
-            plt.clf()
-            plt.plot(interation_plot, avg_result["iterations"])
-            plt.title("Mse over training set for " + self.variant_parameter["data_set"] + " data set with " +
-                      self.variant_parameter["variant"] + " variant.")
-            plt.xlabel("Iterations")
-            plt.ylabel("Training Mse")
-            plt.savefig("./Results/" + self.key, dpi=300)
-            # plt.show()
-            with open("./Results/" + self.key + ".csv", "w", newline="") as f:
-                writer = csv.writer(f)
-                writer.writerow(list(interation_plot))
-                writer.writerows(self.result["iterations"])
-                writer.writerow(avg_result["iterations"].tolist())
-                writer.writerow(["train"])
-                writer.writerow(self.result["train"])
-                writer.writerow(["average train"])
-                writer.writerow([avg_result["train"].tolist()])
-                writer.writerow(["test"])
-                writer.writerow(self.result["test"])
-                writer.writerow(["average test"])
-                writer.writerow([avg_result["test"].tolist()])
+            if self.variant_parameter["variant"] == "pso":
+                decomposition = self.psoDecompose()
+            else:
+                if "decomposition" in self.variant_parameter.keys() and self.variant_parameter["decomposition"] in decomDict.keys():
+                    decomposition_type = self.variant_parameter["decomposition"]
+                    if self.variant_parameter["variant"] == "dcpso":
+                        decomposition = self.psoDecompose()
+                        self.do_decompose = True
+                        self.decom_func = decomDict[decomposition_type]["function"]
+                        self.decompose_iter = math.floor(
+                            self.iterations /
+                            (1 + (math.log(self.dimension) / math.log(
+                                decomDict[decomposition_type]["sub_swarm_size"]))))
+                    elif self.variant_parameter["variant"] == "cpso":
+                        decomposition = decomDict[decomposition_type]["function"]()
+                    elif self.variant_parameter["variant"] == "mcpso":
+                        decomposition = decomDict[decomposition_type]["function"]()
+                        self.do_merge = True
+                        merge_nr = 2
+                        self.merge_iter = math.floor(
+                            self.iterations / (1 + (math.log(self.dimension) / math.log(merge_nr))))
+                    else:
+                        print("Invalid variant: ", self.variant_parameter["variant"],
+                              " Available variants: pso, dcpso, cpso, mcpso(case sensitive)", flush=True)
+                else:
+                    print("Invalid decomposition ", decomposition_type, " Available options are: ",
+                          decomDict.keys(), flush=True)
+            if decomposition is not None:
+                self.swarms = []
+                self.swarms = self.createSwarms(decomposition)
+                self.net = Network(self.random, network_config, lda, data)
+                print("Starting to optimize: seed ", self.seed, flush=True)
+                self.optimize()
+            else:
+                print("Invalid Decomposition: ", self.variant_parameter["decomposition"], flush=True)
         else:
             print("Invalid data set named: ", self.variant_parameter["data_set"], " Available data-sets are ",
-                  data_dict.keys())
-            print("Running for, ", self.key)
+                  data_dict.keys(), flush=True)
 
     def createWeight(self, index: int, layer: int, node: int, j: int, max_particle_value: float,
                      min_particle_value: float) -> {}:
@@ -384,7 +351,8 @@ class Cpso(threading.Thread):
             self.swarms = swarms
         else:
             self.do_merge = False
-        print("Merge swarms : ", prev_num_swarms, " -> ", len(self.swarms))
+        print("seed ", self.seed, "Merge swarms : ", prev_num_swarms, " -> ", len(self.swarms),
+              flush=True)
 
     def decompose(self):
         decomposition = self.decom_func()
@@ -395,7 +363,7 @@ class Cpso(threading.Thread):
                 swarm["values"][value] = copy.deepcopy(values[value])
         self.swarms = swarms
         self.do_decompose = False
-        print("Decompose swarms : ", 1, " -> ", len(self.swarms))
+        print("seed ", self.seed, "Decompose swarms : ", 1, " -> ", len(self.swarms), flush=True)
 
     def optimize(self):
         max_velocity = 0.14286
@@ -442,106 +410,74 @@ class Cpso(threading.Thread):
                             particle[i]["f"] = fitness
 
             global_fitness = self.net.feed_forward_global()
-            if iteration % 10 == 0:
-                print(self.key, " Iteration: ", iteration, " Fitness: ", global_fitness)
+            print("seed ", self.seed, " Iteration: ", iteration, " Fitness: ", global_fitness,
+                  flush=True)
             y_values.append(global_fitness)
         global_fitness = self.net.feed_forward_global()
         global_test_fitness = self.net.feed_forward_global_test()
-        print(self.key, " Final train fitness:", global_fitness)
-        print(self.key, " Final test fitness:", global_test_fitness)
-        self.result["iterations"].append(y_values)
-        self.result["train"].append(global_fitness)
-        self.result["test"].append(global_test_fitness)
+        print("seed ", self.seed, " Final train fitness:", global_fitness, flush=True)
+        print("seed ", self.seed, " Final test fitness:", global_test_fitness, flush=True)
+        result["iterations"].append(y_values)
+        result["train"].append(global_fitness)
+        result["test"].append(global_test_fitness)
 
 
 if __name__ == "__main__":
     np.set_printoptions(suppress=True)
     iters = 200
-    data_sets = ["iris", "wine", "cancer"]
-    for data_set in data_sets:
-        threads = []
-        parameters = [
-            {
-                "variant": "pso",
-                "iterations": iters,
-                "data_set": data_set
-            },
-            {
-                "variant": "dcpso",
-                "decomposition": "node",
-                "iterations": iters,
-                "data_set": data_set
-            },
-            {
-                "variant": "dcpso",
-                "decomposition": "node_factorized",
-                "iterations": iters,
-                "data_set": data_set
-            },
-            {
-                "variant": "dcpso",
-                "decomposition": "layer",
-                "iterations": iters,
-                "data_set": data_set
-            },
-            {
-                "variant": "dcpso",
-                "decomposition": "layer_factorized",
-                "iterations": iters,
-                "data_set": data_set
-            },
-            {
-                "variant": "mcpso",
-                "decomposition": "node",
-                "iterations": iters,
-                "data_set": data_set
-            },
-            {
-                "variant": "mcpso",
-                "decomposition": "node_factorized",
-                "iterations": iters,
-                "data_set": data_set
-            },
-            {
-                "variant": "mcpso",
-                "decomposition": "layer",
-                "iterations": iters,
-                "data_set": data_set
-            },
-            {
-                "variant": "mcpso",
-                "decomposition": "layer_factorized",
-                "iterations": iters,
-                "data_set": data_set
-            },
-            {
-                "variant": "cpso",
-                "decomposition": "node",
-                "iterations": iters,
-                "data_set": data_set
-            },
-            {
-                "variant": "cpso",
-                "decomposition": "node_factorized",
-                "iterations": iters,
-                "data_set": data_set
-            },
-            {
-                "variant": "cpso",
-                "decomposition": "layer",
-                "iterations": iters,
-                "data_set": data_set
-            },
-            {
-                "variant": "cpso",
-                "decomposition": "layer_factorized",
-                "iterations": iters,
-                "data_set": data_set
-            }
-        ]
-        for parameter in parameters:
-            threads.append(Cpso(parameter))
-        for thread in threads:
-            thread.start()
-        for thread in threads:
-            thread.join()
+    data_set = sys.argv[0]
+    threads = []
+    parameter = {"variant": sys.argv[1],
+                 "iterations": iters,
+                 "data_set": sys.argv[2]}
+    if parameter["variant"] != "pso":
+        parameter["decomposition"] = sys.argv[3]
+    seeds = [10402, 10418, 10598, 10859, 11177, 11447, 12129, 12497, 13213, 13431, 13815, 14573, 15010, 15095,
+             15259, 16148, 17020, 17172, 17265, 17291, 17307, 17591, 17987, 18284, 18700, 18906, 19406, 19457,
+             19482, 19894]
+    for seed_index, seed in enumerate(seeds):
+        parameter["seed"] = seed
+        parameter["seed_index"] = seed_index
+        threads.append(Cpso(parameter))
+    for thread in threads:
+        thread.start()
+    for thread in threads:
+        thread.join()
+    if "decomposition" in parameter.keys():
+        key = parameter["variant"] + "_" + parameter["decomposition"] + "_" + \
+              parameter["data_set"]
+    else:
+        key = parameter["variant"] + "_" + parameter["data_set"]
+    avg_result = {
+        "iterations": np.average(np.array(result["iterations"]), axis=0),
+        "train": np.average(np.array(result["train"]), axis=0),
+        "test": np.average(np.array(result["test"]), axis=0)
+    }
+    interation_plot = np.arange(0, parameter["iterations"] + 1, 1)
+    plt.clf()
+    plt.plot(interation_plot, avg_result["iterations"])
+    plt.title("Mse over training set for " + parameter["data_set"] + " data set with " +
+              parameter["variant"] + " variant.")
+    plt.xlabel("Iterations")
+    plt.ylabel("Training Mse")
+    store_directory = "./Results/" + parameter["data_set"] + "/images"
+    if not os.path.exists(store_directory):
+        os.makedirs(store_directory)
+    plt.savefig(store_directory + "/" + key, dpi=300)
+    # plt.show()
+    store_directory = "./Results/" + parameter["data_set"] + "/csv"
+    if not os.path.exists(store_directory):
+        os.makedirs(store_directory)
+    with open(store_directory + "/" + key + ".csv", "w", newline="") as f:
+        writer = csv.writer(f)
+        writer.writerow(list(interation_plot))
+        writer.writerows(result["iterations"])
+        writer.writerow(avg_result["iterations"].tolist())
+        writer.writerow(["train"])
+        writer.writerow(result["train"])
+        writer.writerow(["average train"])
+        writer.writerow([avg_result["train"].tolist()])
+        writer.writerow(["test"])
+        writer.writerow(result["test"])
+        writer.writerow(["average test"])
+        writer.writerow([avg_result["test"].tolist()])
