@@ -426,11 +426,11 @@ class Cpso(threading.Thread):
 if __name__ == "__main__":
     np.set_printoptions(suppress=True)
     iters = 200
-    data_set = sys.argv[0]
     threads = []
-    parameter = {"variant": sys.argv[1],
+    parameter = {"data_set": sys.argv[0],
+                 "variant": sys.argv[1],
                  "iterations": iters,
-                 "data_set": sys.argv[2]}
+                 }
     if parameter["variant"] != "pso":
         parameter["decomposition"] = sys.argv[3]
     seeds = [10402, 10418, 10598, 10859, 11177, 11447, 12129, 12497, 13213, 13431, 13815, 14573, 15010, 15095,
