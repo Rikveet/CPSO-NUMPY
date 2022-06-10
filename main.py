@@ -395,14 +395,26 @@ if __name__ == "__main__":
     with Manager() as manager:
         data_dict = {
             "iris": {
-                "max": 1,
+                "max": 30,
                 "function": data_loader.get_iris_data},
+            "heart": {
+                "max": 1,
+                "function": data_loader.get_heart_disease},
             "wine": {
-                "max": 1,
+                "max": 30,
                 "function": data_loader.get_wine_data},
+            "soyabean": {
+                "max": 20,
+                "function": data_loader.get_soybean_large},
             "cancer": {
-                "max": 1,
+                "max": 30,
                 "function": data_loader.get_breast_cancer_data},
+            "coil": {
+                "max": 20,
+                "function": data_loader.get_coil_2000},
+            "crime": {
+                "max": 15,
+                "function": data_loader.get_crime},
             "cnae9": {
                 "max": 3,
                 "function": data_loader.get_cnae9_data
@@ -415,13 +427,14 @@ if __name__ == "__main__":
         np.set_printoptions(suppress=True)
         iters = 200
         processes = []
-        parameter = {"data_set": sys.argv[2], "variant": sys.argv[3], "iterations": iters}
+        print(len(sys.argv))
+        parameter = {"data_set": sys.argv[1], "variant": sys.argv[2], "iterations": iters}
 
         if parameter["data_set"] is not None and parameter["data_set"] in data_dict.keys():
             NETWORK_CONFIG, DATA = data_dict[parameter["data_set"]]["function"]()
             max_seeds_per_group = data_dict[parameter["data_set"]]["max"]
             if parameter["variant"] != "pso":
-                parameter["decomposition"] = sys.argv[4]
+                parameter["decomposition"] = sys.argv[3]
 
             seeds_raw = [10402, 10418, 10598, 10859, 11177, 11447, 12129, 12497, 13213, 13431, 13815, 14573, 15010,
                          15095, 15259, 16148, 17020, 17172, 17265, 17291, 17307, 17591, 17987, 18284, 18700, 18906,
