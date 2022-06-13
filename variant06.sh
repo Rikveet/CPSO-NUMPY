@@ -1,1 +1,1 @@
-python main.py $dataset dcpso layer
+python3 main.py $dataset dcpso layer

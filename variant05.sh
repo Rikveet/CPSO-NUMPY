@@ -1,1 +1,1 @@
-python main.py $dataset cpso node_factorized
+python3 main.py $dataset cpso node_factorized

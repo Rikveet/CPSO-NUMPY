@@ -1,1 +1,1 @@
-python main.py $dataset dcpso layer_factorized
+python3 main.py $dataset dcpso layer_factorized

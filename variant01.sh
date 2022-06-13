@@ -1,1 +1,1 @@
-python main.py $dataset pso
+python3 main.py $dataset pso

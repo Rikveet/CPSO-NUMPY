@@ -1,1 +1,1 @@
-python main.py $dataset mcpso node
+python3 main.py $dataset mcpso node

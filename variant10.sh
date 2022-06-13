@@ -1,1 +1,1 @@
-python main.py $dataset mcpso layer
+python3 main.py $dataset mcpso layer
