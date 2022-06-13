@@ -68,7 +68,7 @@ def get_heart_disease():
     for i in range(len(data)):
         for v in range(len(data[i][0])):
             data[i][0][v] = (data[i][0][v] - min_value) / (max_value - min_value)
-    print("Breast cancer data loaded")
+    print("Heart disease data loaded")
     return (num_input_nodes, num_hidden_nodes, num_hidden_layers, num_output_nodes), data
 
 
@@ -121,7 +121,7 @@ def get_soybean_large():
     for i in range(len(data)):
         for v in range(len(data[i][0])):
             data[i][0][v] = (data[i][0][v] - min_value) / (max_value - min_value)
-    print("Breast cancer data loaded")
+    print("Soyabean data loaded")
     return (num_input_nodes, num_hidden_nodes, num_hidden_layers, num_output_nodes), data
 
 
@@ -149,7 +149,7 @@ def get_breast_cancer_data():
     for i in range(len(data)):
         for v in range(len(data[i][0])):
             data[i][0][v] = (data[i][0][v] - min_value) / (max_value - min_value)
-    print("Breast cancer data loaded")
+    print("wdbc data loaded")
     return (num_input_nodes, num_hidden_nodes, num_hidden_layers, num_output_nodes), data
 
 
@@ -176,7 +176,7 @@ def get_coil_2000():
     for i in range(len(data)):
         for v in range(len(data[i][0])):
             data[i][0][v] = (data[i][0][v] - min_value) / (max_value - min_value)
-    print("Breast cancer data loaded")
+    print("Coil data loaded")
     return (num_input_nodes, num_hidden_nodes, num_hidden_layers, num_output_nodes), data
 
 
@@ -203,7 +203,7 @@ def get_crime():
     # for i in range(len(data)):
     #     for v in range(len(data[i][0])):
     #         data[i][0][v] = (data[i][0][v] - min_value) / (max_value - min_value)
-    print("Breast cancer data loaded")
+    print("Crime data loaded")
     return (num_input_nodes, num_hidden_nodes, num_hidden_layers, num_output_nodes), data
 
 
