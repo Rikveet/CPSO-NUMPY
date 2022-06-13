@@ -56,12 +56,13 @@ def get_heart_disease():
     for line in file:
         line = line.strip().split(",")
         try:
-            input_layer = numpy.array([float(x) for x in line[:85]])
+            input_layer = numpy.array([float(x) for x in line[:13]])
         except:
-            input_layer = numpy.array([float(x) for x in replace_missing_values(line[:85])])
+            input_layer = numpy.array([float(x) for x in replace_missing_values(line[:13])])
         min_value = min(numpy.amin(input_layer), min_value)
         max_value = max(numpy.amax(input_layer), max_value)
-        out = [float(line[85])]
+        out = [0, 0, 0, 0, 0]
+        out[int(line[13])] = 1
         output_layer = numpy.array(out)
         data.append((input_layer, output_layer))
     for i in range(len(data)):
@@ -222,3 +223,5 @@ def get_cnae9_data():
         data.append((input_layer, output_layer))
     print("CNAE9 data loaded")
     return (num_input_nodes, num_hidden_nodes, num_hidden_layers, num_output_nodes), data
+
+

@@ -342,6 +342,7 @@ class Cpso:
         w = 0.729844
         y_values = [self.net.feed_forward_global()]
         iterations = self.iterations
+        print(self.variant_parameter)
         for iteration in range(iterations):
             if self.do_merge and iteration % self.merge_iter == 0 and iteration != 0:
                 self.random.shuffle(self.swarms)
@@ -380,7 +381,8 @@ class Cpso:
                             particle[i]["f"] = fitness
 
             global_fitness = self.net.feed_forward_global()
-            print("seed ", self.seed, " Iteration: ", iteration, " Fitness: ", global_fitness, flush=True)
+            if iteration % 25 == 0:
+                print("seed ", self.seed, " Iteration: ", iteration, " Fitness: ", global_fitness, flush=True)
             y_values.append(global_fitness)
         global_fitness = self.net.feed_forward_global()
         global_test_fitness = self.net.feed_forward_global_test()
@@ -393,30 +395,57 @@ class Cpso:
 
 if __name__ == "__main__":
     with Manager() as manager:
+        # data_dict = {
+        #     "iris": {
+        #         "max": 30,
+        #         "function": data_loader.get_iris_data},
+        #     "heart": {
+        #         "max": 30,
+        #         "function": data_loader.get_heart_disease},
+        #     "wine": {
+        #         "max": 30,
+        #         "function": data_loader.get_wine_data},
+        #     "soyabean": {
+        #         "max": 20,
+        #         "function": data_loader.get_soybean_large},
+        #     "cancer": {
+        #         "max": 30,
+        #         "function": data_loader.get_breast_cancer_data},
+        #     "coil": {
+        #         "max": 20,
+        #         "function": data_loader.get_coil_2000},
+        #     "crime": {
+        #         "max": 15,
+        #         "function": data_loader.get_crime},
+        #     "cnae9": {
+        #         "max": 3,
+        #         "function": data_loader.get_cnae9_data
+        #     }
+        # }
         data_dict = {
             "iris": {
-                "max": 30,
+                "max": 1,
                 "function": data_loader.get_iris_data},
             "heart": {
                 "max": 1,
                 "function": data_loader.get_heart_disease},
             "wine": {
-                "max": 30,
+                "max": 1,
                 "function": data_loader.get_wine_data},
             "soyabean": {
-                "max": 20,
+                "max": 1,
                 "function": data_loader.get_soybean_large},
             "cancer": {
-                "max": 30,
+                "max": 1,
                 "function": data_loader.get_breast_cancer_data},
             "coil": {
-                "max": 20,
+                "max": 1,
                 "function": data_loader.get_coil_2000},
             "crime": {
-                "max": 15,
+                "max": 1,
                 "function": data_loader.get_crime},
             "cnae9": {
-                "max": 3,
+                "max": 1,
                 "function": data_loader.get_cnae9_data
             }
         }
@@ -425,9 +454,8 @@ if __name__ == "__main__":
         result["train"] = manager.list()
         result["test"] = manager.list()
         np.set_printoptions(suppress=True)
-        iters = 200
+        iters = 0
         processes = []
-        print(len(sys.argv))
         parameter = {"data_set": sys.argv[1], "variant": sys.argv[2], "iterations": iters}
 
         if parameter["data_set"] is not None and parameter["data_set"] in data_dict.keys():
@@ -436,9 +464,10 @@ if __name__ == "__main__":
             if parameter["variant"] != "pso":
                 parameter["decomposition"] = sys.argv[3]
 
-            seeds_raw = [10402, 10418, 10598, 10859, 11177, 11447, 12129, 12497, 13213, 13431, 13815, 14573, 15010,
-                         15095, 15259, 16148, 17020, 17172, 17265, 17291, 17307, 17591, 17987, 18284, 18700, 18906,
-                         19406, 19457, 19482, 19894]
+            seeds_raw = [10402]
+            # [10402, 10418, 10598, 10859, 11177, 11447, 12129, 12497, 13213, 13431, 13815, 14573, 15010,
+            #  15095, 15259, 16148, 17020, 17172, 17265, 17291, 17307, 17591, 17987, 18284, 18700, 18906,
+            #  19406, 19457, 19482, 19894]
             seed_groups = []
             if max_seeds_per_group <= len(seeds_raw):
                 J = 0
@@ -465,6 +494,7 @@ if __name__ == "__main__":
                     process.start()
                 for process in processes:
                     process.join()
+                    processes.remove(process)
             if "decomposition" in parameter.keys():
                 key = parameter["variant"] + "_" + parameter["decomposition"] + "_" + parameter["data_set"]
             else:

@@ -1,0 +1,1 @@
+python main.py $dataset dcpso layer_factorized
