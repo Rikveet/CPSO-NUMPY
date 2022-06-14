@@ -424,28 +424,28 @@ if __name__ == "__main__":
         # }
         data_dict = {
             "iris": {
-                "max": 1,
+                "max": 3,
                 "function": data_loader.get_iris_data},
             "heart": {
-                "max": 1,
+                "max": 3,
                 "function": data_loader.get_heart_disease},
             "wine": {
-                "max": 1,
+                "max": 3,
                 "function": data_loader.get_wine_data},
             "soyabean": {
-                "max": 1,
+                "max": 3,
                 "function": data_loader.get_soybean_large},
             "cancer": {
-                "max": 1,
+                "max": 3,
                 "function": data_loader.get_breast_cancer_data},
             "coil": {
-                "max": 1,
+                "max": 3,
                 "function": data_loader.get_coil_2000},
             "crime": {
-                "max": 1,
+                "max": 3,
                 "function": data_loader.get_crime},
             "cnae9": {
-                "max": 1,
+                "max": 3,
                 "function": data_loader.get_cnae9_data
             }
         }
@@ -454,7 +454,7 @@ if __name__ == "__main__":
         result["train"] = manager.list()
         result["test"] = manager.list()
         np.set_printoptions(suppress=True)
-        iters = 0
+        iters = 1
         processes = []
         parameter = {"data_set": sys.argv[1], "variant": sys.argv[2], "iterations": iters}
 
@@ -464,7 +464,7 @@ if __name__ == "__main__":
             if parameter["variant"] != "pso":
                 parameter["decomposition"] = sys.argv[3]
 
-            seeds_raw = [10402]
+            seeds_raw = [10402, 10418, 10598]
             # [10402, 10418, 10598, 10859, 11177, 11447, 12129, 12497, 13213, 13431, 13815, 14573, 15010,
             #  15095, 15259, 16148, 17020, 17172, 17265, 17291, 17307, 17591, 17987, 18284, 18700, 18906,
             #  19406, 19457, 19482, 19894]
