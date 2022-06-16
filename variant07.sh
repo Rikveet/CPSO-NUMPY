@@ -3,5 +3,4 @@
 # PBS -l select=1:ncpus=2:mem=8gb
 dataset=$1
 
-cd "./experiment/CPSO-NUMPY"
-/usr/bin/scl enable rh-python38 'python3 main.py '$dataset' dcpso layer_factorized'
+/usr/bin/scl enable rh-python38 'python3 ./experiment/CPSO-NUMPY/main.py '$dataset' dcpso layer_factorized'
