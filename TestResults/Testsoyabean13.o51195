@@ -1,0 +1,109 @@
+Soyabean data loaded
+Starting to optimize: seed  10402
+Starting to optimize: seed  10598
+Starting to optimize: seed  11177
+Starting to optimize: seed  10859
+Starting to optimize: seed  10418
+Starting to optimize: seed  13213
+Starting to optimize: seed  12129
+Starting to optimize: seed  15010
+Starting to optimize: seed  14573
+Starting to optimize: seed  11447
+Starting to optimize: seed  15095
+Starting to optimize: seed  13815
+Starting to optimize: seed  12497
+Starting to optimize: seed  13431
+Starting to optimize: seed  15259
+Starting to optimize: seed  17172
+Starting to optimize: seed  16148
+Starting to optimize: seed  17020
+{'data_set': 'soyabean', 'variant': 'mcpso', 'iterations': 1000, 'decomposition': 'node_factorized', 'seed': 17172, 'seed_index': 17}
+seed  15010  Iteration:  0  Fitness:  0.035212940604478854
+{'data_set': 'soyabean', 'variant': 'mcpso', 'iterations': 1000, 'decomposition': 'node_factorized', 'seed': 17172, 'seed_index': 17}
+seed  13815  Iteration:  0  Fitness:  0.03350711179726831
+{'data_set': 'soyabean', 'variant': 'mcpso', 'iterations': 1000, 'decomposition': 'node_factorized', 'seed': 17172, 'seed_index': 17}
+seed  10859  Iteration:  0  Fitness:  0.036507028800502606
+{'data_set': 'soyabean', 'variant': 'mcpso', 'iterations': 1000, 'decomposition': 'node_factorized', 'seed': 17172, 'seed_index': 17}
+seed  11447  Iteration:  0  Fitness:  0.037639338855899394
+{'data_set': 'soyabean', 'variant': 'mcpso', 'iterations': 1000, 'decomposition': 'node_factorized', 'seed': 17172, 'seed_index': 17}
+seed  11177  Iteration:  0  Fitness:  0.034961118381972876
+{'data_set': 'soyabean', 'variant': 'mcpso', 'iterations': 1000, 'decomposition': 'node_factorized', 'seed': 17172, 'seed_index': 17}
+seed  15259  Iteration:  0  Fitness:  0.032176318045121
+{'data_set': 'soyabean', 'variant': 'mcpso', 'iterations': 1000, 'decomposition': 'node_factorized', 'seed': 17172, 'seed_index': 17}
+seed  10598  Iteration:  0  Fitness:  0.036813785147104726
+{'data_set': 'soyabean', 'variant': 'mcpso', 'iterations': 1000, 'decomposition': 'node_factorized', 'seed': 17172, 'seed_index': 17}
+seed  12129  Iteration:  0  Fitness:  0.0395107381785082
+{'data_set': 'soyabean', 'variant': 'mcpso', 'iterations': 1000, 'decomposition': 'node_factorized', 'seed': 17172, 'seed_index': 17}
+seed  17020  Iteration:  0  Fitness:  0.0391985490588811
+{'data_set': 'soyabean', 'variant': 'mcpso', 'iterations': 1000, 'decomposition': 'node_factorized', 'seed': 17172, 'seed_index': 17}
+seed  10418  Iteration:  0  Fitness:  0.035907800023504494
+{'data_set': 'soyabean', 'variant': 'mcpso', 'iterations': 1000, 'decomposition': 'node_factorized', 'seed': 17172, 'seed_index': 17}
+seed  16148  Iteration:  0  Fitness:  0.03533319612662469
+{'data_set': 'soyabean', 'variant': 'mcpso', 'iterations': 1000, 'decomposition': 'node_factorized', 'seed': 17172, 'seed_index': 17}
+seed  15095  Iteration:  0  Fitness:  0.03501952426434899
+{'data_set': 'soyabean', 'variant': 'mcpso', 'iterations': 1000, 'decomposition': 'node_factorized', 'seed': 17172, 'seed_index': 17}
+seed  12497  Iteration:  0  Fitness:  0.03670868010580615
+{'data_set': 'soyabean', 'variant': 'mcpso', 'iterations': 1000, 'decomposition': 'node_factorized', 'seed': 17172, 'seed_index': 17}
+seed  13431  Iteration:  0  Fitness:  0.03877258672590421
+{'data_set': 'soyabean', 'variant': 'mcpso', 'iterations': 1000, 'decomposition': 'node_factorized', 'seed': 17172, 'seed_index': 17}
+seed  10402  Iteration:  0  Fitness:  0.03338583153310005
+{'data_set': 'soyabean', 'variant': 'mcpso', 'iterations': 1000, 'decomposition': 'node_factorized', 'seed': 17172, 'seed_index': 17}
+seed  17172  Iteration:  0  Fitness:  0.0379846405937204
+{'data_set': 'soyabean', 'variant': 'mcpso', 'iterations': 1000, 'decomposition': 'node_factorized', 'seed': 17172, 'seed_index': 17}
+seed  13213  Iteration:  0  Fitness:  0.033318607000384005
+{'data_set': 'soyabean', 'variant': 'mcpso', 'iterations': 1000, 'decomposition': 'node_factorized', 'seed': 17172, 'seed_index': 17}
+seed  14573  Iteration:  0  Fitness:  0.03827158238206006
+seed  11447  Iteration:  25  Fitness:  0.009240365196587134
+seed  10418  Iteration:  25  Fitness:  0.014520157937706755
+seed  17020  Iteration:  25  Fitness:  0.007736854497372559
+seed  11177  Iteration:  25  Fitness:  0.007780091198583311
+seed  16148  Iteration:  25  Fitness:  0.006798640410794471
+seed  13815  Iteration:  25  Fitness:  0.005038708980132128
+seed  14573  Iteration:  25  Fitness:  0.008630325006857044
+seed  13213  Iteration:  25  Fitness:  0.009011901198944395
+seed  10859  Iteration:  25  Fitness:  0.009892892670186235
+seed  10598  Iteration:  25  Fitness:  0.010548429604978293
+seed  15095  Iteration:  25  Fitness:  0.006128398636457279
+seed  12497  Iteration:  25  Fitness:  0.006194342703826943
+seed  13431  Iteration:  25  Fitness:  0.011197044417291342
+seed  17172  Iteration:  25  Fitness:  0.008224608974304742
+seed  15259  Iteration:  25  Fitness:  0.009167757694964536
+seed  12129  Iteration:  25  Fitness:  0.004482934480055566
+seed  10402  Iteration:  25  Fitness:  0.005645996174120553
+seed  15010  Iteration:  25  Fitness:  0.0067940681560719725
+seed  10859  Iteration:  50  Fitness:  0.007685513424874685
+seed  10598  Iteration:  50  Fitness:  0.010548429604978293
+seed  13815  Iteration:  50  Fitness:  0.004365214376095021
+seed  13213  Iteration:  50  Fitness:  0.007734629196984612
+seed  11447  Iteration:  50  Fitness:  0.006738222364198133
+seed  16148  Iteration:  50  Fitness:  0.005630534063614233
+seed  10418  Iteration:  50  Fitness:  0.01334496954897758
+seed  15095  Iteration:  50  Fitness:  0.0050285746918797
+seed  17020  Iteration:  50  Fitness:  0.007161945349626775
+seed  14573  Iteration:  50  Fitness:  0.007186240431584935
+seed  13431  Iteration:  50  Fitness:  0.010684442200293253
+seed  12497  Iteration:  50  Fitness:  0.005391102003697876
+seed  11177  Iteration:  50  Fitness:  0.00674684108293186
+seed  15010  Iteration:  50  Fitness:  0.006326089829962946
+seed  15259  Iteration:  50  Fitness:  0.008193567617855762
+seed  12129  Iteration:  50  Fitness:  0.0030082024296186893
+seed  10402  Iteration:  50  Fitness:  0.005380001254637577
+seed  17172  Iteration:  50  Fitness:  0.007283533892480841
+seed  11447  Iteration:  75  Fitness:  0.006737349049258122
+seed  16148  Iteration:  75  Fitness:  0.005510829538162841
+seed  10598  Iteration:  75  Fitness:  0.010548429604978293
+seed  15095  Iteration:  75  Fitness:  0.004920895262714914
+seed  13815  Iteration:  75  Fitness:  0.003920040411611992
+seed  10859  Iteration:  75  Fitness:  0.007228277763315218
+seed  12497  Iteration:  75  Fitness:  0.005391102003697876
+seed  11177  Iteration:  75  Fitness:  0.006477298993911721
+seed  13431  Iteration:  75  Fitness:  0.009432616560541736
+seed  17020  Iteration:  75  Fitness:  0.0068874420369658745
+seed  10418  Iteration:  75  Fitness:  0.013331309517583555
+seed  14573  Iteration:  75  Fitness:  0.006614053944378969
+seed  15010  Iteration:  75  Fitness:  0.006324180206423748
+seed  13213  Iteration:  75  Fitness:  0.007366576601882714
+seed  12129  Iteration:  75  Fitness:  0.0028469423568714897
+seed  15259  Iteration:  75  Fitness:  0.008115907145336958
+seed  17172  Iteration:  75  Fitness:  0.006873284207902222
+seed  10402  Iteration:  75  Fitness:  0.0053206834432893415

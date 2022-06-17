@@ -1,0 +1,25 @@
+Process Process-25:
+Traceback (most recent call last):
+  File "/opt/rh/rh-python38/root/usr/lib64/python3.8/multiprocessing/managers.py", line 827, in _callmethod
+    conn = self._tls.connection
+AttributeError: 'ForkAwareLocal' object has no attribute 'connection'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/rh/rh-python38/root/usr/lib64/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/opt/rh/rh-python38/root/usr/lib64/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "./experiments/CPSO-NUMPY/main.py", line 99, in run
+  File "./experiments/CPSO-NUMPY/main.py", line 392, in optimize
+  File "<string>", line 2, in __getitem__
+  File "/opt/rh/rh-python38/root/usr/lib64/python3.8/multiprocessing/managers.py", line 831, in _callmethod
+    self._connect()
+  File "/opt/rh/rh-python38/root/usr/lib64/python3.8/multiprocessing/managers.py", line 818, in _connect
+    conn = self._Client(self._token.address, authkey=self._authkey)
+  File "/opt/rh/rh-python38/root/usr/lib64/python3.8/multiprocessing/connection.py", line 506, in Client
+    c = SocketClient(address)
+  File "/opt/rh/rh-python38/root/usr/lib64/python3.8/multiprocessing/connection.py", line 634, in SocketClient
+    s.connect(address)
+FileNotFoundError: [Errno 2] No such file or directory
