@@ -1,0 +1,1 @@
+/home/student/rh18vo/experiments/CPSO-NUMPY/variant13.sh: line 6:  5698 Terminated              /usr/bin/scl enable rh-python38 'python3 ./experiments/CPSO-NUMPY/main.py '$dataset' mcpso node_factorized'

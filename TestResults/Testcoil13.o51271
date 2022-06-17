@@ -1,0 +1,55 @@
+Coil data loaded
+Starting to optimize: seed  11177
+Starting to optimize: seed  15010
+Starting to optimize: seed  17172
+Starting to optimize: seed  15259
+Starting to optimize: seed  11447
+Starting to optimize: seed  10598
+Starting to optimize: seed  12497
+Starting to optimize: seed  10418
+Starting to optimize: seed  14573
+Starting to optimize: seed  12129
+Starting to optimize: seed  10402
+Starting to optimize: seed  16148
+Starting to optimize: seed  13431
+Starting to optimize: seed  13815
+Starting to optimize: seed  15095
+Starting to optimize: seed  13213
+Starting to optimize: seed  10859
+Starting to optimize: seed  17020
+{'data_set': 'coil', 'variant': 'mcpso', 'iterations': 1000, 'decomposition': 'node_factorized', 'seed': 17172, 'seed_index': 17}
+seed  12129  Iteration:  0  Fitness:  0.06176834410151041
+{'data_set': 'coil', 'variant': 'mcpso', 'iterations': 1000, 'decomposition': 'node_factorized', 'seed': 17172, 'seed_index': 17}
+seed  15259  Iteration:  0  Fitness:  0.06090941962272635
+{'data_set': 'coil', 'variant': 'mcpso', 'iterations': 1000, 'decomposition': 'node_factorized', 'seed': 17172, 'seed_index': 17}
+seed  13431  Iteration:  0  Fitness:  0.06176834313643041
+{'data_set': 'coil', 'variant': 'mcpso', 'iterations': 1000, 'decomposition': 'node_factorized', 'seed': 17172, 'seed_index': 17}
+seed  12497  Iteration:  0  Fitness:  0.057903185684576634
+{'data_set': 'coil', 'variant': 'mcpso', 'iterations': 1000, 'decomposition': 'node_factorized', 'seed': 17172, 'seed_index': 17}
+seed  13213  Iteration:  0  Fitness:  0.061983074015444735
+{'data_set': 'coil', 'variant': 'mcpso', 'iterations': 1000, 'decomposition': 'node_factorized', 'seed': 17172, 'seed_index': 17}
+seed  10418  Iteration:  0  Fitness:  0.06005050039697877
+{'data_set': 'coil', 'variant': 'mcpso', 'iterations': 1000, 'decomposition': 'node_factorized', 'seed': 17172, 'seed_index': 17}
+seed  13815  Iteration:  0  Fitness:  0.06005049343577558
+{'data_set': 'coil', 'variant': 'mcpso', 'iterations': 1000, 'decomposition': 'node_factorized', 'seed': 17172, 'seed_index': 17}
+seed  17172  Iteration:  0  Fitness:  0.058762115716808346
+{'data_set': 'coil', 'variant': 'mcpso', 'iterations': 1000, 'decomposition': 'node_factorized', 'seed': 17172, 'seed_index': 17}
+seed  11447  Iteration:  0  Fitness:  0.06219780925300054
+{'data_set': 'coil', 'variant': 'mcpso', 'iterations': 1000, 'decomposition': 'node_factorized', 'seed': 17172, 'seed_index': 17}
+seed  10598  Iteration:  0  Fitness:  0.06176834185305958
+{'data_set': 'coil', 'variant': 'mcpso', 'iterations': 1000, 'decomposition': 'node_factorized', 'seed': 17172, 'seed_index': 17}
+seed  15095  Iteration:  0  Fitness:  0.061983078306085744
+{'data_set': 'coil', 'variant': 'mcpso', 'iterations': 1000, 'decomposition': 'node_factorized', 'seed': 17172, 'seed_index': 17}
+seed  17020  Iteration:  0  Fitness:  0.06305672913236066
+{'data_set': 'coil', 'variant': 'mcpso', 'iterations': 1000, 'decomposition': 'node_factorized', 'seed': 17172, 'seed_index': 17}
+seed  15010  Iteration:  0  Fitness:  0.06348618617577793
+{'data_set': 'coil', 'variant': 'mcpso', 'iterations': 1000, 'decomposition': 'node_factorized', 'seed': 17172, 'seed_index': 17}
+seed  10859  Iteration:  0  Fitness:  0.059406308130927066
+{'data_set': 'coil', 'variant': 'mcpso', 'iterations': 1000, 'decomposition': 'node_factorized', 'seed': 17172, 'seed_index': 17}
+seed  11177  Iteration:  0  Fitness:  0.05983576874937097
+{'data_set': 'coil', 'variant': 'mcpso', 'iterations': 1000, 'decomposition': 'node_factorized', 'seed': 17172, 'seed_index': 17}
+seed  16148  Iteration:  0  Fitness:  0.05962103629621783
+{'data_set': 'coil', 'variant': 'mcpso', 'iterations': 1000, 'decomposition': 'node_factorized', 'seed': 17172, 'seed_index': 17}
+seed  10402  Iteration:  0  Fitness:  0.06262726543844052
+{'data_set': 'coil', 'variant': 'mcpso', 'iterations': 1000, 'decomposition': 'node_factorized', 'seed': 17172, 'seed_index': 17}
+seed  14573  Iteration:  0  Fitness:  0.062197798732492385

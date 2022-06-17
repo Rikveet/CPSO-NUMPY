@@ -1,0 +1,40 @@
+Crime data loaded
+Starting to optimize: seed  13815
+Starting to optimize: seed  10859
+Starting to optimize: seed  10418
+Starting to optimize: seed  15010
+Starting to optimize: seed  10598
+Starting to optimize: seed  12497
+Starting to optimize: seed  13431
+Starting to optimize: seed  12129
+Starting to optimize: seed  13213
+Starting to optimize: seed  14573
+Starting to optimize: seed  11177
+Starting to optimize: seed  11447
+Starting to optimize: seed  10402
+{'data_set': 'crime', 'variant': 'mcpso', 'iterations': 1000, 'decomposition': 'node_factorized', 'seed': 15010, 'seed_index': 12}
+seed  15010  Iteration:  0  Fitness:  0.11184990087146371
+{'data_set': 'crime', 'variant': 'mcpso', 'iterations': 1000, 'decomposition': 'node_factorized', 'seed': 15010, 'seed_index': 12}
+seed  11177  Iteration:  0  Fitness:  0.09691636442484208
+{'data_set': 'crime', 'variant': 'mcpso', 'iterations': 1000, 'decomposition': 'node_factorized', 'seed': 15010, 'seed_index': 12}
+seed  13815  Iteration:  0  Fitness:  0.09017856015166585
+{'data_set': 'crime', 'variant': 'mcpso', 'iterations': 1000, 'decomposition': 'node_factorized', 'seed': 15010, 'seed_index': 12}
+seed  10418  Iteration:  0  Fitness:  0.09114030520792474
+{'data_set': 'crime', 'variant': 'mcpso', 'iterations': 1000, 'decomposition': 'node_factorized', 'seed': 15010, 'seed_index': 12}
+seed  12129  Iteration:  0  Fitness:  0.10989108925284054
+{'data_set': 'crime', 'variant': 'mcpso', 'iterations': 1000, 'decomposition': 'node_factorized', 'seed': 15010, 'seed_index': 12}
+seed  10402  Iteration:  0  Fitness:  0.08388913972404244
+{'data_set': 'crime', 'variant': 'mcpso', 'iterations': 1000, 'decomposition': 'node_factorized', 'seed': 15010, 'seed_index': 12}
+seed  10859  Iteration:  0  Fitness:  0.10986257128477486
+{'data_set': 'crime', 'variant': 'mcpso', 'iterations': 1000, 'decomposition': 'node_factorized', 'seed': 15010, 'seed_index': 12}
+seed  13431  Iteration:  0  Fitness:  0.08703134832277787
+{'data_set': 'crime', 'variant': 'mcpso', 'iterations': 1000, 'decomposition': 'node_factorized', 'seed': 15010, 'seed_index': 12}
+seed  11447  Iteration:  0  Fitness:  0.0873137885406919
+{'data_set': 'crime', 'variant': 'mcpso', 'iterations': 1000, 'decomposition': 'node_factorized', 'seed': 15010, 'seed_index': 12}
+seed  14573  Iteration:  0  Fitness:  0.11318607957920893
+{'data_set': 'crime', 'variant': 'mcpso', 'iterations': 1000, 'decomposition': 'node_factorized', 'seed': 15010, 'seed_index': 12}
+seed  10598  Iteration:  0  Fitness:  0.09884532292734345
+{'data_set': 'crime', 'variant': 'mcpso', 'iterations': 1000, 'decomposition': 'node_factorized', 'seed': 15010, 'seed_index': 12}
+seed  12497  Iteration:  0  Fitness:  0.08621071898592465
+{'data_set': 'crime', 'variant': 'mcpso', 'iterations': 1000, 'decomposition': 'node_factorized', 'seed': 15010, 'seed_index': 12}
+seed  13213  Iteration:  0  Fitness:  0.11434796515207764
