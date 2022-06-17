@@ -304,7 +304,8 @@ class Cpso:
                             del_key(i + 1, KEY)
                         else:
                             del_key(i, KEY)
-                    subSwarms = {"values": self.swarms[i]["values"].update(self.swarms[i + 1]["values"]),
+                    self.swarms[i]["values"].update(self.swarms[i + 1]["values"])
+                    subSwarms = {"values": self.swarms[i]["values"],
                                  "particles": self.swarms[i]["particles"] + self.swarms[i + 1]["particles"]}
                     swarms.append(subSwarms)
                 else:
