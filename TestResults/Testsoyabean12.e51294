@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "./experiments/CPSO-NUMPY/main.py", line 468, in <module>
+    process.start()
+  File "/opt/rh/rh-python38/root/usr/lib64/python3.8/multiprocessing/process.py", line 115, in start
+    assert self._popen is None, 'cannot start a process twice'
+AssertionError: cannot start a process twice
