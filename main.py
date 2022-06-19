@@ -1,11 +1,11 @@
 import copy
 import csv
 import math
+import multiprocessing
 import os.path
 import sys
 from multiprocessing import Process, Manager
 from random import Random as Rand
-from typing import Any
 
 import matplotlib.pyplot as plt
 import numpy as np
@@ -13,13 +13,12 @@ import numpy as np
 import data_loader
 from Network import Network
 
-os.chdir("./experiments/CPSO-NUMPY")
+
+# os.chdir("./experiments/CPSO-NUMPY")
 
 
 class Cpso:
-    results: Any
-
-    def __init__(self, variant_parameter, results, network_config, data):
+    def __init__(self, variant_parameter, results, network_config, data, lock):
         self.data = data
         self.network_config = network_config
         self.results = results
@@ -37,11 +36,12 @@ class Cpso:
         self.decompose_iter = None
         self.decom_func = None
         self.do_decompose = None
-        self.variant_parameter = variant_parameter
+        self.variant_parameter = dict(variant_parameter)
         self.key = None
-        self.seedIndex = variant_parameter["seed_index"]
-        self.seed = variant_parameter["seed"]
+        self.seedIndex = self.variant_parameter["seed_index"]
+        self.seed = self.variant_parameter["seed"]
         self.random = Rand()
+        self.lock = lock
 
     def run(self):
         decomposition_type = None
@@ -95,7 +95,6 @@ class Cpso:
             self.swarms = []
             self.swarms = self.createSwarms(decomposition)
             self.net = Network(self.random, self.network_config, lda, self.data)
-            print("Starting to optimize: seed ", self.seed, flush=True)
             self.optimize()
         else:
             print("Invalid Decomposition: ", self.variant_parameter["decomposition"], flush=True)
@@ -344,7 +343,7 @@ class Cpso:
         w = 0.729844
         y_values = [self.net.feed_forward_global()]
         iterations = self.iterations
-        print(self.variant_parameter)
+        print("optimizing using following parameter", self.variant_parameter, flush=True)
         for iteration in range(iterations):
             if self.do_merge and iteration % self.merge_iter == 0 and iteration != 0:
                 self.random.shuffle(self.swarms)
@@ -390,9 +389,11 @@ class Cpso:
         global_test_fitness = self.net.feed_forward_global_test()
         print("seed ", self.seed, " Final train fitness:", global_fitness, flush=True)
         print("seed ", self.seed, " Final test fitness:", global_test_fitness, flush=True)
+        self.lock.acquire()
         self.results["iterations"].append(y_values)
         self.results["train"].append(global_fitness)
         self.results["test"].append(global_test_fitness)
+        self.lock.release()
 
 
 if __name__ == "__main__":
@@ -424,12 +425,13 @@ if __name__ == "__main__":
                 "function": data_loader.get_cnae9_data
             }
         }
+        lock = multiprocessing.Lock()
         result = manager.dict()
         result["iterations"] = manager.list()
         result["train"] = manager.list()
         result["test"] = manager.list()
         np.set_printoptions(suppress=True)
-        iters = 1000
+        iters = 1
         processes = []
         parameter = {"data_set": sys.argv[1], "variant": sys.argv[2], "iterations": iters}
 
@@ -462,7 +464,7 @@ if __name__ == "__main__":
                 for seed_index, seed in enumerate(seeds):
                     parameter["seed"] = seed
                     parameter["seed_index"] = seed_index
-                    obj = Cpso(parameter, result, NETWORK_CONFIG, DATA)
+                    obj = Cpso(parameter, result, NETWORK_CONFIG, DATA, lock)
                     processes.append(Process(target=obj.run))
                 for process in processes:
                     process.start()
