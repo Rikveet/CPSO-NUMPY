@@ -1,9 +1,0 @@
-CNAE9 data loaded
-optimizing using following parameter {'data_set': 'cnae9', 'variant': 'cpso', 'iterations': 1, 'decomposition': 'node', 'seed': 10402, 'seed_index': 0}
-optimizing using following parameter {'data_set': 'cnae9', 'variant': 'cpso', 'iterations': 1, 'decomposition': 'node', 'seed': 10418, 'seed_index': 1}
-seed  10418  Iteration:  0  Fitness:  0.06323048234836262
-seed  10418  Final train fitness: 0.06323048234836262
-seed  10418  Final test fitness: 0.0675504660936707
-seed  10402  Iteration:  0  Fitness:  0.068909722435944
-seed  10402  Final train fitness: 0.068909722435944
-seed  10402  Final test fitness: 0.07307378631739815
