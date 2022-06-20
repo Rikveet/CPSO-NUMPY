@@ -1,0 +1,53 @@
+Crime data loaded
+optimizing using following parameter {'data_set': 'crime', 'variant': 'pso', 'iterations': 1, 'seed': 11447, 'seed_index': 5}
+optimizing using following parameter {'data_set': 'crime', 'variant': 'pso', 'iterations': 1, 'seed': 10859, 'seed_index': 3}
+optimizing using following parameter {'data_set': 'crime', 'variant': 'pso', 'iterations': 1, 'seed': 10598, 'seed_index': 2}
+optimizing using following parameter {'data_set': 'crime', 'variant': 'pso', 'iterations': 1, 'seed': 13213, 'seed_index': 8}
+optimizing using following parameter {'data_set': 'crime', 'variant': 'pso', 'iterations': 1, 'seed': 11177, 'seed_index': 4}
+optimizing using following parameter {'data_set': 'crime', 'variant': 'pso', 'iterations': 1, 'seed': 12129, 'seed_index': 6}
+optimizing using following parameter {'data_set': 'crime', 'variant': 'pso', 'iterations': 1, 'seed': 13815, 'seed_index': 10}
+optimizing using following parameter {'data_set': 'crime', 'variant': 'pso', 'iterations': 1, 'seed': 10418, 'seed_index': 1}
+optimizing using following parameter {'data_set': 'crime', 'variant': 'pso', 'iterations': 1, 'seed': 12497, 'seed_index': 7}
+optimizing using following parameter {'data_set': 'crime', 'variant': 'pso', 'iterations': 1, 'seed': 13431, 'seed_index': 9}
+optimizing using following parameter {'data_set': 'crime', 'variant': 'pso', 'iterations': 1, 'seed': 15010, 'seed_index': 12}
+optimizing using following parameter {'data_set': 'crime', 'variant': 'pso', 'iterations': 1, 'seed': 14573, 'seed_index': 11}
+optimizing using following parameter {'data_set': 'crime', 'variant': 'pso', 'iterations': 1, 'seed': 10402, 'seed_index': 0}
+seed  11177  Iteration:  0  Fitness:  0.08367497183872674
+seed  11177  Final train fitness: 0.08367497183872674
+seed  11177  Final test fitness: 0.09940881786737257
+seed  15010  Iteration:  0  Fitness:  0.11184989764023025
+seed  15010  Final train fitness: 0.11184989764023025
+seed  15010  Final test fitness: 0.11204290151125583
+seed  13431  Iteration:  0  Fitness:  0.09084324419296742
+seed  13431  Final train fitness: 0.09084324419296742
+seed  13431  Final test fitness: 0.0987236058413998
+seed  14573  Iteration:  0  Fitness:  0.11318607115609229
+seed  14573  Final train fitness: 0.11318607115609229
+seed  14573  Final test fitness: 0.10670156154700915
+seed  13815  Iteration:  0  Fitness:  0.08611584982330629
+seed  13815  Final train fitness: 0.08611584982330629
+seed  13815  Final test fitness: 0.08669403779432827
+seed  12497  Iteration:  0  Fitness:  0.08785334458025341
+seed  12497  Final train fitness: 0.08785334458025341
+seed  12497  Final test fitness: 0.0955378941475329
+seed  10859  Iteration:  0  Fitness:  0.0999189808601358
+seed  10859  Final train fitness: 0.0999189808601358
+seed  10859  Final test fitness: 0.10961133530239647
+seed  10402  Iteration:  0  Fitness:  0.08870419042719173
+seed  10402  Final train fitness: 0.08870419042719173
+seed  10402  Final test fitness: 0.09183588675074593
+seed  11447  Iteration:  0  Fitness:  0.08973383766667906
+seed  11447  Final train fitness: 0.08973383766667906
+seed  11447  Final test fitness: 0.07874742087643923
+seed  13213  Iteration:  0  Fitness:  0.09014732733727047
+seed  13213  Final train fitness: 0.09014732733727047
+seed  13213  Final test fitness: 0.09529002328370056
+seed  10418  Iteration:  0  Fitness:  0.08377980216113223
+seed  10418  Final train fitness: 0.08377980216113223
+seed  10418  Final test fitness: 0.08259879416189912
+seed  12129  Iteration:  0  Fitness:  0.08384720087406249
+seed  12129  Final train fitness: 0.08384720087406249
+seed  12129  Final test fitness: 0.09831935454823992
+seed  10598  Iteration:  0  Fitness:  0.08732180502491929
+seed  10598  Final train fitness: 0.08732180502491929
+seed  10598  Final test fitness: 0.09019404071031961
