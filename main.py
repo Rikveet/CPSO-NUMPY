@@ -14,7 +14,7 @@ import data_loader
 from Network import Network
 
 
-# os.chdir("./experiments/CPSO-NUMPY")
+os.chdir("./experiments/CPSO-NUMPY")
 
 
 class Cpso:

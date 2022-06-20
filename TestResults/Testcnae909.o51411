@@ -1,0 +1,3 @@
+CNAE9 data loaded
+optimizing using following parameter {'data_set': 'cnae9', 'variant': 'dcpso', 'iterations': 1, 'decomposition': 'node_factorized', 'seed': 10418, 'seed_index': 1}
+optimizing using following parameter {'data_set': 'cnae9', 'variant': 'dcpso', 'iterations': 1, 'decomposition': 'node_factorized', 'seed': 10402, 'seed_index': 0}

@@ -1,0 +1,19 @@
+Soyabean data loaded
+optimizing using following parameter {'data_set': 'soyabean', 'variant': 'dcpso', 'iterations': 1, 'decomposition': 'node', 'seed': 10402, 'seed_index': 0}
+optimizing using following parameter {'data_set': 'soyabean', 'variant': 'dcpso', 'iterations': 1, 'decomposition': 'node', 'seed': 10418, 'seed_index': 1}
+optimizing using following parameter {'data_set': 'soyabean', 'variant': 'dcpso', 'iterations': 1, 'decomposition': 'node', 'seed': 11177, 'seed_index': 4}
+optimizing using following parameter {'data_set': 'soyabean', 'variant': 'dcpso', 'iterations': 1, 'decomposition': 'node', 'seed': 13815, 'seed_index': 10}
+optimizing using following parameter {'data_set': 'soyabean', 'variant': 'dcpso', 'iterations': 1, 'decomposition': 'node', 'seed': 11447, 'seed_index': 5}
+optimizing using following parameter {'data_set': 'soyabean', 'variant': 'dcpso', 'iterations': 1, 'decomposition': 'node', 'seed': 10598, 'seed_index': 2}
+optimizing using following parameter {'data_set': 'soyabean', 'variant': 'dcpso', 'iterations': 1, 'decomposition': 'node', 'seed': 12129, 'seed_index': 6}
+optimizing using following parameter {'data_set': 'soyabean', 'variant': 'dcpso', 'iterations': 1, 'decomposition': 'node', 'seed': 13213, 'seed_index': 8}
+optimizing using following parameter {'data_set': 'soyabean', 'variant': 'dcpso', 'iterations': 1, 'decomposition': 'node', 'seed': 13431, 'seed_index': 9}
+optimizing using following parameter {'data_set': 'soyabean', 'variant': 'dcpso', 'iterations': 1, 'decomposition': 'node', 'seed': 12497, 'seed_index': 7}
+optimizing using following parameter {'data_set': 'soyabean', 'variant': 'dcpso', 'iterations': 1, 'decomposition': 'node', 'seed': 15010, 'seed_index': 12}
+optimizing using following parameter {'data_set': 'soyabean', 'variant': 'dcpso', 'iterations': 1, 'decomposition': 'node', 'seed': 10859, 'seed_index': 3}
+optimizing using following parameter {'data_set': 'soyabean', 'variant': 'dcpso', 'iterations': 1, 'decomposition': 'node', 'seed': 15095, 'seed_index': 13}
+optimizing using following parameter {'data_set': 'soyabean', 'variant': 'dcpso', 'iterations': 1, 'decomposition': 'node', 'seed': 17020, 'seed_index': 16}
+optimizing using following parameter {'data_set': 'soyabean', 'variant': 'dcpso', 'iterations': 1, 'decomposition': 'node', 'seed': 16148, 'seed_index': 15}
+optimizing using following parameter {'data_set': 'soyabean', 'variant': 'dcpso', 'iterations': 1, 'decomposition': 'node', 'seed': 14573, 'seed_index': 11}
+optimizing using following parameter {'data_set': 'soyabean', 'variant': 'dcpso', 'iterations': 1, 'decomposition': 'node', 'seed': 15259, 'seed_index': 14}
+optimizing using following parameter {'data_set': 'soyabean', 'variant': 'dcpso', 'iterations': 1, 'decomposition': 'node', 'seed': 17172, 'seed_index': 17}

@@ -1,0 +1,73 @@
+Coil data loaded
+optimizing using following parameter {'data_set': 'coil', 'variant': 'cpso', 'iterations': 1, 'decomposition': 'node', 'seed': 10859, 'seed_index': 3}
+optimizing using following parameter {'data_set': 'coil', 'variant': 'cpso', 'iterations': 1, 'decomposition': 'node', 'seed': 12497, 'seed_index': 7}
+optimizing using following parameter {'data_set': 'coil', 'variant': 'cpso', 'iterations': 1, 'decomposition': 'node', 'seed': 13815, 'seed_index': 10}
+optimizing using following parameter {'data_set': 'coil', 'variant': 'cpso', 'iterations': 1, 'decomposition': 'node', 'seed': 10402, 'seed_index': 0}
+optimizing using following parameter {'data_set': 'coil', 'variant': 'cpso', 'iterations': 1, 'decomposition': 'node', 'seed': 13431, 'seed_index': 9}
+optimizing using following parameter {'data_set': 'coil', 'variant': 'cpso', 'iterations': 1, 'decomposition': 'node', 'seed': 15259, 'seed_index': 14}
+optimizing using following parameter {'data_set': 'coil', 'variant': 'cpso', 'iterations': 1, 'decomposition': 'node', 'seed': 12129, 'seed_index': 6}
+optimizing using following parameter {'data_set': 'coil', 'variant': 'cpso', 'iterations': 1, 'decomposition': 'node', 'seed': 14573, 'seed_index': 11}
+optimizing using following parameter {'data_set': 'coil', 'variant': 'cpso', 'iterations': 1, 'decomposition': 'node', 'seed': 11447, 'seed_index': 5}
+optimizing using following parameter {'data_set': 'coil', 'variant': 'cpso', 'iterations': 1, 'decomposition': 'node', 'seed': 17172, 'seed_index': 17}
+optimizing using following parameter {'data_set': 'coil', 'variant': 'cpso', 'iterations': 1, 'decomposition': 'node', 'seed': 13213, 'seed_index': 8}
+optimizing using following parameter {'data_set': 'coil', 'variant': 'cpso', 'iterations': 1, 'decomposition': 'node', 'seed': 10418, 'seed_index': 1}
+optimizing using following parameter {'data_set': 'coil', 'variant': 'cpso', 'iterations': 1, 'decomposition': 'node', 'seed': 15010, 'seed_index': 12}
+optimizing using following parameter {'data_set': 'coil', 'variant': 'cpso', 'iterations': 1, 'decomposition': 'node', 'seed': 10598, 'seed_index': 2}
+optimizing using following parameter {'data_set': 'coil', 'variant': 'cpso', 'iterations': 1, 'decomposition': 'node', 'seed': 11177, 'seed_index': 4}
+optimizing using following parameter {'data_set': 'coil', 'variant': 'cpso', 'iterations': 1, 'decomposition': 'node', 'seed': 15095, 'seed_index': 13}
+optimizing using following parameter {'data_set': 'coil', 'variant': 'cpso', 'iterations': 1, 'decomposition': 'node', 'seed': 16148, 'seed_index': 15}
+optimizing using following parameter {'data_set': 'coil', 'variant': 'cpso', 'iterations': 1, 'decomposition': 'node', 'seed': 17020, 'seed_index': 16}
+seed  13815  Iteration:  0  Fitness:  0.06005049362086519
+seed  13815  Final train fitness: 0.06005049362086519
+seed  13815  Final test fitness: 0.06366054669524396
+seed  15010  Iteration:  0  Fitness:  0.06348619054998904
+seed  15010  Final train fitness: 0.06348619054998904
+seed  15010  Final test fitness: 0.04992664983367386
+seed  13213  Iteration:  0  Fitness:  0.06198307573697383
+seed  13213  Final train fitness: 0.06198307573697383
+seed  13213  Final test fitness: 0.05593523230408725
+seed  10418  Iteration:  0  Fitness:  0.06005050042821666
+seed  10418  Final train fitness: 0.06005050042821666
+seed  10418  Final test fitness: 0.06366055350259545
+seed  12129  Iteration:  0  Fitness:  0.061768346613079256
+seed  12129  Final train fitness: 0.061768346613079256
+seed  12129  Final test fitness: 0.056793602792111056
+seed  13431  Iteration:  0  Fitness:  0.06176834908740443
+seed  13431  Final train fitness: 0.06176834908740443
+seed  13431  Final test fitness: 0.05679360526643623
+seed  11447  Iteration:  0  Fitness:  0.06219781064535848
+seed  17172  Iteration:  0  Fitness:  0.058762115676476205
+seed  17172  Final train fitness: 0.058762115676476205
+seed  17172  Final test fitness: 0.06881076642236521
+seed  11447  Final train fitness: 0.06219781064535848
+seed  11447  Final test fitness: 0.05507686760055353
+seed  10859  Iteration:  0  Fitness:  0.05940630753583557
+seed  10859  Final train fitness: 0.05940630753583557
+seed  10859  Final test fitness: 0.06623565944596947
+seed  11177  Iteration:  0  Fitness:  0.05983576815568658
+seed  11177  Final train fitness: 0.05983576815568658
+seed  11177  Final test fitness: 0.06451892084198374
+seed  16148  Iteration:  0  Fitness:  0.05962104005582551
+seed  16148  Final train fitness: 0.05962104005582551
+seed  16148  Final test fitness: 0.06537729235404104
+seed  15095  Iteration:  0  Fitness:  0.06198307637428838
+seed  15095  Final train fitness: 0.06198307637428838
+seed  15095  Final test fitness: 0.05679360204011426
+seed  12497  Iteration:  0  Fitness:  0.05790318869033542
+seed  12497  Final train fitness: 0.05790318869033542
+seed  12497  Final test fitness: 0.07224423788389793
+seed  15259  Iteration:  0  Fitness:  0.060909419868097954
+seed  15259  Final train fitness: 0.060909419868097954
+seed  15259  Final test fitness: 0.06022707449480324
+seed  17020  Iteration:  0  Fitness:  0.0630567269883719
+seed  17020  Final train fitness: 0.0630567269883719
+seed  17020  Final test fitness: 0.051643385495893465
+seed  14573  Iteration:  0  Fitness:  0.06219780099317746
+seed  14573  Final train fitness: 0.06219780099317746
+seed  14573  Final test fitness: 0.05507685794837251
+seed  10402  Iteration:  0  Fitness:  0.06262726652077123
+seed  10402  Final train fitness: 0.06262726652077123
+seed  10402  Final test fitness: 0.053360124252129534
+seed  10598  Iteration:  0  Fitness:  0.06176834270478847
+seed  10598  Final train fitness: 0.06176834270478847
+seed  10598  Final test fitness: 0.05679359888382027
