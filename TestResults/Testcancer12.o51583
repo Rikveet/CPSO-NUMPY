@@ -1,0 +1,241 @@
+wdbc data loaded
+optimizing using following parameter {'data_set': 'cancer', 'variant': 'mcpso', 'iterations': 5, 'decomposition': 'node', 'seed': 12129, 'seed_index': 6}
+optimizing using following parameter {'data_set': 'cancer', 'variant': 'mcpso', 'iterations': 5, 'decomposition': 'node', 'seed': 10402, 'seed_index': 0}
+optimizing using following parameter {'data_set': 'cancer', 'variant': 'mcpso', 'iterations': 5, 'decomposition': 'node', 'seed': 11177, 'seed_index': 4}
+optimizing using following parameter {'data_set': 'cancer', 'variant': 'mcpso', 'iterations': 5, 'decomposition': 'node', 'seed': 10859, 'seed_index': 3}
+optimizing using following parameter {'data_set': 'cancer', 'variant': 'mcpso', 'iterations': 5, 'decomposition': 'node', 'seed': 10598, 'seed_index': 2}
+optimizing using following parameter {'data_set': 'cancer', 'variant': 'mcpso', 'iterations': 5, 'decomposition': 'node', 'seed': 10418, 'seed_index': 1}
+optimizing using following parameter {'data_set': 'cancer', 'variant': 'mcpso', 'iterations': 5, 'decomposition': 'node', 'seed': 11447, 'seed_index': 5}
+optimizing using following parameter {'data_set': 'cancer', 'variant': 'mcpso', 'iterations': 5, 'decomposition': 'node', 'seed': 13213, 'seed_index': 8}
+optimizing using following parameter {'data_set': 'cancer', 'variant': 'mcpso', 'iterations': 5, 'decomposition': 'node', 'seed': 12497, 'seed_index': 7}
+optimizing using following parameter {'data_set': 'cancer', 'variant': 'mcpso', 'iterations': 5, 'decomposition': 'node', 'seed': 15010, 'seed_index': 12}
+optimizing using following parameter {'data_set': 'cancer', 'variant': 'mcpso', 'iterations': 5, 'decomposition': 'node', 'seed': 15095, 'seed_index': 13}
+optimizing using following parameter {'data_set': 'cancer', 'variant': 'mcpso', 'iterations': 5, 'decomposition': 'node', 'seed': 17172, 'seed_index': 17}
+optimizing using following parameter {'data_set': 'cancer', 'variant': 'mcpso', 'iterations': 5, 'decomposition': 'node', 'seed': 13431, 'seed_index': 9}
+optimizing using following parameter {'data_set': 'cancer', 'variant': 'mcpso', 'iterations': 5, 'decomposition': 'node', 'seed': 14573, 'seed_index': 11}
+optimizing using following parameter {'data_set': 'cancer', 'variant': 'mcpso', 'iterations': 5, 'decomposition': 'node', 'seed': 13815, 'seed_index': 10}
+optimizing using following parameter {'data_set': 'cancer', 'variant': 'mcpso', 'iterations': 5, 'decomposition': 'node', 'seed': 15259, 'seed_index': 14}
+optimizing using following parameter {'data_set': 'cancer', 'variant': 'mcpso', 'iterations': 5, 'decomposition': 'node', 'seed': 17020, 'seed_index': 16}
+optimizing using following parameter {'data_set': 'cancer', 'variant': 'mcpso', 'iterations': 5, 'decomposition': 'node', 'seed': 17307, 'seed_index': 20}
+optimizing using following parameter {'data_set': 'cancer', 'variant': 'mcpso', 'iterations': 5, 'decomposition': 'node', 'seed': 18906, 'seed_index': 25}
+optimizing using following parameter {'data_set': 'cancer', 'variant': 'mcpso', 'iterations': 5, 'decomposition': 'node', 'seed': 18284, 'seed_index': 23}
+optimizing using following parameter {'data_set': 'cancer', 'variant': 'mcpso', 'iterations': 5, 'decomposition': 'node', 'seed': 17265, 'seed_index': 18}
+optimizing using following parameter {'data_set': 'cancer', 'variant': 'mcpso', 'iterations': 5, 'decomposition': 'node', 'seed': 16148, 'seed_index': 15}
+optimizing using following parameter {'data_set': 'cancer', 'variant': 'mcpso', 'iterations': 5, 'decomposition': 'node', 'seed': 17591, 'seed_index': 21}
+optimizing using following parameter {'data_set': 'cancer', 'variant': 'mcpso', 'iterations': 5, 'decomposition': 'node', 'seed': 17291, 'seed_index': 19}
+optimizing using following parameter {'data_set': 'cancer', 'variant': 'mcpso', 'iterations': 5, 'decomposition': 'node', 'seed': 17987, 'seed_index': 22}
+optimizing using following parameter {'data_set': 'cancer', 'variant': 'mcpso', 'iterations': 5, 'decomposition': 'node', 'seed': 19406, 'seed_index': 26}
+optimizing using following parameter {'data_set': 'cancer', 'variant': 'mcpso', 'iterations': 5, 'decomposition': 'node', 'seed': 19894, 'seed_index': 29}
+optimizing using following parameter {'data_set': 'cancer', 'variant': 'mcpso', 'iterations': 5, 'decomposition': 'node', 'seed': 18700, 'seed_index': 24}
+optimizing using following parameter {'data_set': 'cancer', 'variant': 'mcpso', 'iterations': 5, 'decomposition': 'node', 'seed': 19482, 'seed_index': 28}
+optimizing using following parameter {'data_set': 'cancer', 'variant': 'mcpso', 'iterations': 5, 'decomposition': 'node', 'seed': 19457, 'seed_index': 27}
+seed  13213  Iteration:  0  Fitness:  0.37682075639679774
+seed  13213 Merge swarms :  27  ->  14
+seed  10598  Iteration:  0  Fitness:  0.11577843603340551
+seed  10598 Merge swarms :  27  ->  14
+seed  10859  Iteration:  0  Fitness:  0.06086301396992058
+seed  10402  Iteration:  0  Fitness:  0.07484019427577007
+seed  15010  Iteration:  0  Fitness:  0.06634132214615443
+seed  10859 Merge swarms :  27  ->  14
+seed  10402 Merge swarms :  27  ->  14
+seed  15010 Merge swarms :  27  ->  14
+seed  17265  Iteration:  0  Fitness:  0.08165280245964221
+seed  17265 Merge swarms :  27  ->  14
+seed  13431  Iteration:  0  Fitness:  0.0775066294992022
+seed  13431 Merge swarms :  27  ->  14
+seed  13815  Iteration:  0  Fitness:  0.23396356109936267
+seed  17020  Iteration:  0  Fitness:  0.06458659011220377
+seed  19482  Iteration:  0  Fitness:  0.19991648627670455
+seed  17172  Iteration:  0  Fitness:  0.0797324570906707
+seed  12129  Iteration:  0  Fitness:  0.05655902309897939
+seed  17291  Iteration:  0  Fitness:  0.0743398212313289
+seed  13815 Merge swarms :  27  ->  14
+seed  17020 Merge swarms :  27  ->  14
+seed  12129 Merge swarms :  27  ->  14
+seed  17291 Merge swarms :  27  ->  14
+seed  19482 Merge swarms :  27  ->  14
+seed  17172 Merge swarms :  27  ->  14
+seed  17987  Iteration:  0  Fitness:  0.07999735448436471
+seed  19894  Iteration:  0  Fitness:  0.22737023925720554
+seed  11447  Iteration:  0  Fitness:  0.08011724111456159
+seed  17987 Merge swarms :  27  ->  14
+seed  19894 Merge swarms :  27  ->  14
+seed  19406  Iteration:  0  Fitness:  0.3702274568318718
+seed  19457  Iteration:  0  Fitness:  0.08671083746841937
+seed  11447 Merge swarms :  27  ->  14
+seed  16148  Iteration:  0  Fitness:  0.23835905748534544
+seed  19406 Merge swarms :  27  ->  14
+seed  19457 Merge swarms :  27  ->  14
+seed  15259  Iteration:  0  Fitness:  0.087078734552358
+seed  16148 Merge swarms :  27  ->  14
+seed  15259 Merge swarms :  27  ->  14
+seed  12497  Iteration:  0  Fitness:  0.09041049340497169
+seed  11177  Iteration:  0  Fitness:  0.06837224406648898
+seed  12497 Merge swarms :  27  ->  14
+seed  15095  Iteration:  0  Fitness:  0.08012146175308764
+seed  11177 Merge swarms :  27  ->  14
+seed  10418  Iteration:  0  Fitness:  0.09233358015575582
+seed  15095 Merge swarms :  27  ->  14
+seed  10418 Merge swarms :  27  ->  14
+seed  14573  Iteration:  0  Fitness:  0.07850731910390497
+seed  14573 Merge swarms :  27  ->  14
+seed  18906  Iteration:  0  Fitness:  0.41748003491252145
+seed  18284  Iteration:  0  Fitness:  0.11967780762170921
+seed  18906 Merge swarms :  27  ->  14
+seed  18284 Merge swarms :  27  ->  14
+seed  18700  Iteration:  0  Fitness:  0.058127858551473295
+seed  18700 Merge swarms :  27  ->  14
+seed  17591  Iteration:  0  Fitness:  0.09417466269421544
+seed  17591 Merge swarms :  27  ->  14
+seed  17307  Iteration:  0  Fitness:  0.3625349412092535
+seed  17307 Merge swarms :  27  ->  14
+seed  15010 Merge swarms :  14  ->  7
+seed  13213 Merge swarms :  14  ->  7
+seed  10598 Merge swarms :  14  ->  7
+seed  10402 Merge swarms :  14  ->  7
+seed  13431 Merge swarms :  14  ->  7
+seed  19457 Merge swarms :  14  ->  7
+seed  13815 Merge swarms :  14  ->  7
+seed  16148 Merge swarms :  14  ->  7
+seed  19406 Merge swarms :  14  ->  7
+seed  12129 Merge swarms :  14  ->  7
+seed  19482 Merge swarms :  14  ->  7
+seed  17987 Merge swarms :  14  ->  7
+seed  17291 Merge swarms :  14  ->  7
+seed  15259 Merge swarms :  14  ->  7
+seed  10859 Merge swarms :  14  ->  7
+seed  17265 Merge swarms :  14  ->  7
+seed  17172 Merge swarms :  14  ->  7
+seed  17020 Merge swarms :  14  ->  7
+seed  19894 Merge swarms :  14  ->  7
+seed  11177 Merge swarms :  14  ->  7
+seed  11447 Merge swarms :  14  ->  7
+seed  12497 Merge swarms :  14  ->  7
+seed  15095 Merge swarms :  14  ->  7
+seed  10418 Merge swarms :  14  ->  7
+seed  14573 Merge swarms :  14  ->  7
+seed  18906 Merge swarms :  14  ->  7
+seed  18284 Merge swarms :  14  ->  7
+seed  18700 Merge swarms :  14  ->  7
+seed  17591 Merge swarms :  14  ->  7
+seed  17307 Merge swarms :  14  ->  7
+seed  15010 Merge swarms :  7  ->  4
+seed  10598 Merge swarms :  7  ->  4
+seed  10402 Merge swarms :  7  ->  4
+seed  19457 Merge swarms :  7  ->  4
+seed  13213 Merge swarms :  7  ->  4
+seed  13815 Merge swarms :  7  ->  4
+seed  12129 Merge swarms :  7  ->  4
+seed  17291 Merge swarms :  7  ->  4
+seed  13431 Merge swarms :  7  ->  4
+seed  16148 Merge swarms :  7  ->  4
+seed  15259 Merge swarms :  7  ->  4
+seed  19406 Merge swarms :  7  ->  4
+seed  17987 Merge swarms :  7  ->  4
+seed  19482 Merge swarms :  7  ->  4
+seed  10859 Merge swarms :  7  ->  4
+seed  17265 Merge swarms :  7  ->  4
+seed  17172 Merge swarms :  7  ->  4
+seed  11447 Merge swarms :  7  ->  4
+seed  17020 Merge swarms :  7  ->  4
+seed  11177 Merge swarms :  7  ->  4
+seed  12497 Merge swarms :  7  ->  4
+seed  19894 Merge swarms :  7  ->  4
+seed  15095 Merge swarms :  7  ->  4
+seed  10418 Merge swarms :  7  ->  4
+seed  14573 Merge swarms :  7  ->  4
+seed  18284 Merge swarms :  7  ->  4
+seed  18906 Merge swarms :  7  ->  4
+seed  18700 Merge swarms :  7  ->  4
+seed  17591 Merge swarms :  7  ->  4
+seed  17307 Merge swarms :  7  ->  4
+seed  15010 Merge swarms :  4  ->  2
+seed  10402 Merge swarms :  4  ->  2
+seed  10598 Merge swarms :  4  ->  2
+seed  19457 Merge swarms :  4  ->  2
+seed  13213 Merge swarms :  4  ->  2
+seed  12129 Merge swarms :  4  ->  2
+seed  17291 Merge swarms :  4  ->  2
+seed  13815 Merge swarms :  4  ->  2
+seed  13431 Merge swarms :  4  ->  2
+seed  16148 Merge swarms :  4  ->  2
+seed  19482 Merge swarms :  4  ->  2
+seed  17987 Merge swarms :  4  ->  2
+seed  15259 Merge swarms :  4  ->  2
+seed  19406 Merge swarms :  4  ->  2
+seed  10859 Merge swarms :  4  ->  2
+seed  17265 Merge swarms :  4  ->  2
+seed  17172 Merge swarms :  4  ->  2
+seed  11447 Merge swarms :  4  ->  2
+seed  12497 Merge swarms :  4  ->  2
+seed  19894 Merge swarms :  4  ->  2
+seed  11177 Merge swarms :  4  ->  2
+seed  17020 Merge swarms :  4  ->  2
+seed  10418 Merge swarms :  4  ->  2
+seed  15095 Merge swarms :  4  ->  2
+seed  14573 Merge swarms :  4  ->  2
+seed  18284 Merge swarms :  4  ->  2
+seed  18906 Merge swarms :  4  ->  2
+seed  18700 Merge swarms :  4  ->  2
+seed  17307 Merge swarms :  4  ->  2
+seed  17591 Merge swarms :  4  ->  2
+seed  15010  Final train fitness: 0.05333391714112391
+seed  15010  Final test fitness: 0.053541299844838484
+seed  10402  Final train fitness: 0.05072015143364886
+seed  10402  Final test fitness: 0.04656121300387174
+seed  10598  Final train fitness: 0.06235623070243471
+seed  10598  Final test fitness: 0.05630585227696453
+seed  19457  Final train fitness: 0.05716150811723315
+seed  19457  Final test fitness: 0.06779357243353208
+seed  13213  Final train fitness: 0.0581241809684161
+seed  13213  Final test fitness: 0.06396648403065062
+seed  19482  Final train fitness: 0.04808855170808401
+seed  19482  Final test fitness: 0.05220952123221383
+seed  13815  Final train fitness: 0.06774891455003927
+seed  13815  Final test fitness: 0.03242312980062265
+seed  13431  Final train fitness: 0.052484937858325635
+seed  13431  Final test fitness: 0.03464507386715364
+seed  12129  Final train fitness: 0.040934528961246976
+seed  12129  Final test fitness: 0.07719883522327044
+seed  16148  Final train fitness: 0.0772509734980108
+seed  16148  Final test fitness: 0.07275532210286503
+seed  17291  Final train fitness: 0.06129458746477381
+seed  17291  Final test fitness: 0.07143768878355679
+seed  17987  Final train fitness: 0.05366385106993307
+seed  17987  Final test fitness: 0.06970712954547809
+seed  15259  Final train fitness: 0.061491775140806657
+seed  15259  Final test fitness: 0.04322984434673704
+seed  19406  Final train fitness: 0.05130414323020947
+seed  19406  Final test fitness: 0.05992555237779086
+seed  10859  Final train fitness: 0.05160296488109806
+seed  10859  Final test fitness: 0.05561348119542349
+seed  17265  Final train fitness: 0.054713089584131194
+seed  17265  Final test fitness: 0.04053773644105069
+seed  17172  Final train fitness: 0.044173113450847006
+seed  17172  Final test fitness: 0.0800222960386642
+seed  11177  Final train fitness: 0.05677962403089523
+seed  11177  Final test fitness: 0.07312049628270113
+seed  19894  Final train fitness: 0.09239716833110334
+seed  19894  Final test fitness: 0.11088552435343527
+seed  17020  Final train fitness: 0.07176515831591761
+seed  17020  Final test fitness: 0.08433037265062945
+seed  11447  Final train fitness: 0.05515551328607639
+seed  11447  Final test fitness: 0.05520697389784375
+seed  14573  Final train fitness: 0.06050472682025244
+seed  14573  Final test fitness: 0.045480066953575246
+seed  12497  Final train fitness: 0.05827580246622191
+seed  12497  Final test fitness: 0.041037972327155885
+seed  15095  Final train fitness: 0.05218292550997281
+seed  15095  Final test fitness: 0.038408720759404325
+seed  18906  Final train fitness: 0.042715797843498556
+seed  18906  Final test fitness: 0.07563017688320926
+seed  18700  Final train fitness: 0.05765571522589722
+seed  18700  Final test fitness: 0.061447524749189
+seed  18284  Final train fitness: 0.055424503959861905
+seed  18284  Final test fitness: 0.0534077005059616
+seed  10418  Final train fitness: 0.06169422265000066
+seed  10418  Final test fitness: 0.05721357516080483
+seed  17307  Final train fitness: 0.058704819567745384
+seed  17307  Final test fitness: 0.05721975729711849
+seed  17591  Final train fitness: 0.061307554367639794
+seed  17591  Final test fitness: 0.04277123559655401
