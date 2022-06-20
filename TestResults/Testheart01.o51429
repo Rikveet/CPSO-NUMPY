@@ -1,0 +1,121 @@
+Heart disease data loaded
+optimizing using following parameter {'data_set': 'heart', 'variant': 'pso', 'iterations': 5, 'seed': 10402, 'seed_index': 0}
+optimizing using following parameter {'data_set': 'heart', 'variant': 'pso', 'iterations': 5, 'seed': 10598, 'seed_index': 2}
+optimizing using following parameter {'data_set': 'heart', 'variant': 'pso', 'iterations': 5, 'seed': 10418, 'seed_index': 1}
+optimizing using following parameter {'data_set': 'heart', 'variant': 'pso', 'iterations': 5, 'seed': 11177, 'seed_index': 4}
+optimizing using following parameter {'data_set': 'heart', 'variant': 'pso', 'iterations': 5, 'seed': 10859, 'seed_index': 3}
+optimizing using following parameter {'data_set': 'heart', 'variant': 'pso', 'iterations': 5, 'seed': 11447, 'seed_index': 5}
+optimizing using following parameter {'data_set': 'heart', 'variant': 'pso', 'iterations': 5, 'seed': 12129, 'seed_index': 6}
+optimizing using following parameter {'data_set': 'heart', 'variant': 'pso', 'iterations': 5, 'seed': 12497, 'seed_index': 7}
+optimizing using following parameter {'data_set': 'heart', 'variant': 'pso', 'iterations': 5, 'seed': 13213, 'seed_index': 8}
+optimizing using following parameter {'data_set': 'heart', 'variant': 'pso', 'iterations': 5, 'seed': 13431, 'seed_index': 9}
+optimizing using following parameter {'data_set': 'heart', 'variant': 'pso', 'iterations': 5, 'seed': 13815, 'seed_index': 10}
+optimizing using following parameter {'data_set': 'heart', 'variant': 'pso', 'iterations': 5, 'seed': 14573, 'seed_index': 11}
+optimizing using following parameter {'data_set': 'heart', 'variant': 'pso', 'iterations': 5, 'seed': 15259, 'seed_index': 14}
+optimizing using following parameter {'data_set': 'heart', 'variant': 'pso', 'iterations': 5, 'seed': 15095, 'seed_index': 13}
+optimizing using following parameter {'data_set': 'heart', 'variant': 'pso', 'iterations': 5, 'seed': 16148, 'seed_index': 15}
+optimizing using following parameter {'data_set': 'heart', 'variant': 'pso', 'iterations': 5, 'seed': 17020, 'seed_index': 16}
+optimizing using following parameter {'data_set': 'heart', 'variant': 'pso', 'iterations': 5, 'seed': 15010, 'seed_index': 12}
+optimizing using following parameter {'data_set': 'heart', 'variant': 'pso', 'iterations': 5, 'seed': 17172, 'seed_index': 17}
+optimizing using following parameter {'data_set': 'heart', 'variant': 'pso', 'iterations': 5, 'seed': 17265, 'seed_index': 18}
+optimizing using following parameter {'data_set': 'heart', 'variant': 'pso', 'iterations': 5, 'seed': 17291, 'seed_index': 19}
+optimizing using following parameter {'data_set': 'heart', 'variant': 'pso', 'iterations': 5, 'seed': 17307, 'seed_index': 20}
+optimizing using following parameter {'data_set': 'heart', 'variant': 'pso', 'iterations': 5, 'seed': 17591, 'seed_index': 21}
+optimizing using following parameter {'data_set': 'heart', 'variant': 'pso', 'iterations': 5, 'seed': 18284, 'seed_index': 23}
+optimizing using following parameter {'data_set': 'heart', 'variant': 'pso', 'iterations': 5, 'seed': 18700, 'seed_index': 24}
+optimizing using following parameter {'data_set': 'heart', 'variant': 'pso', 'iterations': 5, 'seed': 17987, 'seed_index': 22}
+optimizing using following parameter {'data_set': 'heart', 'variant': 'pso', 'iterations': 5, 'seed': 18906, 'seed_index': 25}
+optimizing using following parameter {'data_set': 'heart', 'variant': 'pso', 'iterations': 5, 'seed': 19406, 'seed_index': 26}
+optimizing using following parameter {'data_set': 'heart', 'variant': 'pso', 'iterations': 5, 'seed': 19482, 'seed_index': 28}
+optimizing using following parameter {'data_set': 'heart', 'variant': 'pso', 'iterations': 5, 'seed': 19457, 'seed_index': 27}
+optimizing using following parameter {'data_set': 'heart', 'variant': 'pso', 'iterations': 5, 'seed': 19894, 'seed_index': 29}
+seed  10402  Iteration:  0  Fitness:  0.12367051477506423
+seed  14573  Iteration:  0  Fitness:  0.12694472429554057
+seed  13815  Iteration:  0  Fitness:  0.13228959158766215
+seed  13213  Iteration:  0  Fitness:  0.12639433668413616
+seed  10859  Iteration:  0  Fitness:  0.12921320853413248
+seed  17987  Iteration:  0  Fitness:  0.13253127320013322
+seed  17291  Iteration:  0  Fitness:  0.1265692115162782
+seed  12129  Iteration:  0  Fitness:  0.1351552905008034
+seed  12497  Iteration:  0  Fitness:  0.1308427190697717
+seed  17172  Iteration:  0  Fitness:  0.1358567782592751
+seed  10598  Iteration:  0  Fitness:  0.1278892094996484
+seed  10418  Iteration:  0  Fitness:  0.12982647924153493
+seed  15010  Iteration:  0  Fitness:  0.13377814958544934
+seed  15259  Iteration:  0  Fitness:  0.14201465020042914
+seed  15095  Iteration:  0  Fitness:  0.13471371300456267
+seed  13431  Iteration:  0  Fitness:  0.12809426475637783
+seed  16148  Iteration:  0  Fitness:  0.12740020420189468
+seed  11177  Iteration:  0  Fitness:  0.12829270458591746
+seed  11447  Iteration:  0  Fitness:  0.13449147803922537
+seed  19406  Iteration:  0  Fitness:  0.13036651643889596
+seed  17591  Iteration:  0  Fitness:  0.13187559651011863
+seed  17265  Iteration:  0  Fitness:  0.13466677500314406
+seed  17307  Iteration:  0  Fitness:  0.1277374330605528
+seed  17020  Iteration:  0  Fitness:  0.13078375630280098
+seed  19894  Iteration:  0  Fitness:  0.13262470802122486
+seed  18700  Iteration:  0  Fitness:  0.13081206930341374
+seed  18906  Iteration:  0  Fitness:  0.12929897005654115
+seed  18284  Iteration:  0  Fitness:  0.13446335882544344
+seed  19457  Iteration:  0  Fitness:  0.13181169986090283
+seed  19482  Iteration:  0  Fitness:  0.12939104108700594
+seed  13815  Final train fitness: 0.1192419965426796
+seed  13815  Final test fitness: 0.10900822895866691
+seed  10418  Final train fitness: 0.11695279835041206
+seed  10418  Final test fitness: 0.1386724282787384
+seed  10402  Final train fitness: 0.10888658592767803
+seed  10402  Final test fitness: 0.16093422652568729
+seed  15259  Final train fitness: 0.12065526502219555
+seed  15259  Final test fitness: 0.10946565679132564
+seed  12129  Final train fitness: 0.11888911401808115
+seed  12129  Final test fitness: 0.11774013009590396
+seed  17172  Final train fitness: 0.12063643834419027
+seed  17172  Final test fitness: 0.11303460224858267
+seed  13431  Final train fitness: 0.11031934412908322
+seed  13431  Final test fitness: 0.15315356209317596
+seed  17291  Final train fitness: 0.11567589664465852
+seed  17291  Final test fitness: 0.13138319983642094
+seed  13213  Final train fitness: 0.11269203742720839
+seed  13213  Final test fitness: 0.12690780194724136
+seed  10598  Final train fitness: 0.11333287618660622
+seed  10598  Final test fitness: 0.1351678425900645
+seed  15010  Final train fitness: 0.1199695043301434
+seed  15010  Final test fitness: 0.10762122570926108
+seed  11177  Final train fitness: 0.11534926052787255
+seed  11177  Final test fitness: 0.11836559680120234
+seed  10859  Final train fitness: 0.11633055625955423
+seed  10859  Final test fitness: 0.11569792202752584
+seed  15095  Final train fitness: 0.12162259629614237
+seed  15095  Final test fitness: 0.09612067878256364
+seed  16148  Final train fitness: 0.11597871793728658
+seed  16148  Final test fitness: 0.1398144806010437
+seed  11447  Final train fitness: 0.11473559158046379
+seed  11447  Final test fitness: 0.12937057587687306
+seed  12497  Final train fitness: 0.122179022217962
+seed  12497  Final test fitness: 0.11456535616780471
+seed  19482  Final train fitness: 0.1143461223699448
+seed  19482  Final test fitness: 0.13129766197328527
+seed  17265  Final train fitness: 0.11699380528931692
+seed  17265  Final test fitness: 0.1280276617203733
+seed  14573  Final train fitness: 0.11676184386078495
+seed  14573  Final test fitness: 0.13820642610544712
+seed  19457  Final train fitness: 0.1189775766209955
+seed  19457  Final test fitness: 0.10962666766685941
+seed  18700  Final train fitness: 0.11998751785766705
+seed  18700  Final test fitness: 0.12198043892069521
+seed  17020  Final train fitness: 0.11825539762541445
+seed  17020  Final test fitness: 0.12374928245431557
+seed  18906  Final train fitness: 0.1148657014533291
+seed  18906  Final test fitness: 0.12634136370751475
+seed  19894  Final train fitness: 0.1196004986046496
+seed  19894  Final test fitness: 0.12233654181760638
+seed  17591  Final train fitness: 0.11722074285281539
+seed  17591  Final test fitness: 0.13673119730019692
+seed  18284  Final train fitness: 0.12347517478967643
+seed  18284  Final test fitness: 0.11307723599015104
+seed  19406  Final train fitness: 0.11002613035435507
+seed  19406  Final test fitness: 0.14123863489333316
+seed  17987  Final train fitness: 0.1177469263028728
+seed  17987  Final test fitness: 0.1211759508011491
+seed  17307  Final train fitness: 0.11480152953376588
+seed  17307  Final test fitness: 0.14396498718950781

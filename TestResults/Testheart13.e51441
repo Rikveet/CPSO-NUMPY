@@ -1,0 +1,286 @@
+Process Process-2:
+Traceback (most recent call last):
+  File "/opt/rh/rh-python38/root/usr/lib64/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/opt/rh/rh-python38/root/usr/lib64/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "./experiments/CPSO-NUMPY/main.py", line 98, in run
+  File "./experiments/CPSO-NUMPY/main.py", line 348, in optimize
+ZeroDivisionError: integer division or modulo by zero
+Process Process-7:
+Traceback (most recent call last):
+  File "/opt/rh/rh-python38/root/usr/lib64/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/opt/rh/rh-python38/root/usr/lib64/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "./experiments/CPSO-NUMPY/main.py", line 98, in run
+  File "./experiments/CPSO-NUMPY/main.py", line 348, in optimize
+ZeroDivisionError: integer division or modulo by zero
+Process Process-5:
+Traceback (most recent call last):
+  File "/opt/rh/rh-python38/root/usr/lib64/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/opt/rh/rh-python38/root/usr/lib64/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "./experiments/CPSO-NUMPY/main.py", line 98, in run
+  File "./experiments/CPSO-NUMPY/main.py", line 348, in optimize
+ZeroDivisionError: integer division or modulo by zero
+Process Process-4:
+Traceback (most recent call last):
+  File "/opt/rh/rh-python38/root/usr/lib64/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/opt/rh/rh-python38/root/usr/lib64/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "./experiments/CPSO-NUMPY/main.py", line 98, in run
+  File "./experiments/CPSO-NUMPY/main.py", line 348, in optimize
+ZeroDivisionError: integer division or modulo by zero
+Process Process-3:
+Traceback (most recent call last):
+  File "/opt/rh/rh-python38/root/usr/lib64/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/opt/rh/rh-python38/root/usr/lib64/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "./experiments/CPSO-NUMPY/main.py", line 98, in run
+  File "./experiments/CPSO-NUMPY/main.py", line 348, in optimize
+ZeroDivisionError: integer division or modulo by zero
+Process Process-8:
+Traceback (most recent call last):
+  File "/opt/rh/rh-python38/root/usr/lib64/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/opt/rh/rh-python38/root/usr/lib64/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "./experiments/CPSO-NUMPY/main.py", line 98, in run
+  File "./experiments/CPSO-NUMPY/main.py", line 348, in optimize
+ZeroDivisionError: integer division or modulo by zero
+Process Process-6:
+Traceback (most recent call last):
+  File "/opt/rh/rh-python38/root/usr/lib64/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/opt/rh/rh-python38/root/usr/lib64/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "./experiments/CPSO-NUMPY/main.py", line 98, in run
+  File "./experiments/CPSO-NUMPY/main.py", line 348, in optimize
+ZeroDivisionError: integer division or modulo by zero
+Process Process-17:
+Traceback (most recent call last):
+  File "/opt/rh/rh-python38/root/usr/lib64/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/opt/rh/rh-python38/root/usr/lib64/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "./experiments/CPSO-NUMPY/main.py", line 98, in run
+  File "./experiments/CPSO-NUMPY/main.py", line 348, in optimize
+ZeroDivisionError: integer division or modulo by zero
+Process Process-9:
+Traceback (most recent call last):
+  File "/opt/rh/rh-python38/root/usr/lib64/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/opt/rh/rh-python38/root/usr/lib64/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "./experiments/CPSO-NUMPY/main.py", line 98, in run
+  File "./experiments/CPSO-NUMPY/main.py", line 348, in optimize
+ZeroDivisionError: integer division or modulo by zero
+Process Process-11:
+Traceback (most recent call last):
+  File "/opt/rh/rh-python38/root/usr/lib64/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/opt/rh/rh-python38/root/usr/lib64/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "./experiments/CPSO-NUMPY/main.py", line 98, in run
+  File "./experiments/CPSO-NUMPY/main.py", line 348, in optimize
+ZeroDivisionError: integer division or modulo by zero
+Process Process-18:
+Traceback (most recent call last):
+  File "/opt/rh/rh-python38/root/usr/lib64/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/opt/rh/rh-python38/root/usr/lib64/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "./experiments/CPSO-NUMPY/main.py", line 98, in run
+  File "./experiments/CPSO-NUMPY/main.py", line 348, in optimize
+ZeroDivisionError: integer division or modulo by zero
+Process Process-14:
+Traceback (most recent call last):
+  File "/opt/rh/rh-python38/root/usr/lib64/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/opt/rh/rh-python38/root/usr/lib64/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "./experiments/CPSO-NUMPY/main.py", line 98, in run
+  File "./experiments/CPSO-NUMPY/main.py", line 348, in optimize
+ZeroDivisionError: integer division or modulo by zero
+Process Process-16:
+Traceback (most recent call last):
+  File "/opt/rh/rh-python38/root/usr/lib64/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/opt/rh/rh-python38/root/usr/lib64/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "./experiments/CPSO-NUMPY/main.py", line 98, in run
+  File "./experiments/CPSO-NUMPY/main.py", line 348, in optimize
+ZeroDivisionError: integer division or modulo by zero
+Process Process-21:
+Traceback (most recent call last):
+  File "/opt/rh/rh-python38/root/usr/lib64/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/opt/rh/rh-python38/root/usr/lib64/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "./experiments/CPSO-NUMPY/main.py", line 98, in run
+  File "./experiments/CPSO-NUMPY/main.py", line 348, in optimize
+ZeroDivisionError: integer division or modulo by zero
+Process Process-12:
+Traceback (most recent call last):
+  File "/opt/rh/rh-python38/root/usr/lib64/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/opt/rh/rh-python38/root/usr/lib64/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "./experiments/CPSO-NUMPY/main.py", line 98, in run
+  File "./experiments/CPSO-NUMPY/main.py", line 348, in optimize
+ZeroDivisionError: integer division or modulo by zero
+Process Process-19:
+Traceback (most recent call last):
+  File "/opt/rh/rh-python38/root/usr/lib64/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/opt/rh/rh-python38/root/usr/lib64/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "./experiments/CPSO-NUMPY/main.py", line 98, in run
+  File "./experiments/CPSO-NUMPY/main.py", line 348, in optimize
+ZeroDivisionError: integer division or modulo by zero
+Process Process-25:
+Traceback (most recent call last):
+  File "/opt/rh/rh-python38/root/usr/lib64/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/opt/rh/rh-python38/root/usr/lib64/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "./experiments/CPSO-NUMPY/main.py", line 98, in run
+  File "./experiments/CPSO-NUMPY/main.py", line 348, in optimize
+ZeroDivisionError: integer division or modulo by zero
+Process Process-15:
+Traceback (most recent call last):
+  File "/opt/rh/rh-python38/root/usr/lib64/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/opt/rh/rh-python38/root/usr/lib64/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "./experiments/CPSO-NUMPY/main.py", line 98, in run
+  File "./experiments/CPSO-NUMPY/main.py", line 348, in optimize
+ZeroDivisionError: integer division or modulo by zero
+Process Process-23:
+Traceback (most recent call last):
+  File "/opt/rh/rh-python38/root/usr/lib64/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/opt/rh/rh-python38/root/usr/lib64/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "./experiments/CPSO-NUMPY/main.py", line 98, in run
+  File "./experiments/CPSO-NUMPY/main.py", line 348, in optimize
+ZeroDivisionError: integer division or modulo by zero
+Process Process-13:
+Traceback (most recent call last):
+  File "/opt/rh/rh-python38/root/usr/lib64/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/opt/rh/rh-python38/root/usr/lib64/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "./experiments/CPSO-NUMPY/main.py", line 98, in run
+  File "./experiments/CPSO-NUMPY/main.py", line 348, in optimize
+ZeroDivisionError: integer division or modulo by zero
+Process Process-20:
+Traceback (most recent call last):
+  File "/opt/rh/rh-python38/root/usr/lib64/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/opt/rh/rh-python38/root/usr/lib64/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "./experiments/CPSO-NUMPY/main.py", line 98, in run
+  File "./experiments/CPSO-NUMPY/main.py", line 348, in optimize
+ZeroDivisionError: integer division or modulo by zero
+Process Process-24:
+Traceback (most recent call last):
+  File "/opt/rh/rh-python38/root/usr/lib64/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/opt/rh/rh-python38/root/usr/lib64/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "./experiments/CPSO-NUMPY/main.py", line 98, in run
+  File "./experiments/CPSO-NUMPY/main.py", line 348, in optimize
+ZeroDivisionError: integer division or modulo by zero
+Process Process-28:
+Traceback (most recent call last):
+  File "/opt/rh/rh-python38/root/usr/lib64/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/opt/rh/rh-python38/root/usr/lib64/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "./experiments/CPSO-NUMPY/main.py", line 98, in run
+  File "./experiments/CPSO-NUMPY/main.py", line 348, in optimize
+ZeroDivisionError: integer division or modulo by zero
+Process Process-27:
+Traceback (most recent call last):
+  File "/opt/rh/rh-python38/root/usr/lib64/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/opt/rh/rh-python38/root/usr/lib64/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "./experiments/CPSO-NUMPY/main.py", line 98, in run
+  File "./experiments/CPSO-NUMPY/main.py", line 348, in optimize
+ZeroDivisionError: integer division or modulo by zero
+Process Process-10:
+Traceback (most recent call last):
+  File "/opt/rh/rh-python38/root/usr/lib64/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/opt/rh/rh-python38/root/usr/lib64/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "./experiments/CPSO-NUMPY/main.py", line 98, in run
+  File "./experiments/CPSO-NUMPY/main.py", line 348, in optimize
+ZeroDivisionError: integer division or modulo by zero
+Process Process-22:
+Traceback (most recent call last):
+  File "/opt/rh/rh-python38/root/usr/lib64/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/opt/rh/rh-python38/root/usr/lib64/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "./experiments/CPSO-NUMPY/main.py", line 98, in run
+  File "./experiments/CPSO-NUMPY/main.py", line 348, in optimize
+ZeroDivisionError: integer division or modulo by zero
+Process Process-26:
+Traceback (most recent call last):
+  File "/opt/rh/rh-python38/root/usr/lib64/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/opt/rh/rh-python38/root/usr/lib64/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "./experiments/CPSO-NUMPY/main.py", line 98, in run
+  File "./experiments/CPSO-NUMPY/main.py", line 348, in optimize
+ZeroDivisionError: integer division or modulo by zero
+Process Process-30:
+Traceback (most recent call last):
+  File "/opt/rh/rh-python38/root/usr/lib64/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/opt/rh/rh-python38/root/usr/lib64/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "./experiments/CPSO-NUMPY/main.py", line 98, in run
+  File "./experiments/CPSO-NUMPY/main.py", line 348, in optimize
+ZeroDivisionError: integer division or modulo by zero
+Process Process-31:
+Traceback (most recent call last):
+  File "/opt/rh/rh-python38/root/usr/lib64/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/opt/rh/rh-python38/root/usr/lib64/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "./experiments/CPSO-NUMPY/main.py", line 98, in run
+  File "./experiments/CPSO-NUMPY/main.py", line 348, in optimize
+ZeroDivisionError: integer division or modulo by zero
+Process Process-29:
+Traceback (most recent call last):
+  File "/opt/rh/rh-python38/root/usr/lib64/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/opt/rh/rh-python38/root/usr/lib64/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "./experiments/CPSO-NUMPY/main.py", line 98, in run
+  File "./experiments/CPSO-NUMPY/main.py", line 348, in optimize
+ZeroDivisionError: integer division or modulo by zero
+/opt/rh/rh-python38/root/usr/lib64/python3.8/site-packages/numpy/lib/function_base.py:390: RuntimeWarning: Mean of empty slice.
+  avg = a.mean(axis)
+/opt/rh/rh-python38/root/usr/lib64/python3.8/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Traceback (most recent call last):
+  File "./experiments/CPSO-NUMPY/main.py", line 483, in <module>
+    plt.plot(interation_plot, avg_result["iterations"])
+  File "/home/student/rh18vo/.local/lib/python3.8/site-packages/matplotlib/pyplot.py", line 2769, in plot
+    return gca().plot(
+  File "/home/student/rh18vo/.local/lib/python3.8/site-packages/matplotlib/axes/_axes.py", line 1632, in plot
+    lines = [*self._get_lines(*args, data=data, **kwargs)]
+  File "/home/student/rh18vo/.local/lib/python3.8/site-packages/matplotlib/axes/_base.py", line 312, in __call__
+    yield from self._plot_args(this, kwargs)
+  File "/home/student/rh18vo/.local/lib/python3.8/site-packages/matplotlib/axes/_base.py", line 498, in _plot_args
+    raise ValueError(f"x and y must have same first dimension, but "
+ValueError: x and y must have same first dimension, but have shapes (6,) and (1,)

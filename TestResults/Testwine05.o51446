@@ -1,0 +1,121 @@
+wine data loaded
+optimizing using following parameter {'data_set': 'wine', 'variant': 'cpso', 'iterations': 5, 'decomposition': 'node_factorized', 'seed': 10859, 'seed_index': 3}
+optimizing using following parameter {'data_set': 'wine', 'variant': 'cpso', 'iterations': 5, 'decomposition': 'node_factorized', 'seed': 10598, 'seed_index': 2}
+optimizing using following parameter {'data_set': 'wine', 'variant': 'cpso', 'iterations': 5, 'decomposition': 'node_factorized', 'seed': 11177, 'seed_index': 4}
+optimizing using following parameter {'data_set': 'wine', 'variant': 'cpso', 'iterations': 5, 'decomposition': 'node_factorized', 'seed': 11447, 'seed_index': 5}
+optimizing using following parameter {'data_set': 'wine', 'variant': 'cpso', 'iterations': 5, 'decomposition': 'node_factorized', 'seed': 10402, 'seed_index': 0}
+optimizing using following parameter {'data_set': 'wine', 'variant': 'cpso', 'iterations': 5, 'decomposition': 'node_factorized', 'seed': 10418, 'seed_index': 1}
+optimizing using following parameter {'data_set': 'wine', 'variant': 'cpso', 'iterations': 5, 'decomposition': 'node_factorized', 'seed': 13431, 'seed_index': 9}
+optimizing using following parameter {'data_set': 'wine', 'variant': 'cpso', 'iterations': 5, 'decomposition': 'node_factorized', 'seed': 12129, 'seed_index': 6}
+optimizing using following parameter {'data_set': 'wine', 'variant': 'cpso', 'iterations': 5, 'decomposition': 'node_factorized', 'seed': 12497, 'seed_index': 7}
+optimizing using following parameter {'data_set': 'wine', 'variant': 'cpso', 'iterations': 5, 'decomposition': 'node_factorized', 'seed': 13213, 'seed_index': 8}
+optimizing using following parameter {'data_set': 'wine', 'variant': 'cpso', 'iterations': 5, 'decomposition': 'node_factorized', 'seed': 16148, 'seed_index': 15}
+optimizing using following parameter {'data_set': 'wine', 'variant': 'cpso', 'iterations': 5, 'decomposition': 'node_factorized', 'seed': 15095, 'seed_index': 13}
+optimizing using following parameter {'data_set': 'wine', 'variant': 'cpso', 'iterations': 5, 'decomposition': 'node_factorized', 'seed': 13815, 'seed_index': 10}
+optimizing using following parameter {'data_set': 'wine', 'variant': 'cpso', 'iterations': 5, 'decomposition': 'node_factorized', 'seed': 15010, 'seed_index': 12}
+optimizing using following parameter {'data_set': 'wine', 'variant': 'cpso', 'iterations': 5, 'decomposition': 'node_factorized', 'seed': 17172, 'seed_index': 17}
+optimizing using following parameter {'data_set': 'wine', 'variant': 'cpso', 'iterations': 5, 'decomposition': 'node_factorized', 'seed': 17307, 'seed_index': 20}
+optimizing using following parameter {'data_set': 'wine', 'variant': 'cpso', 'iterations': 5, 'decomposition': 'node_factorized', 'seed': 17291, 'seed_index': 19}
+optimizing using following parameter {'data_set': 'wine', 'variant': 'cpso', 'iterations': 5, 'decomposition': 'node_factorized', 'seed': 15259, 'seed_index': 14}
+optimizing using following parameter {'data_set': 'wine', 'variant': 'cpso', 'iterations': 5, 'decomposition': 'node_factorized', 'seed': 14573, 'seed_index': 11}
+optimizing using following parameter {'data_set': 'wine', 'variant': 'cpso', 'iterations': 5, 'decomposition': 'node_factorized', 'seed': 17987, 'seed_index': 22}
+optimizing using following parameter {'data_set': 'wine', 'variant': 'cpso', 'iterations': 5, 'decomposition': 'node_factorized', 'seed': 17265, 'seed_index': 18}
+optimizing using following parameter {'data_set': 'wine', 'variant': 'cpso', 'iterations': 5, 'decomposition': 'node_factorized', 'seed': 17591, 'seed_index': 21}
+optimizing using following parameter {'data_set': 'wine', 'variant': 'cpso', 'iterations': 5, 'decomposition': 'node_factorized', 'seed': 17020, 'seed_index': 16}
+optimizing using following parameter {'data_set': 'wine', 'variant': 'cpso', 'iterations': 5, 'decomposition': 'node_factorized', 'seed': 18284, 'seed_index': 23}
+optimizing using following parameter {'data_set': 'wine', 'variant': 'cpso', 'iterations': 5, 'decomposition': 'node_factorized', 'seed': 19406, 'seed_index': 26}
+optimizing using following parameter {'data_set': 'wine', 'variant': 'cpso', 'iterations': 5, 'decomposition': 'node_factorized', 'seed': 18700, 'seed_index': 24}
+optimizing using following parameter {'data_set': 'wine', 'variant': 'cpso', 'iterations': 5, 'decomposition': 'node_factorized', 'seed': 19482, 'seed_index': 28}
+optimizing using following parameter {'data_set': 'wine', 'variant': 'cpso', 'iterations': 5, 'decomposition': 'node_factorized', 'seed': 19894, 'seed_index': 29}
+optimizing using following parameter {'data_set': 'wine', 'variant': 'cpso', 'iterations': 5, 'decomposition': 'node_factorized', 'seed': 18906, 'seed_index': 25}
+optimizing using following parameter {'data_set': 'wine', 'variant': 'cpso', 'iterations': 5, 'decomposition': 'node_factorized', 'seed': 19457, 'seed_index': 27}
+seed  10418  Iteration:  0  Fitness:  0.13961379849659636
+seed  11177  Iteration:  0  Fitness:  0.1319910096234965
+seed  10598  Iteration:  0  Fitness:  0.12670805134322044
+seed  12497  Iteration:  0  Fitness:  0.1197554429776575
+seed  11447  Iteration:  0  Fitness:  0.12091599405763556
+seed  17265  Iteration:  0  Fitness:  0.13690259714203754
+seed  16148  Iteration:  0  Fitness:  0.12692996266690879
+seed  15010  Iteration:  0  Fitness:  0.13439788582862505
+seed  19482  Iteration:  0  Fitness:  0.12575587751563203
+seed  15259  Iteration:  0  Fitness:  0.15656045279987174
+seed  19457  Iteration:  0  Fitness:  0.13893045749506036
+seed  18700  Iteration:  0  Fitness:  0.13711342114264355
+seed  17172  Iteration:  0  Fitness:  0.26109620364460995
+seed  18284  Iteration:  0  Fitness:  0.13995923502286844
+seed  10859  Iteration:  0  Fitness:  0.16552573251908695
+seed  10402  Iteration:  0  Fitness:  0.17704032466639677
+seed  12129  Iteration:  0  Fitness:  0.12533277765905204
+seed  13431  Iteration:  0  Fitness:  0.15376380452873784
+seed  13213  Iteration:  0  Fitness:  0.1770389777483708
+seed  13815  Iteration:  0  Fitness:  0.1304861254275874
+seed  17307  Iteration:  0  Fitness:  0.11407754631286057
+seed  15095  Iteration:  0  Fitness:  0.12019432217637474
+seed  17291  Iteration:  0  Fitness:  0.12703316792634872
+seed  17591  Iteration:  0  Fitness:  0.12804511609965666
+seed  17987  Iteration:  0  Fitness:  0.14154115648617413
+seed  14573  Iteration:  0  Fitness:  0.11873198588356115
+seed  17020  Iteration:  0  Fitness:  0.11379783157082202
+seed  19894  Iteration:  0  Fitness:  0.13389951139483544
+seed  19406  Iteration:  0  Fitness:  0.1294577695247482
+seed  18906  Iteration:  0  Fitness:  0.24409208018028122
+seed  10598  Final train fitness: 0.09996003482401554
+seed  10598  Final test fitness: 0.16009903918858637
+seed  10418  Final train fitness: 0.10422146067283748
+seed  10418  Final test fitness: 0.08631697210382758
+seed  17265  Final train fitness: 0.1064418573583254
+seed  17265  Final test fitness: 0.1252377309336305
+seed  12497  Final train fitness: 0.09313942977895694
+seed  12497  Final test fitness: 0.10396865610414575
+seed  19482  Final train fitness: 0.07162557482940002
+seed  19482  Final test fitness: 0.09799954475965184
+seed  11447  Final train fitness: 0.07558466610136434
+seed  11447  Final test fitness: 0.07359137733388352
+seed  11177  Final train fitness: 0.07073964394634458
+seed  11177  Final test fitness: 0.05990131095177705
+seed  15259  Final train fitness: 0.09800721951348582
+seed  15259  Final test fitness: 0.1039308931561811
+seed  16148  Final train fitness: 0.07140002085685633
+seed  16148  Final test fitness: 0.08520911936771791
+seed  19457  Final train fitness: 0.07902721253671947
+seed  19457  Final test fitness: 0.06954597382728811
+seed  18700  Final train fitness: 0.09216170331506068
+seed  18700  Final test fitness: 0.10641830678287958
+seed  18284  Final train fitness: 0.08131045393664352
+seed  18284  Final test fitness: 0.115544507961807
+seed  17172  Final train fitness: 0.24211270308510205
+seed  17172  Final test fitness: 0.2740602509260622
+seed  15010  Final train fitness: 0.057814797119035886
+seed  15010  Final test fitness: 0.0951813841017112
+seed  10402  Final train fitness: 0.11719615521638538
+seed  10402  Final test fitness: 0.14210431242472807
+seed  18906  Final train fitness: 0.1012057557019495
+seed  18906  Final test fitness: 0.12185852035513896
+seed  19406  Final train fitness: 0.08696460736908142
+seed  19406  Final test fitness: 0.13912178802785866
+seed  13431  Final train fitness: 0.09342647245001298
+seed  13431  Final test fitness: 0.07844292663028123
+seed  13213  Final train fitness: 0.07784592161524904
+seed  13213  Final test fitness: 0.13849940827501592
+seed  15095  Final train fitness: 0.06802345756454474
+seed  15095  Final test fitness: 0.09848592107478643
+seed  17987  Final train fitness: 0.09854252889982043
+seed  17987  Final test fitness: 0.10004891357375738
+seed  17020  Final train fitness: 0.06632238748411672
+seed  17020  Final test fitness: 0.08752009019840297
+seed  10859  Final train fitness: 0.10263367536952563
+seed  10859  Final test fitness: 0.0670534094308807
+seed  12129  Final train fitness: 0.08879164576237557
+seed  12129  Final test fitness: 0.09524571642025591
+seed  17291  Final train fitness: 0.09637374720697764
+seed  17291  Final test fitness: 0.1162548991694569
+seed  14573  Final train fitness: 0.10079639454773207
+seed  14573  Final test fitness: 0.14708410255161247
+seed  13815  Final train fitness: 0.09417897821364524
+seed  13815  Final test fitness: 0.0681582113544464
+seed  17591  Final train fitness: 0.047543136055845495
+seed  17591  Final test fitness: 0.06395215546735739
+seed  17307  Final train fitness: 0.07948607738115376
+seed  17307  Final test fitness: 0.09044550524903719
+seed  19894  Final train fitness: 0.09588535349947638
+seed  19894  Final test fitness: 0.08376518123467283
