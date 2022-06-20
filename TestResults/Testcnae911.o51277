@@ -1,7 +1,0 @@
-CNAE9 data loaded
-Starting to optimize: seed  10402
-Starting to optimize: seed  10418
-{'data_set': 'cnae9', 'variant': 'mcpso', 'iterations': 1000, 'decomposition': 'layer_factorized', 'seed': 10418, 'seed_index': 1}
-seed  10418  Iteration:  0  Fitness:  0.11910145177829753
-{'data_set': 'cnae9', 'variant': 'mcpso', 'iterations': 1000, 'decomposition': 'layer_factorized', 'seed': 10418, 'seed_index': 1}
-seed  10402  Iteration:  0  Fitness:  0.09953667060058684

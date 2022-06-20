@@ -409,16 +409,16 @@ if __name__ == "__main__":
                 "max": 30,
                 "function": data_loader.get_wine_data},
             "soyabean": {
-                "max": 18,
+                "max": 15,
                 "function": data_loader.get_soybean_large},
             "cancer": {
                 "max": 30,
                 "function": data_loader.get_breast_cancer_data},
             "coil": {
-                "max": 18,
+                "max": 15,
                 "function": data_loader.get_coil_2000},
             "crime": {
-                "max": 13,
+                "max": 10,
                 "function": data_loader.get_crime},
             "cnae9": {
                 "max": 2,
@@ -455,12 +455,13 @@ if __name__ == "__main__":
                     else:
                         J = 0
                         seed_groups.append(group)
-                        group = []
+                        group = [seeds_raw[I]]
                 if len(group) > 0:
                     seed_groups.append(group)
                     group = []
 
             for seeds in seed_groups:
+                processes = []
                 for seed_index, seed in enumerate(seeds):
                     parameter["seed"] = seed
                     parameter["seed_index"] = seed_index
@@ -470,7 +471,6 @@ if __name__ == "__main__":
                     process.start()
                 for process in processes:
                     process.join()
-                    processes.remove(process)
             if "decomposition" in parameter.keys():
                 key = parameter["variant"] + "_" + parameter["decomposition"] + "_" + parameter["data_set"]
             else:
