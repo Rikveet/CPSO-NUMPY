@@ -1,3 +1,0 @@
-CNAE9 data loaded
-optimizing using following parameter {'data_set': 'cnae9', 'variant': 'mcpso', 'iterations': 1, 'decomposition': 'layer', 'seed': 10402, 'seed_index': 0}
-optimizing using following parameter {'data_set': 'cnae9', 'variant': 'mcpso', 'iterations': 1, 'decomposition': 'layer', 'seed': 10418, 'seed_index': 1}
