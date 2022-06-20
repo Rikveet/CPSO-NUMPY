@@ -431,7 +431,7 @@ if __name__ == "__main__":
         result["train"] = manager.list()
         result["test"] = manager.list()
         np.set_printoptions(suppress=True)
-        iters = 5
+        iters = 1000
         processes = []
         parameter = {"data_set": sys.argv[1], "variant": sys.argv[2], "iterations": iters}
 
