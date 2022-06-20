@@ -75,16 +75,16 @@ class Cpso:
                     decomposition = self.psoDecompose()
                     self.do_decompose = True
                     self.decom_func = decomDict[decomposition_type]["function"]
-                    self.decompose_iter = math.floor(self.iterations / (1 + (math.log(self.dimension) / math.log(
-                        decomDict[decomposition_type]["sub_swarm_size"]))))
+                    self.decompose_iter = max(math.floor(self.iterations / (1 + (math.log(self.dimension) / math.log(
+                        decomDict[decomposition_type]["sub_swarm_size"])))), 1)
                 elif self.variant_parameter["variant"] == "cpso":
                     decomposition = decomDict[decomposition_type]["function"]()
                 elif self.variant_parameter["variant"] == "mcpso":
                     decomposition = decomDict[decomposition_type]["function"]()
                     self.do_merge = True
                     merge_nr = 2
-                    self.merge_iter = math.floor(
-                        self.iterations / (1 + (math.log(self.dimension) / math.log(merge_nr))))
+                    self.merge_iter = max(math.floor(
+                        self.iterations / (1 + (math.log(self.dimension) / math.log(merge_nr)))), 1)
                 else:
                     print("Invalid variant: ", self.variant_parameter["variant"],
                           " Available variants: pso, dcpso, cpso, mcpso(case sensitive)", flush=True)
