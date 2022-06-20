@@ -1,0 +1,151 @@
+wdbc data loaded
+optimizing using following parameter {'data_set': 'cancer', 'variant': 'dcpso', 'iterations': 5, 'decomposition': 'layer', 'seed': 11177, 'seed_index': 4}
+optimizing using following parameter {'data_set': 'cancer', 'variant': 'dcpso', 'iterations': 5, 'decomposition': 'layer', 'seed': 12497, 'seed_index': 7}
+optimizing using following parameter {'data_set': 'cancer', 'variant': 'dcpso', 'iterations': 5, 'decomposition': 'layer', 'seed': 11447, 'seed_index': 5}
+optimizing using following parameter {'data_set': 'cancer', 'variant': 'dcpso', 'iterations': 5, 'decomposition': 'layer', 'seed': 10402, 'seed_index': 0}
+optimizing using following parameter {'data_set': 'cancer', 'variant': 'dcpso', 'iterations': 5, 'decomposition': 'layer', 'seed': 10418, 'seed_index': 1}
+optimizing using following parameter {'data_set': 'cancer', 'variant': 'dcpso', 'iterations': 5, 'decomposition': 'layer', 'seed': 10598, 'seed_index': 2}
+optimizing using following parameter {'data_set': 'cancer', 'variant': 'dcpso', 'iterations': 5, 'decomposition': 'layer', 'seed': 12129, 'seed_index': 6}
+optimizing using following parameter {'data_set': 'cancer', 'variant': 'dcpso', 'iterations': 5, 'decomposition': 'layer', 'seed': 13431, 'seed_index': 9}
+optimizing using following parameter {'data_set': 'cancer', 'variant': 'dcpso', 'iterations': 5, 'decomposition': 'layer', 'seed': 10859, 'seed_index': 3}
+optimizing using following parameter {'data_set': 'cancer', 'variant': 'dcpso', 'iterations': 5, 'decomposition': 'layer', 'seed': 14573, 'seed_index': 11}
+optimizing using following parameter {'data_set': 'cancer', 'variant': 'dcpso', 'iterations': 5, 'decomposition': 'layer', 'seed': 13815, 'seed_index': 10}
+optimizing using following parameter {'data_set': 'cancer', 'variant': 'dcpso', 'iterations': 5, 'decomposition': 'layer', 'seed': 15259, 'seed_index': 14}
+optimizing using following parameter {'data_set': 'cancer', 'variant': 'dcpso', 'iterations': 5, 'decomposition': 'layer', 'seed': 15010, 'seed_index': 12}
+optimizing using following parameter {'data_set': 'cancer', 'variant': 'dcpso', 'iterations': 5, 'decomposition': 'layer', 'seed': 13213, 'seed_index': 8}
+optimizing using following parameter {'data_set': 'cancer', 'variant': 'dcpso', 'iterations': 5, 'decomposition': 'layer', 'seed': 17020, 'seed_index': 16}
+optimizing using following parameter {'data_set': 'cancer', 'variant': 'dcpso', 'iterations': 5, 'decomposition': 'layer', 'seed': 15095, 'seed_index': 13}
+optimizing using following parameter {'data_set': 'cancer', 'variant': 'dcpso', 'iterations': 5, 'decomposition': 'layer', 'seed': 16148, 'seed_index': 15}
+optimizing using following parameter {'data_set': 'cancer', 'variant': 'dcpso', 'iterations': 5, 'decomposition': 'layer', 'seed': 17591, 'seed_index': 21}
+optimizing using following parameter {'data_set': 'cancer', 'variant': 'dcpso', 'iterations': 5, 'decomposition': 'layer', 'seed': 17987, 'seed_index': 22}
+optimizing using following parameter {'data_set': 'cancer', 'variant': 'dcpso', 'iterations': 5, 'decomposition': 'layer', 'seed': 17265, 'seed_index': 18}
+optimizing using following parameter {'data_set': 'cancer', 'variant': 'dcpso', 'iterations': 5, 'decomposition': 'layer', 'seed': 17291, 'seed_index': 19}
+optimizing using following parameter {'data_set': 'cancer', 'variant': 'dcpso', 'iterations': 5, 'decomposition': 'layer', 'seed': 17307, 'seed_index': 20}
+optimizing using following parameter {'data_set': 'cancer', 'variant': 'dcpso', 'iterations': 5, 'decomposition': 'layer', 'seed': 19482, 'seed_index': 28}
+optimizing using following parameter {'data_set': 'cancer', 'variant': 'dcpso', 'iterations': 5, 'decomposition': 'layer', 'seed': 17172, 'seed_index': 17}
+optimizing using following parameter {'data_set': 'cancer', 'variant': 'dcpso', 'iterations': 5, 'decomposition': 'layer', 'seed': 19406, 'seed_index': 26}
+optimizing using following parameter {'data_set': 'cancer', 'variant': 'dcpso', 'iterations': 5, 'decomposition': 'layer', 'seed': 18906, 'seed_index': 25}
+optimizing using following parameter {'data_set': 'cancer', 'variant': 'dcpso', 'iterations': 5, 'decomposition': 'layer', 'seed': 19894, 'seed_index': 29}
+optimizing using following parameter {'data_set': 'cancer', 'variant': 'dcpso', 'iterations': 5, 'decomposition': 'layer', 'seed': 18284, 'seed_index': 23}
+optimizing using following parameter {'data_set': 'cancer', 'variant': 'dcpso', 'iterations': 5, 'decomposition': 'layer', 'seed': 19457, 'seed_index': 27}
+optimizing using following parameter {'data_set': 'cancer', 'variant': 'dcpso', 'iterations': 5, 'decomposition': 'layer', 'seed': 18700, 'seed_index': 24}
+seed  17291  Iteration:  0  Fitness:  0.07725551204849668
+seed  10418  Iteration:  0  Fitness:  0.07799018716166016
+seed  17291 Decompose swarms :  1  ->  2
+seed  10418 Decompose swarms :  1  ->  2
+seed  18906  Iteration:  0  Fitness:  0.07249035709319612
+seed  19406  Iteration:  0  Fitness:  0.09739217531516099
+seed  17591  Iteration:  0  Fitness:  0.10346737854399259
+seed  12497  Iteration:  0  Fitness:  0.5229743117415004
+seed  18906 Decompose swarms :  1  ->  2
+seed  19406 Decompose swarms :  1  ->  2
+seed  12129  Iteration:  0  Fitness:  0.36143598795024506
+seed  17265  Iteration:  0  Fitness:  0.12868833016517275
+seed  17591 Decompose swarms :  1  ->  2
+seed  17307  Iteration:  0  Fitness:  0.07385490795371029
+seed  12497 Decompose swarms :  1  ->  2
+seed  13815  Iteration:  0  Fitness:  0.06800567915607504
+seed  12129 Decompose swarms :  1  ->  2
+seed  15259  Iteration:  0  Fitness:  0.09346296526514375
+seed  17020  Iteration:  0  Fitness:  0.09902780430102606
+seed  15095  Iteration:  0  Fitness:  0.0949186486648337
+seed  17265 Decompose swarms :  1  ->  2
+seed  10598  Iteration:  0  Fitness:  0.08096693194811642
+seed  17307 Decompose swarms :  1  ->  2
+seed  13815 Decompose swarms :  1  ->  2
+seed  15259 Decompose swarms :  1  ->  2
+seed  17020 Decompose swarms :  1  ->  2
+seed  19894  Iteration:  0  Fitness:  0.06780635605262426
+seed  15095 Decompose swarms :  1  ->  2
+seed  14573  Iteration:  0  Fitness:  0.10392093153684752
+seed  19482  Iteration:  0  Fitness:  0.07479033518782652
+seed  13431  Iteration:  0  Fitness:  0.06881526688469329
+seed  10598 Decompose swarms :  1  ->  2
+seed  11447  Iteration:  0  Fitness:  0.11997549714842737
+seed  18284  Iteration:  0  Fitness:  0.09785276814771195
+seed  15010  Iteration:  0  Fitness:  0.09306268560818734
+seed  17172  Iteration:  0  Fitness:  0.06528112043040524
+seed  10402  Iteration:  0  Fitness:  0.14211409188146626
+seed  14573 Decompose swarms :  1  ->  2
+seed  19894 Decompose swarms :  1  ->  2
+seed  13431 Decompose swarms :  1  ->  2
+seed  19482 Decompose swarms :  1  ->  2
+seed  13213  Iteration:  0  Fitness:  0.08268758382663634
+seed  11177  Iteration:  0  Fitness:  0.07826450162876089
+seed  11447 Decompose swarms :  1  ->  2
+seed  18284 Decompose swarms :  1  ->  2
+seed  15010 Decompose swarms :  1  ->  2
+seed  10859  Iteration:  0  Fitness:  0.08506690971644314
+seed  17172 Decompose swarms :  1  ->  2
+seed  19457  Iteration:  0  Fitness:  0.09120367753988934
+seed  10402 Decompose swarms :  1  ->  2
+seed  18700  Iteration:  0  Fitness:  0.0570264973864198
+seed  13213 Decompose swarms :  1  ->  2
+seed  11177 Decompose swarms :  1  ->  2
+seed  10859 Decompose swarms :  1  ->  2
+seed  19457 Decompose swarms :  1  ->  2
+seed  18700 Decompose swarms :  1  ->  2
+seed  16148  Iteration:  0  Fitness:  0.060606160572357015
+seed  17987  Iteration:  0  Fitness:  0.07258607612967748
+seed  16148 Decompose swarms :  1  ->  2
+seed  17987 Decompose swarms :  1  ->  2
+seed  17291  Final train fitness: 0.04476107398779229
+seed  17291  Final test fitness: 0.050348791043698986
+seed  17591  Final train fitness: 0.05150711767605171
+seed  17591  Final test fitness: 0.042964074945782436
+seed  12497  Final train fitness: 0.515282013537911
+seed  12497  Final test fitness: 0.5097682290767582
+seed  18284  Final train fitness: 0.06000474316294222
+seed  18284  Final test fitness: 0.05607658087297105
+seed  15259  Final train fitness: 0.047429896671976716
+seed  15259  Final test fitness: 0.02866791644404171
+seed  19406  Final train fitness: 0.04608184454255208
+seed  19406  Final test fitness: 0.04224370514589784
+seed  17987  Final train fitness: 0.04174378071556744
+seed  17987  Final test fitness: 0.06686132045913835
+seed  17265  Final train fitness: 0.05053426145886249
+seed  17265  Final test fitness: 0.031694502687550426
+seed  13213  Final train fitness: 0.042274373443576096
+seed  13213  Final test fitness: 0.04687774109332886
+seed  19894  Final train fitness: 0.041168236166939806
+seed  19894  Final test fitness: 0.07688683996482445
+seed  16148  Final train fitness: 0.04514255369583116
+seed  16148  Final test fitness: 0.03981963328617206
+seed  14573  Final train fitness: 0.053046327367760764
+seed  14573  Final test fitness: 0.039764045682260156
+seed  17307  Final train fitness: 0.05215029206184743
+seed  17307  Final test fitness: 0.05104764403594348
+seed  15095  Final train fitness: 0.050433602856822496
+seed  15095  Final test fitness: 0.035057906556350465
+seed  15010  Final train fitness: 0.0545875946154487
+seed  15010  Final test fitness: 0.05410436539400689
+seed  18700  Final train fitness: 0.03817092291763014
+seed  18700  Final test fitness: 0.04930129883215141
+seed  10402  Final train fitness: 0.054640264671915406
+seed  10402  Final test fitness: 0.04453161617538357
+seed  17020  Final train fitness: 0.043619631107592614
+seed  17020  Final test fitness: 0.0537071738096977
+seed  13815  Final train fitness: 0.05195706373279353
+seed  13815  Final test fitness: 0.028522269289546466
+seed  19482  Final train fitness: 0.04693469905783845
+seed  19482  Final test fitness: 0.06007232344432746
+seed  12129  Final train fitness: 0.36143598795024506
+seed  12129  Final test fitness: 0.422049059089632
+seed  18906  Final train fitness: 0.039019821334504975
+seed  18906  Final test fitness: 0.0711057892855263
+seed  11447  Final train fitness: 0.041675906280062174
+seed  11447  Final test fitness: 0.05160639888122333
+seed  10418  Final train fitness: 0.04489775881629847
+seed  10418  Final test fitness: 0.04460930785705809
+seed  11177  Final train fitness: 0.0478205409405264
+seed  11177  Final test fitness: 0.07164721893693955
+seed  19457  Final train fitness: 0.04688761862975695
+seed  19457  Final test fitness: 0.05267280098546522
+seed  10598  Final train fitness: 0.04961628261318127
+seed  10598  Final test fitness: 0.05018432040743673
+seed  13431  Final train fitness: 0.047230086075270114
+seed  13431  Final test fitness: 0.0405149600450268
+seed  10859  Final train fitness: 0.050090405244225
+seed  10859  Final test fitness: 0.05309594760773323
+seed  17172  Final train fitness: 0.03519865650759295
+seed  17172  Final test fitness: 0.07283714770552799

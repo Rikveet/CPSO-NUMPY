@@ -1,0 +1,181 @@
+Heart disease data loaded
+optimizing using following parameter {'data_set': 'heart', 'variant': 'mcpso', 'iterations': 5, 'decomposition': 'layer', 'seed': 10402, 'seed_index': 0}
+optimizing using following parameter {'data_set': 'heart', 'variant': 'mcpso', 'iterations': 5, 'decomposition': 'layer', 'seed': 10859, 'seed_index': 3}
+optimizing using following parameter {'data_set': 'heart', 'variant': 'mcpso', 'iterations': 5, 'decomposition': 'layer', 'seed': 10598, 'seed_index': 2}
+optimizing using following parameter {'data_set': 'heart', 'variant': 'mcpso', 'iterations': 5, 'decomposition': 'layer', 'seed': 10418, 'seed_index': 1}
+optimizing using following parameter {'data_set': 'heart', 'variant': 'mcpso', 'iterations': 5, 'decomposition': 'layer', 'seed': 12129, 'seed_index': 6}
+optimizing using following parameter {'data_set': 'heart', 'variant': 'mcpso', 'iterations': 5, 'decomposition': 'layer', 'seed': 11177, 'seed_index': 4}
+optimizing using following parameter {'data_set': 'heart', 'variant': 'mcpso', 'iterations': 5, 'decomposition': 'layer', 'seed': 11447, 'seed_index': 5}
+optimizing using following parameter {'data_set': 'heart', 'variant': 'mcpso', 'iterations': 5, 'decomposition': 'layer', 'seed': 13213, 'seed_index': 8}
+optimizing using following parameter {'data_set': 'heart', 'variant': 'mcpso', 'iterations': 5, 'decomposition': 'layer', 'seed': 12497, 'seed_index': 7}
+optimizing using following parameter {'data_set': 'heart', 'variant': 'mcpso', 'iterations': 5, 'decomposition': 'layer', 'seed': 14573, 'seed_index': 11}
+optimizing using following parameter {'data_set': 'heart', 'variant': 'mcpso', 'iterations': 5, 'decomposition': 'layer', 'seed': 13431, 'seed_index': 9}
+optimizing using following parameter {'data_set': 'heart', 'variant': 'mcpso', 'iterations': 5, 'decomposition': 'layer', 'seed': 15010, 'seed_index': 12}
+optimizing using following parameter {'data_set': 'heart', 'variant': 'mcpso', 'iterations': 5, 'decomposition': 'layer', 'seed': 13815, 'seed_index': 10}
+optimizing using following parameter {'data_set': 'heart', 'variant': 'mcpso', 'iterations': 5, 'decomposition': 'layer', 'seed': 15095, 'seed_index': 13}
+optimizing using following parameter {'data_set': 'heart', 'variant': 'mcpso', 'iterations': 5, 'decomposition': 'layer', 'seed': 16148, 'seed_index': 15}
+optimizing using following parameter {'data_set': 'heart', 'variant': 'mcpso', 'iterations': 5, 'decomposition': 'layer', 'seed': 15259, 'seed_index': 14}
+optimizing using following parameter {'data_set': 'heart', 'variant': 'mcpso', 'iterations': 5, 'decomposition': 'layer', 'seed': 17291, 'seed_index': 19}
+optimizing using following parameter {'data_set': 'heart', 'variant': 'mcpso', 'iterations': 5, 'decomposition': 'layer', 'seed': 17172, 'seed_index': 17}
+optimizing using following parameter {'data_set': 'heart', 'variant': 'mcpso', 'iterations': 5, 'decomposition': 'layer', 'seed': 17591, 'seed_index': 21}
+optimizing using following parameter {'data_set': 'heart', 'variant': 'mcpso', 'iterations': 5, 'decomposition': 'layer', 'seed': 17987, 'seed_index': 22}
+optimizing using following parameter {'data_set': 'heart', 'variant': 'mcpso', 'iterations': 5, 'decomposition': 'layer', 'seed': 18700, 'seed_index': 24}
+optimizing using following parameter {'data_set': 'heart', 'variant': 'mcpso', 'iterations': 5, 'decomposition': 'layer', 'seed': 19457, 'seed_index': 27}
+optimizing using following parameter {'data_set': 'heart', 'variant': 'mcpso', 'iterations': 5, 'decomposition': 'layer', 'seed': 18284, 'seed_index': 23}
+optimizing using following parameter {'data_set': 'heart', 'variant': 'mcpso', 'iterations': 5, 'decomposition': 'layer', 'seed': 17020, 'seed_index': 16}
+optimizing using following parameter {'data_set': 'heart', 'variant': 'mcpso', 'iterations': 5, 'decomposition': 'layer', 'seed': 19406, 'seed_index': 26}
+optimizing using following parameter {'data_set': 'heart', 'variant': 'mcpso', 'iterations': 5, 'decomposition': 'layer', 'seed': 17265, 'seed_index': 18}
+optimizing using following parameter {'data_set': 'heart', 'variant': 'mcpso', 'iterations': 5, 'decomposition': 'layer', 'seed': 17307, 'seed_index': 20}
+optimizing using following parameter {'data_set': 'heart', 'variant': 'mcpso', 'iterations': 5, 'decomposition': 'layer', 'seed': 18906, 'seed_index': 25}
+optimizing using following parameter {'data_set': 'heart', 'variant': 'mcpso', 'iterations': 5, 'decomposition': 'layer', 'seed': 19894, 'seed_index': 29}
+optimizing using following parameter {'data_set': 'heart', 'variant': 'mcpso', 'iterations': 5, 'decomposition': 'layer', 'seed': 19482, 'seed_index': 28}
+seed  14573  Iteration:  0  Fitness:  0.13281835450496485
+seed  14573 Merge swarms :  2  ->  1
+seed  12497  Iteration:  0  Fitness:  0.13588890434450462
+seed  12497 Merge swarms :  2  ->  1
+seed  10418  Iteration:  0  Fitness:  0.12844575391997176
+seed  10418 Merge swarms :  2  ->  1
+seed  15095  Iteration:  0  Fitness:  0.13529236201592218
+seed  15095 Merge swarms :  2  ->  1
+seed  12129  Iteration:  0  Fitness:  0.13661805858041023
+seed  12129 Merge swarms :  2  ->  1
+seed  15010  Iteration:  0  Fitness:  0.14553137780951936
+seed  15010 Merge swarms :  2  ->  1
+seed  17291  Iteration:  0  Fitness:  0.1271791179582667
+seed  19457  Iteration:  0  Fitness:  0.13280234325419685
+seed  17291 Merge swarms :  2  ->  1
+seed  19457 Merge swarms :  2  ->  1
+seed  10598  Iteration:  0  Fitness:  0.12700334827521634
+seed  17591  Iteration:  0  Fitness:  0.13354664484402284
+seed  10598 Merge swarms :  2  ->  1
+seed  16148  Iteration:  0  Fitness:  0.1309115955366158
+seed  17172  Iteration:  0  Fitness:  0.1364653255903738
+seed  13431  Iteration:  0  Fitness:  0.1341071464015057
+seed  16148 Merge swarms :  2  ->  1
+seed  17591 Merge swarms :  2  ->  1
+seed  17172 Merge swarms :  2  ->  1
+seed  13431 Merge swarms :  2  ->  1
+seed  13213  Iteration:  0  Fitness:  0.13011929522452487
+seed  13815  Iteration:  0  Fitness:  0.13535652453735605
+seed  17987  Iteration:  0  Fitness:  0.1373015546805826
+seed  17987 Merge swarms :  2  ->  1
+seed  13213 Merge swarms :  2  ->  1
+seed  10859  Iteration:  0  Fitness:  0.1350104269710097
+seed  10859 Merge swarms :  2  ->  1
+seed  13815 Merge swarms :  2  ->  1
+seed  10402  Iteration:  0  Fitness:  0.12531897067129907
+seed  10402 Merge swarms :  2  ->  1
+seed  11447  Iteration:  0  Fitness:  0.14076523967688423
+seed  11447 Merge swarms :  2  ->  1
+seed  17265  Iteration:  0  Fitness:  0.13197231878724333
+seed  17265 Merge swarms :  2  ->  1
+seed  17020  Iteration:  0  Fitness:  0.13194140286230194
+seed  17020 Merge swarms :  2  ->  1
+seed  18906  Iteration:  0  Fitness:  0.13664739974027929
+seed  18906 Merge swarms :  2  ->  1
+seed  11177  Iteration:  0  Fitness:  0.12445275989179956
+seed  11177 Merge swarms :  2  ->  1
+seed  15259  Iteration:  0  Fitness:  0.13923066702119097
+seed  19894  Iteration:  0  Fitness:  0.13689795303817176
+seed  18700  Iteration:  0  Fitness:  0.13174045042050897
+seed  19894 Merge swarms :  2  ->  1
+seed  18700 Merge swarms :  2  ->  1
+seed  19406  Iteration:  0  Fitness:  0.12836957724986575
+seed  15259 Merge swarms :  2  ->  1
+seed  19406 Merge swarms :  2  ->  1
+seed  18284  Iteration:  0  Fitness:  0.15018666213962376
+seed  17307  Iteration:  0  Fitness:  0.12414063390531734
+seed  18284 Merge swarms :  2  ->  1
+seed  17307 Merge swarms :  2  ->  1
+seed  19482  Iteration:  0  Fitness:  0.1401495473505735
+seed  19482 Merge swarms :  2  ->  1
+seed  15095 Merge swarms :  1  ->  1
+seed  10418 Merge swarms :  1  ->  1
+seed  12497 Merge swarms :  1  ->  1
+seed  17291 Merge swarms :  1  ->  1
+seed  12129 Merge swarms :  1  ->  1
+seed  15010 Merge swarms :  1  ->  1
+seed  10859 Merge swarms :  1  ->  1
+seed  13815 Merge swarms :  1  ->  1
+seed  13431 Merge swarms :  1  ->  1
+seed  11447 Merge swarms :  1  ->  1
+seed  10402 Merge swarms :  1  ->  1
+seed  17020 Merge swarms :  1  ->  1
+seed  14573 Merge swarms :  1  ->  1
+seed  17265 Merge swarms :  1  ->  1
+seed  16148 Merge swarms :  1  ->  1
+seed  10598 Merge swarms :  1  ->  1
+seed  13213 Merge swarms :  1  ->  1
+seed  17172 Merge swarms :  1  ->  1
+seed  17987 Merge swarms :  1  ->  1
+seed  17591 Merge swarms :  1  ->  1
+seed  19457 Merge swarms :  1  ->  1
+seed  18700 Merge swarms :  1  ->  1
+seed  17307 Merge swarms :  1  ->  1
+seed  18284 Merge swarms :  1  ->  1
+seed  11177 Merge swarms :  1  ->  1
+seed  18906 Merge swarms :  1  ->  1
+seed  19894 Merge swarms :  1  ->  1
+seed  15259 Merge swarms :  1  ->  1
+seed  19482 Merge swarms :  1  ->  1
+seed  19406 Merge swarms :  1  ->  1
+seed  10418  Final train fitness: 0.12320712877282435
+seed  10418  Final test fitness: 0.14435274211718507
+seed  13213  Final train fitness: 0.11962900593023135
+seed  13213  Final test fitness: 0.131114233818189
+seed  15010  Final train fitness: 0.12240064420867103
+seed  15010  Final test fitness: 0.10632622770013402
+seed  15095  Final train fitness: 0.12924915448638546
+seed  15095  Final test fitness: 0.1023367870536533
+seed  17291  Final train fitness: 0.11803788975138388
+seed  17291  Final test fitness: 0.12959067886865924
+seed  13431  Final train fitness: 0.11913943228074984
+seed  13431  Final test fitness: 0.14474237606397228
+seed  10402  Final train fitness: 0.11193633545232504
+seed  10402  Final test fitness: 0.15787207429326933
+seed  19457  Final train fitness: 0.1208942262852311
+seed  19457  Final test fitness: 0.11256563242425809
+seed  14573  Final train fitness: 0.12003008785932424
+seed  14573  Final test fitness: 0.13745602602615462
+seed  12129  Final train fitness: 0.1206893751685914
+seed  12129  Final test fitness: 0.1220996761383136
+seed  12497  Final train fitness: 0.12480344763313331
+seed  12497  Final test fitness: 0.11686207484869046
+seed  10859  Final train fitness: 0.11814468520242342
+seed  10859  Final test fitness: 0.11903322479048235
+seed  17591  Final train fitness: 0.1184959411184712
+seed  17591  Final test fitness: 0.13420422380003957
+seed  18700  Final train fitness: 0.1175747873801097
+seed  18700  Final test fitness: 0.12161695347769927
+seed  11447  Final train fitness: 0.11976561242808544
+seed  11447  Final test fitness: 0.1369746658552562
+seed  10598  Final train fitness: 0.11804070449208545
+seed  10598  Final test fitness: 0.1457007271610105
+seed  19482  Final train fitness: 0.1224484771498422
+seed  19482  Final test fitness: 0.12812788816000556
+seed  16148  Final train fitness: 0.11694144634893155
+seed  16148  Final test fitness: 0.1342643791102682
+seed  18906  Final train fitness: 0.12105387951014734
+seed  18906  Final test fitness: 0.13355356982763797
+seed  11177  Final train fitness: 0.13087236243991118
+seed  11177  Final test fitness: 0.13428903147433285
+seed  17307  Final train fitness: 0.1156843696476208
+seed  17307  Final test fitness: 0.14163161898224583
+seed  17987  Final train fitness: 0.12022201819989389
+seed  17987  Final test fitness: 0.11687389112497974
+seed  17020  Final train fitness: 0.12119196475637375
+seed  17020  Final test fitness: 0.12029449512791734
+seed  15259  Final train fitness: 0.12688259350854822
+seed  15259  Final test fitness: 0.11586581974768842
+seed  18284  Final train fitness: 0.1241940654613224
+seed  18284  Final test fitness: 0.11201441630572283
+seed  13815  Final train fitness: 0.12446299698803447
+seed  13815  Final test fitness: 0.10962769958400248
+seed  17172  Final train fitness: 0.12297781318508344
+seed  17172  Final test fitness: 0.11576376584836294
+seed  19406  Final train fitness: 0.11799866724219583
+seed  19406  Final test fitness: 0.144809000696745
+seed  17265  Final train fitness: 0.11454193385236026
+seed  17265  Final test fitness: 0.13007151132700218
+seed  19894  Final train fitness: 0.12002492596531183
+seed  19894  Final test fitness: 0.12288078757382975
