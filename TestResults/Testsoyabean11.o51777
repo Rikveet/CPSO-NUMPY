@@ -1,0 +1,1471 @@
+Soyabean data loaded
+optimizing using following parameter {'data_set': 'soyabean', 'variant': 'mcpso', 'iterations': 1000, 'decomposition': 'layer_factorized', 'seed': 10418, 'seed_index': 1}
+optimizing using following parameter {'data_set': 'soyabean', 'variant': 'mcpso', 'iterations': 1000, 'decomposition': 'layer_factorized', 'seed': 13815, 'seed_index': 10}
+optimizing using following parameter {'data_set': 'soyabean', 'variant': 'mcpso', 'iterations': 1000, 'decomposition': 'layer_factorized', 'seed': 15259, 'seed_index': 14}
+optimizing using following parameter {'data_set': 'soyabean', 'variant': 'mcpso', 'iterations': 1000, 'decomposition': 'layer_factorized', 'seed': 13431, 'seed_index': 9}
+optimizing using following parameter {'data_set': 'soyabean', 'variant': 'mcpso', 'iterations': 1000, 'decomposition': 'layer_factorized', 'seed': 11447, 'seed_index': 5}
+optimizing using following parameter {'data_set': 'soyabean', 'variant': 'mcpso', 'iterations': 1000, 'decomposition': 'layer_factorized', 'seed': 15010, 'seed_index': 12}
+optimizing using following parameter {'data_set': 'soyabean', 'variant': 'mcpso', 'iterations': 1000, 'decomposition': 'layer_factorized', 'seed': 10598, 'seed_index': 2}
+optimizing using following parameter {'data_set': 'soyabean', 'variant': 'mcpso', 'iterations': 1000, 'decomposition': 'layer_factorized', 'seed': 12129, 'seed_index': 6}
+optimizing using following parameter {'data_set': 'soyabean', 'variant': 'mcpso', 'iterations': 1000, 'decomposition': 'layer_factorized', 'seed': 10402, 'seed_index': 0}
+optimizing using following parameter {'data_set': 'soyabean', 'variant': 'mcpso', 'iterations': 1000, 'decomposition': 'layer_factorized', 'seed': 13213, 'seed_index': 8}
+optimizing using following parameter {'data_set': 'soyabean', 'variant': 'mcpso', 'iterations': 1000, 'decomposition': 'layer_factorized', 'seed': 12497, 'seed_index': 7}
+optimizing using following parameter {'data_set': 'soyabean', 'variant': 'mcpso', 'iterations': 1000, 'decomposition': 'layer_factorized', 'seed': 15095, 'seed_index': 13}
+optimizing using following parameter {'data_set': 'soyabean', 'variant': 'mcpso', 'iterations': 1000, 'decomposition': 'layer_factorized', 'seed': 10859, 'seed_index': 3}
+optimizing using following parameter {'data_set': 'soyabean', 'variant': 'mcpso', 'iterations': 1000, 'decomposition': 'layer_factorized', 'seed': 14573, 'seed_index': 11}
+optimizing using following parameter {'data_set': 'soyabean', 'variant': 'mcpso', 'iterations': 1000, 'decomposition': 'layer_factorized', 'seed': 11177, 'seed_index': 4}
+seed  15095  Iteration:  0  Fitness:  0.050353050214390384
+seed  15259  Iteration:  0  Fitness:  0.05032568604297989
+seed  15010  Iteration:  0  Fitness:  0.049568433750129315
+seed  14573  Iteration:  0  Fitness:  0.0498671502186304
+seed  12497  Iteration:  0  Fitness:  0.04891038146634554
+seed  13815  Iteration:  0  Fitness:  0.049792952021093705
+seed  10598  Iteration:  0  Fitness:  0.05034321005434103
+seed  11447  Iteration:  0  Fitness:  0.051344754759181085
+seed  13213  Iteration:  0  Fitness:  0.04953612247415347
+seed  10859  Iteration:  0  Fitness:  0.05136737938716347
+seed  13431  Iteration:  0  Fitness:  0.05053048309828313
+seed  12129  Iteration:  0  Fitness:  0.04923377474169968
+seed  11177  Iteration:  0  Fitness:  0.049720903146875065
+seed  10418  Iteration:  0  Fitness:  0.049327160419825454
+seed  10402  Iteration:  0  Fitness:  0.050976233552241235
+seed  15010  Iteration:  25  Fitness:  0.013332589080932702
+seed  10859  Iteration:  25  Fitness:  0.013060614143677629
+seed  10402  Iteration:  25  Fitness:  0.012184269068535236
+seed  12497  Iteration:  25  Fitness:  0.019180379857717547
+seed  15259  Iteration:  25  Fitness:  0.010816479859463636
+seed  13431  Iteration:  25  Fitness:  0.013846433416214828
+seed  10598  Iteration:  25  Fitness:  0.010387391619065899
+seed  12129  Iteration:  25  Fitness:  0.012488693811785329
+seed  15095  Iteration:  25  Fitness:  0.008241784820217932
+seed  13213  Iteration:  25  Fitness:  0.014582922183426644
+seed  11447  Iteration:  25  Fitness:  0.011660250121866238
+seed  10418  Iteration:  25  Fitness:  0.013014591365406265
+seed  14573  Iteration:  25  Fitness:  0.010550390400113498
+seed  11177  Iteration:  25  Fitness:  0.014318416237369432
+seed  13815  Iteration:  25  Fitness:  0.009122551726440354
+seed  10859  Iteration:  50  Fitness:  0.012629129253276245
+seed  15010  Iteration:  50  Fitness:  0.013332589080932702
+seed  10402  Iteration:  50  Fitness:  0.00953903383772098
+seed  12497  Iteration:  50  Fitness:  0.019180379857717547
+seed  13213  Iteration:  50  Fitness:  0.014582922183426644
+seed  12129  Iteration:  50  Fitness:  0.012488693811785329
+seed  10598  Iteration:  50  Fitness:  0.009111837590965302
+seed  15259  Iteration:  50  Fitness:  0.00867522347727654
+seed  13431  Iteration:  50  Fitness:  0.008958545021278809
+seed  15095  Iteration:  50  Fitness:  0.005415417548737337
+seed  11447  Iteration:  50  Fitness:  0.006855532360738574
+seed  11177  Iteration:  50  Fitness:  0.012750609645708722
+seed  10418  Iteration:  50  Fitness:  0.008562498973586852
+seed  13815  Iteration:  50  Fitness:  0.007212433685015141
+seed  14573  Iteration:  50  Fitness:  0.00632576527951268
+seed  10859  Iteration:  75  Fitness:  0.012629129253276245
+seed  10402  Iteration:  75  Fitness:  0.009484441406760932
+seed  10598  Iteration:  75  Fitness:  0.009111837590965302
+seed  15010  Iteration:  75  Fitness:  0.01067824491080872
+seed  12129  Iteration:  75  Fitness:  0.012488693811785329
+seed  12497  Iteration:  75  Fitness:  0.013003370739102004
+seed  11447  Iteration:  75  Fitness:  0.007442897589314769
+seed  15095  Iteration:  75  Fitness:  0.005085526029804378
+seed  14573  Iteration:  75  Fitness:  0.0061995528309059696
+seed  13213  Iteration:  75  Fitness:  0.014582922183426644
+seed  15259  Iteration:  75  Fitness:  0.007680765597049162
+seed  11177  Iteration:  75  Fitness:  0.012750609645708722
+seed  13815  Iteration:  75  Fitness:  0.006787380802236225
+seed  13431  Iteration:  75  Fitness:  0.007469948119122109
+seed  10418  Iteration:  75  Fitness:  0.008373136080995767
+seed  10859 Merge swarms :  20  ->  10
+seed  10402 Merge swarms :  20  ->  10
+seed  10598 Merge swarms :  20  ->  10
+seed  15010 Merge swarms :  20  ->  10
+seed  12129 Merge swarms :  20  ->  10
+seed  11447 Merge swarms :  20  ->  10
+seed  14573 Merge swarms :  20  ->  10
+seed  13213 Merge swarms :  20  ->  10
+seed  12497 Merge swarms :  20  ->  10
+seed  15095 Merge swarms :  20  ->  10
+seed  15259 Merge swarms :  20  ->  10
+seed  11177 Merge swarms :  20  ->  10
+seed  13815 Merge swarms :  20  ->  10
+seed  13431 Merge swarms :  20  ->  10
+seed  10418 Merge swarms :  20  ->  10
+seed  10859  Iteration:  100  Fitness:  0.012629129253276245
+seed  10402  Iteration:  100  Fitness:  0.00728173223862645
+seed  10598  Iteration:  100  Fitness:  0.007822784895817572
+seed  15010  Iteration:  100  Fitness:  0.00937635491832024
+seed  12129  Iteration:  100  Fitness:  0.009204283356825192
+seed  11447  Iteration:  100  Fitness:  0.007443129093435793
+seed  14573  Iteration:  100  Fitness:  0.006112950267077116
+seed  13213  Iteration:  100  Fitness:  0.012069980061559607
+seed  15095  Iteration:  100  Fitness:  0.004482227894637515
+seed  12497  Iteration:  100  Fitness:  0.009287621126577113
+seed  11177  Iteration:  100  Fitness:  0.009934925549827889
+seed  15259  Iteration:  100  Fitness:  0.00625320259864368
+seed  13815  Iteration:  100  Fitness:  0.005556756027165739
+seed  13431  Iteration:  100  Fitness:  0.006023872963668896
+seed  10418  Iteration:  100  Fitness:  0.008408553420319253
+seed  10859  Iteration:  125  Fitness:  0.012629129253276245
+seed  10402  Iteration:  125  Fitness:  0.0030842943130311947
+seed  10598  Iteration:  125  Fitness:  0.004116087883916469
+seed  15010  Iteration:  125  Fitness:  0.009247065163329602
+seed  13213  Iteration:  125  Fitness:  0.006860818082603141
+seed  12129  Iteration:  125  Fitness:  0.0024268463894634006
+seed  12497  Iteration:  125  Fitness:  0.003337098427343803
+seed  11177  Iteration:  125  Fitness:  0.002892725851564403
+seed  15095  Iteration:  125  Fitness:  0.0009932608804760468
+seed  11447  Iteration:  125  Fitness:  0.007443129093435793
+seed  14573  Iteration:  125  Fitness:  0.004717503484587045
+seed  15259  Iteration:  125  Fitness:  0.002055620267101897
+seed  13815  Iteration:  125  Fitness:  0.0023917144503479582
+seed  13431  Iteration:  125  Fitness:  0.001944465244373379
+seed  10418  Iteration:  125  Fitness:  0.008408553420319253
+seed  10859  Iteration:  150  Fitness:  0.012629129253276245
+seed  10402  Iteration:  150  Fitness:  0.0026662511347851385
+seed  10598  Iteration:  150  Fitness:  0.0034205340300432893
+seed  15010  Iteration:  150  Fitness:  0.009247065163329602
+seed  13213  Iteration:  150  Fitness:  0.0068608155945723455
+seed  12497  Iteration:  150  Fitness:  0.002967351757376141
+seed  12129  Iteration:  150  Fitness:  0.0017119990095111305
+seed  11177  Iteration:  150  Fitness:  0.0024789351792053717
+seed  15095  Iteration:  150  Fitness:  0.000989857812066102
+seed  11447  Iteration:  150  Fitness:  0.007443129093435793
+seed  14573  Iteration:  150  Fitness:  0.004471481138869704
+seed  13431  Iteration:  150  Fitness:  0.0017514874191815453
+seed  15259  Iteration:  150  Fitness:  0.0014787251316069573
+seed  13815  Iteration:  150  Fitness:  0.001994877266237788
+seed  10418  Iteration:  150  Fitness:  0.008408553420319253
+seed  10859  Iteration:  175  Fitness:  0.012629129253276245
+seed  10402  Iteration:  175  Fitness:  0.0024690787516805047
+seed  13213  Iteration:  175  Fitness:  0.006860815600033148
+seed  10598  Iteration:  175  Fitness:  0.0033288225460297617
+seed  15010  Iteration:  175  Fitness:  0.009248811463034001
+seed  12497  Iteration:  175  Fitness:  0.002962888258969236
+seed  11177  Iteration:  175  Fitness:  0.002478509280030983
+seed  11447  Iteration:  175  Fitness:  0.007443129093435793
+seed  12129  Iteration:  175  Fitness:  0.0014224820847203283
+seed  15095  Iteration:  175  Fitness:  0.000989857812066102
+seed  14573  Iteration:  175  Fitness:  0.004296121750192848
+seed  13815  Iteration:  175  Fitness:  0.001981136941853192
+seed  15259  Iteration:  175  Fitness:  0.0012798298659105773
+seed  13431  Iteration:  175  Fitness:  0.0017468525446864944
+seed  10418  Iteration:  175  Fitness:  0.008408553420319253
+seed  10859 Merge swarms :  10  ->  5
+seed  10402 Merge swarms :  10  ->  5
+seed  10598 Merge swarms :  10  ->  5
+seed  13213 Merge swarms :  10  ->  5
+seed  15010 Merge swarms :  10  ->  5
+seed  12497 Merge swarms :  10  ->  5
+seed  11177 Merge swarms :  10  ->  5
+seed  11447 Merge swarms :  10  ->  5
+seed  14573 Merge swarms :  10  ->  5
+seed  15095 Merge swarms :  10  ->  5
+seed  13431 Merge swarms :  10  ->  5
+seed  12129 Merge swarms :  10  ->  5
+seed  15259 Merge swarms :  10  ->  5
+seed  13815 Merge swarms :  10  ->  5
+seed  10418 Merge swarms :  10  ->  5
+seed  10859  Iteration:  200  Fitness:  0.012629129253276245
+seed  10402  Iteration:  200  Fitness:  0.0026338982358431818
+seed  10598  Iteration:  200  Fitness:  0.0021107382065400143
+seed  13213  Iteration:  200  Fitness:  0.006860815600033148
+seed  15010  Iteration:  200  Fitness:  0.00924693404743343
+seed  12497  Iteration:  200  Fitness:  0.00296217257498394
+seed  11177  Iteration:  200  Fitness:  0.001961704374822514
+seed  15095  Iteration:  200  Fitness:  0.0009898855637852045
+seed  11447  Iteration:  200  Fitness:  0.007443129093435793
+seed  14573  Iteration:  200  Fitness:  0.002721193885216386
+seed  13431  Iteration:  200  Fitness:  0.0016122204025458878
+seed  13815  Iteration:  200  Fitness:  0.001980044838083253
+seed  12129  Iteration:  200  Fitness:  0.001153581839652662
+seed  15259  Iteration:  200  Fitness:  0.0012448047721329916
+seed  10418  Iteration:  200  Fitness:  0.008408553420319253
+seed  10402  Iteration:  225  Fitness:  0.0026338982358431818
+seed  10859  Iteration:  225  Fitness:  0.012629129253276245
+seed  13213  Iteration:  225  Fitness:  0.006860815600033148
+seed  10598  Iteration:  225  Fitness:  0.001265824264421866
+seed  15010  Iteration:  225  Fitness:  0.00924693404743343
+seed  12497  Iteration:  225  Fitness:  0.0029621776967579273
+seed  15095  Iteration:  225  Fitness:  0.0009898855637852045
+seed  11177  Iteration:  225  Fitness:  0.001081917942294397
+seed  11447  Iteration:  225  Fitness:  0.007443129093435793
+seed  14573  Iteration:  225  Fitness:  0.0016195153714082828
+seed  13431  Iteration:  225  Fitness:  0.0017278554311300513
+seed  12129  Iteration:  225  Fitness:  0.0009909355500126436
+seed  13815  Iteration:  225  Fitness:  0.001980046441564992
+seed  15259  Iteration:  225  Fitness:  0.0009922055909701846
+seed  10418  Iteration:  225  Fitness:  0.008408553420319253
+seed  10402  Iteration:  250  Fitness:  0.0026338982358431818
+seed  10859  Iteration:  250  Fitness:  0.012629129253276245
+seed  10598  Iteration:  250  Fitness:  0.0012653510017838247
+seed  13213  Iteration:  250  Fitness:  0.006860815600033148
+seed  15010  Iteration:  250  Fitness:  0.00924693404743343
+seed  12497  Iteration:  250  Fitness:  0.0029621524968686747
+seed  15095  Iteration:  250  Fitness:  0.0009898855637852045
+seed  11177  Iteration:  250  Fitness:  0.0009910330499240878
+seed  13431  Iteration:  250  Fitness:  0.001517556777101741
+seed  15259  Iteration:  250  Fitness:  0.000992206016446542
+seed  14573  Iteration:  250  Fitness:  0.0011523711245566952
+seed  11447  Iteration:  250  Fitness:  0.007443129093435793
+seed  13815  Iteration:  250  Fitness:  0.001980046441882671
+seed  12129  Iteration:  250  Fitness:  0.0009909355500126436
+seed  10418  Iteration:  250  Fitness:  0.008408553420319253
+seed  10859  Iteration:  275  Fitness:  0.012629129253276245
+seed  10402  Iteration:  275  Fitness:  0.0026338982358431818
+seed  10598  Iteration:  275  Fitness:  0.00126534677528166
+seed  13213  Iteration:  275  Fitness:  0.006860815600033148
+seed  15010  Iteration:  275  Fitness:  0.00924693404743343
+seed  12497  Iteration:  275  Fitness:  0.002962152291997715
+seed  15095  Iteration:  275  Fitness:  0.0009898855637852045
+seed  15259  Iteration:  275  Fitness:  0.000992206016446542
+seed  11177  Iteration:  275  Fitness:  0.0009910264633996365
+seed  13431  Iteration:  275  Fitness:  0.0017225348702465905
+seed  14573  Iteration:  275  Fitness:  0.0011115716762258778
+seed  13815  Iteration:  275  Fitness:  0.001980046441882671
+seed  11447  Iteration:  275  Fitness:  0.007443129093435793
+seed  12129  Iteration:  275  Fitness:  0.0009909350746390762
+seed  10418  Iteration:  275  Fitness:  0.008408553420319253
+seed  10859 Merge swarms :  5  ->  3
+seed  10402 Merge swarms :  5  ->  3
+seed  10598 Merge swarms :  5  ->  3
+seed  13213 Merge swarms :  5  ->  3
+seed  15010 Merge swarms :  5  ->  3
+seed  12497 Merge swarms :  5  ->  3
+seed  15095 Merge swarms :  5  ->  3
+seed  11177 Merge swarms :  5  ->  3
+seed  15259 Merge swarms :  5  ->  3
+seed  13815 Merge swarms :  5  ->  3
+seed  13431 Merge swarms :  5  ->  3
+seed  14573 Merge swarms :  5  ->  3
+seed  11447 Merge swarms :  5  ->  3
+seed  12129 Merge swarms :  5  ->  3
+seed  10418 Merge swarms :  5  ->  3
+seed  10859  Iteration:  300  Fitness:  0.012629129253276245
+seed  10402  Iteration:  300  Fitness:  0.0026338982358431818
+seed  10598  Iteration:  300  Fitness:  0.0012653466472373103
+seed  13213  Iteration:  300  Fitness:  0.006860815600033148
+seed  15010  Iteration:  300  Fitness:  0.00924693404743343
+seed  12497  Iteration:  300  Fitness:  0.002962152291997715
+seed  15259  Iteration:  300  Fitness:  0.0009922060442538372
+seed  15095  Iteration:  300  Fitness:  0.0009898855637852045
+seed  13815  Iteration:  300  Fitness:  0.001980046441882671
+seed  11177  Iteration:  300  Fitness:  0.000991026983725697
+seed  14573  Iteration:  300  Fitness:  0.0011111565671489223
+seed  13431  Iteration:  300  Fitness:  0.0017225348702465905
+seed  11447  Iteration:  300  Fitness:  0.007443129093435793
+seed  12129  Iteration:  300  Fitness:  0.0009909350746390762
+seed  10418  Iteration:  300  Fitness:  0.008408553420319253
+seed  10859  Iteration:  325  Fitness:  0.012629129253276245
+seed  10402  Iteration:  325  Fitness:  0.0026338982358431818
+seed  10598  Iteration:  325  Fitness:  0.0012653466472373103
+seed  13213  Iteration:  325  Fitness:  0.006860815600033148
+seed  15010  Iteration:  325  Fitness:  0.00924693404743343
+seed  12497  Iteration:  325  Fitness:  0.002962152291997715
+seed  15259  Iteration:  325  Fitness:  0.0009922060442538372
+seed  15095  Iteration:  325  Fitness:  0.0009898855637852045
+seed  13815  Iteration:  325  Fitness:  0.001980046441882671
+seed  13431  Iteration:  325  Fitness:  0.0017225348702465905
+seed  14573  Iteration:  325  Fitness:  0.0011111528271011044
+seed  11177  Iteration:  325  Fitness:  0.000991026983725697
+seed  11447  Iteration:  325  Fitness:  0.007443129093435793
+seed  12129  Iteration:  325  Fitness:  0.0009909350746390762
+seed  10418  Iteration:  325  Fitness:  0.008408553420319253
+seed  10402  Iteration:  350  Fitness:  0.0026338982358431818
+seed  10859  Iteration:  350  Fitness:  0.012629129253276245
+seed  10598  Iteration:  350  Fitness:  0.0012653466472373103
+seed  15010  Iteration:  350  Fitness:  0.00924693404743343
+seed  13213  Iteration:  350  Fitness:  0.006860815600033148
+seed  12497  Iteration:  350  Fitness:  0.002962152291997715
+seed  15259  Iteration:  350  Fitness:  0.0009922060442538372
+seed  15095  Iteration:  350  Fitness:  0.0009898855637852045
+seed  14573  Iteration:  350  Fitness:  0.0011111319535664916
+seed  13431  Iteration:  350  Fitness:  0.0017225348702465905
+seed  13815  Iteration:  350  Fitness:  0.001980046441882671
+seed  11177  Iteration:  350  Fitness:  0.000991026983725697
+seed  11447  Iteration:  350  Fitness:  0.007443129093435793
+seed  10418  Iteration:  350  Fitness:  0.008408553420319253
+seed  12129  Iteration:  350  Fitness:  0.0009909350746390762
+seed  10402  Iteration:  375  Fitness:  0.0026338982358431818
+seed  10859  Iteration:  375  Fitness:  0.012629129253276245
+seed  15010  Iteration:  375  Fitness:  0.00924693404743343
+seed  10598  Iteration:  375  Fitness:  0.0012653466472373103
+seed  13213  Iteration:  375  Fitness:  0.006860815600033148
+seed  12497  Iteration:  375  Fitness:  0.002962152291997715
+seed  15259  Iteration:  375  Fitness:  0.0009922060442538372
+seed  15095  Iteration:  375  Fitness:  0.0009898855637852045
+seed  14573  Iteration:  375  Fitness:  0.001111131851131012
+seed  13431  Iteration:  375  Fitness:  0.0017225348702465905
+seed  13815  Iteration:  375  Fitness:  0.001980046441882671
+seed  10402 Merge swarms :  3  ->  2
+seed  11447  Iteration:  375  Fitness:  0.007443129093435793
+seed  10418  Iteration:  375  Fitness:  0.008408553420319253
+seed  10859 Merge swarms :  3  ->  2
+seed  11177  Iteration:  375  Fitness:  0.000991026983725697
+seed  12129  Iteration:  375  Fitness:  0.0009909350746390762
+seed  15010 Merge swarms :  3  ->  2
+seed  10598 Merge swarms :  3  ->  2
+seed  13213 Merge swarms :  3  ->  2
+seed  12497 Merge swarms :  3  ->  2
+seed  15259 Merge swarms :  3  ->  2
+seed  15095 Merge swarms :  3  ->  2
+seed  14573 Merge swarms :  3  ->  2
+seed  13431 Merge swarms :  3  ->  2
+seed  13815 Merge swarms :  3  ->  2
+seed  11447 Merge swarms :  3  ->  2
+seed  10418 Merge swarms :  3  ->  2
+seed  11177 Merge swarms :  3  ->  2
+seed  12129 Merge swarms :  3  ->  2
+seed  10402  Iteration:  400  Fitness:  0.0026338982358431818
+seed  10859  Iteration:  400  Fitness:  0.012629129253276245
+seed  10598  Iteration:  400  Fitness:  0.0012653466472373103
+seed  15010  Iteration:  400  Fitness:  0.00924693404743343
+seed  13213  Iteration:  400  Fitness:  0.006860815600033148
+seed  15259  Iteration:  400  Fitness:  0.0009922060442538372
+seed  12497  Iteration:  400  Fitness:  0.002962152291997715
+seed  14573  Iteration:  400  Fitness:  0.001111131851131012
+seed  15095  Iteration:  400  Fitness:  0.0009898855637852045
+seed  13815  Iteration:  400  Fitness:  0.001980046441882671
+seed  13431  Iteration:  400  Fitness:  0.0017225348702465905
+seed  11447  Iteration:  400  Fitness:  0.007443129093435793
+seed  10418  Iteration:  400  Fitness:  0.008408553420319253
+seed  11177  Iteration:  400  Fitness:  0.000991026983725697
+seed  12129  Iteration:  400  Fitness:  0.0009909350746390762
+seed  10402  Iteration:  425  Fitness:  0.0026338982358431818
+seed  10859  Iteration:  425  Fitness:  0.012629129253276245
+seed  10598  Iteration:  425  Fitness:  0.0012653466472373103
+seed  15259  Iteration:  425  Fitness:  0.0009922060442538372
+seed  13213  Iteration:  425  Fitness:  0.006860815600033148
+seed  15010  Iteration:  425  Fitness:  0.00924693404743343
+seed  14573  Iteration:  425  Fitness:  0.001111131851131012
+seed  12497  Iteration:  425  Fitness:  0.002962152291997715
+seed  13815  Iteration:  425  Fitness:  0.001980046441882671
+seed  15095  Iteration:  425  Fitness:  0.0009898855637852045
+seed  11447  Iteration:  425  Fitness:  0.007443129093435793
+seed  13431  Iteration:  425  Fitness:  0.0017225348702465905
+seed  10418  Iteration:  425  Fitness:  0.008408553420319253
+seed  11177  Iteration:  425  Fitness:  0.000991026983725697
+seed  12129  Iteration:  425  Fitness:  0.0009909350746390762
+seed  10402  Iteration:  450  Fitness:  0.0026338982358431818
+seed  10859  Iteration:  450  Fitness:  0.012629129253276245
+seed  15259  Iteration:  450  Fitness:  0.0009922060442538372
+seed  10598  Iteration:  450  Fitness:  0.0012653466472373103
+seed  14573  Iteration:  450  Fitness:  0.001111131851131012
+seed  13213  Iteration:  450  Fitness:  0.006860815600033148
+seed  15010  Iteration:  450  Fitness:  0.00924693404743343
+seed  13815  Iteration:  450  Fitness:  0.001980046441882671
+seed  12497  Iteration:  450  Fitness:  0.002962152291997715
+seed  11447  Iteration:  450  Fitness:  0.007443129093435793
+seed  11177  Iteration:  450  Fitness:  0.000991026983725697
+seed  15095  Iteration:  450  Fitness:  0.0009898855637852045
+seed  10418  Iteration:  450  Fitness:  0.008408553420319253
+seed  13431  Iteration:  450  Fitness:  0.0017225348702465905
+seed  12129  Iteration:  450  Fitness:  0.0009909350746390762
+seed  10402  Iteration:  475  Fitness:  0.0026338982358431818
+seed  10402 Merge swarms :  2  ->  1
+seed  10859  Iteration:  475  Fitness:  0.012629129253276245
+seed  15259  Iteration:  475  Fitness:  0.0009922060442538372
+seed  10859 Merge swarms :  2  ->  1
+seed  14573  Iteration:  475  Fitness:  0.001111131851131012
+seed  10598  Iteration:  475  Fitness:  0.0012653466472373103
+seed  13213  Iteration:  475  Fitness:  0.006860815600033148
+seed  15259 Merge swarms :  2  ->  1
+seed  14573 Merge swarms :  2  ->  1
+seed  15010  Iteration:  475  Fitness:  0.00924693404743343
+seed  13815  Iteration:  475  Fitness:  0.001980046441882671
+seed  10598 Merge swarms :  2  ->  1
+seed  13213 Merge swarms :  2  ->  1
+seed  10402  Iteration:  500  Fitness:  0.0026338982358431818
+seed  11447  Iteration:  475  Fitness:  0.007443129093435793
+seed  12497  Iteration:  475  Fitness:  0.002962152291997715
+seed  11177  Iteration:  475  Fitness:  0.000991026983725697
+seed  10418  Iteration:  475  Fitness:  0.008408553420319253
+seed  15010 Merge swarms :  2  ->  1
+seed  13815 Merge swarms :  2  ->  1
+seed  15095  Iteration:  475  Fitness:  0.0009898855637852045
+seed  13431  Iteration:  475  Fitness:  0.0017225348702465905
+seed  12129  Iteration:  475  Fitness:  0.0009909350746390762
+seed  11447 Merge swarms :  2  ->  1
+seed  12497 Merge swarms :  2  ->  1
+seed  10859  Iteration:  500  Fitness:  0.012629129253276245
+seed  11177 Merge swarms :  2  ->  1
+seed  10418 Merge swarms :  2  ->  1
+seed  15095 Merge swarms :  2  ->  1
+seed  13431 Merge swarms :  2  ->  1
+seed  12129 Merge swarms :  2  ->  1
+seed  15259  Iteration:  500  Fitness:  0.0009922060442538372
+seed  14573  Iteration:  500  Fitness:  0.001111131851131012
+seed  10598  Iteration:  500  Fitness:  0.0012653466472373103
+seed  13213  Iteration:  500  Fitness:  0.006860815600033148
+seed  10402  Iteration:  525  Fitness:  0.0026338982358431818
+seed  15010  Iteration:  500  Fitness:  0.00924693404743343
+seed  13815  Iteration:  500  Fitness:  0.001980046441882671
+seed  12497  Iteration:  500  Fitness:  0.002962152291997715
+seed  11447  Iteration:  500  Fitness:  0.007443129093435793
+seed  11177  Iteration:  500  Fitness:  0.000991026983725697
+seed  10418  Iteration:  500  Fitness:  0.008408553420319253
+seed  15095  Iteration:  500  Fitness:  0.0009898855637852045
+seed  13431  Iteration:  500  Fitness:  0.0017225348702465905
+seed  10859  Iteration:  525  Fitness:  0.012629129253276245
+seed  12129  Iteration:  500  Fitness:  0.0009909350746390762
+seed  15259  Iteration:  525  Fitness:  0.0009922060442538372
+seed  14573  Iteration:  525  Fitness:  0.001111131851131012
+seed  10598  Iteration:  525  Fitness:  0.0012653466472373103
+seed  13213  Iteration:  525  Fitness:  0.006860815600033148
+seed  10402  Iteration:  550  Fitness:  0.0026338982358431818
+seed  15010  Iteration:  525  Fitness:  0.00924693404743343
+seed  13815  Iteration:  525  Fitness:  0.001980046441882671
+seed  12497  Iteration:  525  Fitness:  0.002962152291997715
+seed  11447  Iteration:  525  Fitness:  0.007443129093435793
+seed  11177  Iteration:  525  Fitness:  0.000991026983725697
+seed  10418  Iteration:  525  Fitness:  0.008408553420319253
+seed  15095  Iteration:  525  Fitness:  0.0009898855637852045
+seed  13431  Iteration:  525  Fitness:  0.0017225348702465905
+seed  10859  Iteration:  550  Fitness:  0.012629129253276245
+seed  12129  Iteration:  525  Fitness:  0.0009909350746390762
+seed  15259  Iteration:  550  Fitness:  0.0009922060442538372
+seed  14573  Iteration:  550  Fitness:  0.001111131851131012
+seed  10598  Iteration:  550  Fitness:  0.0012653466472373103
+seed  13213  Iteration:  550  Fitness:  0.006860815600033148
+seed  10402  Iteration:  575  Fitness:  0.0026338982358431818
+seed  10402 Merge swarms :  1  ->  1
+seed  15010  Iteration:  550  Fitness:  0.00924693404743343
+seed  13815  Iteration:  550  Fitness:  0.001980046441882671
+seed  12497  Iteration:  550  Fitness:  0.002962152291997715
+seed  11447  Iteration:  550  Fitness:  0.007443129093435793
+seed  11177  Iteration:  550  Fitness:  0.000991026983725697
+seed  10418  Iteration:  550  Fitness:  0.008408553420319253
+seed  15095  Iteration:  550  Fitness:  0.0009898855637852045
+seed  10859  Iteration:  575  Fitness:  0.012629129253276245
+seed  10859 Merge swarms :  1  ->  1
+seed  13431  Iteration:  550  Fitness:  0.0017225348702465905
+seed  12129  Iteration:  550  Fitness:  0.0009909350746390762
+seed  15259  Iteration:  575  Fitness:  0.0009922060442538372
+seed  15259 Merge swarms :  1  ->  1
+seed  14573  Iteration:  575  Fitness:  0.001111131851131012
+seed  14573 Merge swarms :  1  ->  1
+seed  10598  Iteration:  575  Fitness:  0.0012653466472373103
+seed  10598 Merge swarms :  1  ->  1
+seed  13213  Iteration:  575  Fitness:  0.006860815600033148
+seed  13213 Merge swarms :  1  ->  1
+seed  10402  Iteration:  600  Fitness:  0.0026338982358431818
+seed  15010  Iteration:  575  Fitness:  0.00924693404743343
+seed  15010 Merge swarms :  1  ->  1
+seed  13815  Iteration:  575  Fitness:  0.001980046441882671
+seed  13815 Merge swarms :  1  ->  1
+seed  12497  Iteration:  575  Fitness:  0.002962152291997715
+seed  12497 Merge swarms :  1  ->  1
+seed  11447  Iteration:  575  Fitness:  0.007443129093435793
+seed  11447 Merge swarms :  1  ->  1
+seed  11177  Iteration:  575  Fitness:  0.000991026983725697
+seed  11177 Merge swarms :  1  ->  1
+seed  10418  Iteration:  575  Fitness:  0.008408553420319253
+seed  10418 Merge swarms :  1  ->  1
+seed  15095  Iteration:  575  Fitness:  0.0009898855637852045
+seed  15095 Merge swarms :  1  ->  1
+seed  10859  Iteration:  600  Fitness:  0.012629129253276245
+seed  13431  Iteration:  575  Fitness:  0.0017225348702465905
+seed  13431 Merge swarms :  1  ->  1
+seed  12129  Iteration:  575  Fitness:  0.0009909350746390762
+seed  12129 Merge swarms :  1  ->  1
+seed  15259  Iteration:  600  Fitness:  0.0009922060442538372
+seed  14573  Iteration:  600  Fitness:  0.001111131851131012
+seed  13213  Iteration:  600  Fitness:  0.006860815600033148
+seed  10598  Iteration:  600  Fitness:  0.0012653466472373103
+seed  10402  Iteration:  625  Fitness:  0.0026338982358431818
+seed  15010  Iteration:  600  Fitness:  0.00924693404743343
+seed  13815  Iteration:  600  Fitness:  0.001980046441882671
+seed  12497  Iteration:  600  Fitness:  0.002962152291997715
+seed  11447  Iteration:  600  Fitness:  0.007443129093435793
+seed  11177  Iteration:  600  Fitness:  0.000991026983725697
+seed  10418  Iteration:  600  Fitness:  0.008408553420319253
+seed  15095  Iteration:  600  Fitness:  0.0009898855637852045
+seed  10859  Iteration:  625  Fitness:  0.012629129253276245
+seed  13431  Iteration:  600  Fitness:  0.0017225348702465905
+seed  12129  Iteration:  600  Fitness:  0.0009909350746390762
+seed  15259  Iteration:  625  Fitness:  0.0009922060442538372
+seed  14573  Iteration:  625  Fitness:  0.001111131851131012
+seed  13213  Iteration:  625  Fitness:  0.006860815600033148
+seed  10598  Iteration:  625  Fitness:  0.0012653466472373103
+seed  10402  Iteration:  650  Fitness:  0.0026338982358431818
+seed  15010  Iteration:  625  Fitness:  0.00924693404743343
+seed  13815  Iteration:  625  Fitness:  0.001980046441882671
+seed  12497  Iteration:  625  Fitness:  0.002962152291997715
+seed  11447  Iteration:  625  Fitness:  0.007443129093435793
+seed  11177  Iteration:  625  Fitness:  0.000991026983725697
+seed  15095  Iteration:  625  Fitness:  0.0009898855637852045
+seed  10418  Iteration:  625  Fitness:  0.008408553420319253
+seed  10859  Iteration:  650  Fitness:  0.012629129253276245
+seed  13431  Iteration:  625  Fitness:  0.0017225348702465905
+seed  12129  Iteration:  625  Fitness:  0.0009909350746390762
+seed  15259  Iteration:  650  Fitness:  0.0009922060442538372
+seed  14573  Iteration:  650  Fitness:  0.001111131851131012
+seed  13213  Iteration:  650  Fitness:  0.006860815600033148
+seed  10598  Iteration:  650  Fitness:  0.0012653466472373103
+seed  10402  Iteration:  675  Fitness:  0.0026338982358431818
+seed  15010  Iteration:  650  Fitness:  0.00924693404743343
+seed  13815  Iteration:  650  Fitness:  0.001980046441882671
+seed  12497  Iteration:  650  Fitness:  0.002962152291997715
+seed  11177  Iteration:  650  Fitness:  0.000991026983725697
+seed  11447  Iteration:  650  Fitness:  0.007443129093435793
+seed  15095  Iteration:  650  Fitness:  0.0009898855637852045
+seed  10418  Iteration:  650  Fitness:  0.008408553420319253
+seed  10859  Iteration:  675  Fitness:  0.012629129253276245
+seed  13431  Iteration:  650  Fitness:  0.0017225348702465905
+seed  12129  Iteration:  650  Fitness:  0.0009909350746390762
+seed  15259  Iteration:  675  Fitness:  0.0009922060442538372
+seed  14573  Iteration:  675  Fitness:  0.001111131851131012
+seed  13213  Iteration:  675  Fitness:  0.006860815600033148
+seed  10598  Iteration:  675  Fitness:  0.0012653466472373103
+seed  10402  Iteration:  700  Fitness:  0.0026338982358431818
+seed  15010  Iteration:  675  Fitness:  0.00924693404743343
+seed  13815  Iteration:  675  Fitness:  0.001980046441882671
+seed  12497  Iteration:  675  Fitness:  0.002962152291997715
+seed  11177  Iteration:  675  Fitness:  0.000991026983725697
+seed  11447  Iteration:  675  Fitness:  0.007443129093435793
+seed  15095  Iteration:  675  Fitness:  0.0009898855637852045
+seed  10859  Iteration:  700  Fitness:  0.012629129253276245
+seed  10418  Iteration:  675  Fitness:  0.008408553420319253
+seed  13431  Iteration:  675  Fitness:  0.0017225348702465905
+seed  12129  Iteration:  675  Fitness:  0.0009909350746390762
+seed  15259  Iteration:  700  Fitness:  0.0009922060442538372
+seed  14573  Iteration:  700  Fitness:  0.001111131851131012
+seed  13213  Iteration:  700  Fitness:  0.006860815600033148
+seed  10598  Iteration:  700  Fitness:  0.0012653466472373103
+seed  10402  Iteration:  725  Fitness:  0.0026338982358431818
+seed  15010  Iteration:  700  Fitness:  0.00924693404743343
+seed  13815  Iteration:  700  Fitness:  0.001980046441882671
+seed  11177  Iteration:  700  Fitness:  0.000991026983725697
+seed  12497  Iteration:  700  Fitness:  0.002962152291997715
+seed  11447  Iteration:  700  Fitness:  0.007443129093435793
+seed  15095  Iteration:  700  Fitness:  0.0009898855637852045
+seed  10859  Iteration:  725  Fitness:  0.012629129253276245
+seed  13431  Iteration:  700  Fitness:  0.0017225348702465905
+seed  10418  Iteration:  700  Fitness:  0.008408553420319253
+seed  12129  Iteration:  700  Fitness:  0.0009909350746390762
+seed  15259  Iteration:  725  Fitness:  0.0009922060442538372
+seed  14573  Iteration:  725  Fitness:  0.001111131851131012
+seed  13213  Iteration:  725  Fitness:  0.006860815600033148
+seed  10598  Iteration:  725  Fitness:  0.0012653466472373103
+seed  10402  Iteration:  750  Fitness:  0.0026338982358431818
+seed  13815  Iteration:  725  Fitness:  0.001980046441882671
+seed  15010  Iteration:  725  Fitness:  0.00924693404743343
+seed  12497  Iteration:  725  Fitness:  0.002962152291997715
+seed  11177  Iteration:  725  Fitness:  0.000991026983725697
+seed  11447  Iteration:  725  Fitness:  0.007443129093435793
+seed  15095  Iteration:  725  Fitness:  0.0009898855637852045
+seed  10859  Iteration:  750  Fitness:  0.012629129253276245
+seed  13431  Iteration:  725  Fitness:  0.0017225348702465905
+seed  10418  Iteration:  725  Fitness:  0.008408553420319253
+seed  12129  Iteration:  725  Fitness:  0.0009909350746390762
+seed  15259  Iteration:  750  Fitness:  0.0009922060442538372
+seed  14573  Iteration:  750  Fitness:  0.001111131851131012
+seed  13213  Iteration:  750  Fitness:  0.006860815600033148
+seed  10598  Iteration:  750  Fitness:  0.0012653466472373103
+seed  10402  Iteration:  775  Fitness:  0.0026338982358431818
+seed  13815  Iteration:  750  Fitness:  0.001980046441882671
+seed  15010  Iteration:  750  Fitness:  0.00924693404743343
+seed  11177  Iteration:  750  Fitness:  0.000991026983725697
+seed  12497  Iteration:  750  Fitness:  0.002962152291997715
+seed  11447  Iteration:  750  Fitness:  0.007443129093435793
+seed  15095  Iteration:  750  Fitness:  0.0009898855637852045
+seed  10859  Iteration:  775  Fitness:  0.012629129253276245
+seed  13431  Iteration:  750  Fitness:  0.0017225348702465905
+seed  12129  Iteration:  750  Fitness:  0.0009909350746390762
+seed  10418  Iteration:  750  Fitness:  0.008408553420319253
+seed  15259  Iteration:  775  Fitness:  0.0009922060442538372
+seed  14573  Iteration:  775  Fitness:  0.001111131851131012
+seed  13213  Iteration:  775  Fitness:  0.006860815600033148
+seed  10598  Iteration:  775  Fitness:  0.0012653466472373103
+seed  10402  Iteration:  800  Fitness:  0.0026338982358431818
+seed  13815  Iteration:  775  Fitness:  0.001980046441882671
+seed  15010  Iteration:  775  Fitness:  0.00924693404743343
+seed  12497  Iteration:  775  Fitness:  0.002962152291997715
+seed  11177  Iteration:  775  Fitness:  0.000991026983725697
+seed  11447  Iteration:  775  Fitness:  0.007443129093435793
+seed  15095  Iteration:  775  Fitness:  0.0009898855637852045
+seed  10859  Iteration:  800  Fitness:  0.012629129253276245
+seed  13431  Iteration:  775  Fitness:  0.0017225348702465905
+seed  12129  Iteration:  775  Fitness:  0.0009909350746390762
+seed  10418  Iteration:  775  Fitness:  0.008408553420319253
+seed  15259  Iteration:  800  Fitness:  0.0009922060442538372
+seed  14573  Iteration:  800  Fitness:  0.001111131851131012
+seed  13213  Iteration:  800  Fitness:  0.006860815600033148
+seed  10598  Iteration:  800  Fitness:  0.0012653466472373103
+seed  10402  Iteration:  825  Fitness:  0.0026338982358431818
+seed  13815  Iteration:  800  Fitness:  0.001980046441882671
+seed  15010  Iteration:  800  Fitness:  0.00924693404743343
+seed  12497  Iteration:  800  Fitness:  0.002962152291997715
+seed  11177  Iteration:  800  Fitness:  0.000991026983725697
+seed  11447  Iteration:  800  Fitness:  0.007443129093435793
+seed  15095  Iteration:  800  Fitness:  0.0009898855637852045
+seed  10859  Iteration:  825  Fitness:  0.012629129253276245
+seed  13431  Iteration:  800  Fitness:  0.0017225348702465905
+seed  12129  Iteration:  800  Fitness:  0.0009909350746390762
+seed  10418  Iteration:  800  Fitness:  0.008408553420319253
+seed  15259  Iteration:  825  Fitness:  0.0009922060442538372
+seed  14573  Iteration:  825  Fitness:  0.001111131851131012
+seed  13213  Iteration:  825  Fitness:  0.006860815600033148
+seed  10598  Iteration:  825  Fitness:  0.0012653466472373103
+seed  10402  Iteration:  850  Fitness:  0.0026338982358431818
+seed  13815  Iteration:  825  Fitness:  0.001980046441882671
+seed  15010  Iteration:  825  Fitness:  0.00924693404743343
+seed  12497  Iteration:  825  Fitness:  0.002962152291997715
+seed  11447  Iteration:  825  Fitness:  0.007443129093435793
+seed  11177  Iteration:  825  Fitness:  0.000991026983725697
+seed  15095  Iteration:  825  Fitness:  0.0009898855637852045
+seed  10859  Iteration:  850  Fitness:  0.012629129253276245
+seed  13431  Iteration:  825  Fitness:  0.0017225348702465905
+seed  12129  Iteration:  825  Fitness:  0.0009909350746390762
+seed  10418  Iteration:  825  Fitness:  0.008408553420319253
+seed  15259  Iteration:  850  Fitness:  0.0009922060442538372
+seed  14573  Iteration:  850  Fitness:  0.001111131851131012
+seed  13213  Iteration:  850  Fitness:  0.006860815600033148
+seed  10598  Iteration:  850  Fitness:  0.0012653466472373103
+seed  10402  Iteration:  875  Fitness:  0.0026338982358431818
+seed  13815  Iteration:  850  Fitness:  0.001980046441882671
+seed  15010  Iteration:  850  Fitness:  0.00924693404743343
+seed  12497  Iteration:  850  Fitness:  0.002962152291997715
+seed  11447  Iteration:  850  Fitness:  0.007443129093435793
+seed  11177  Iteration:  850  Fitness:  0.000991026983725697
+seed  15095  Iteration:  850  Fitness:  0.0009898855637852045
+seed  10859  Iteration:  875  Fitness:  0.012629129253276245
+seed  13431  Iteration:  850  Fitness:  0.0017225348702465905
+seed  12129  Iteration:  850  Fitness:  0.0009909350746390762
+seed  10418  Iteration:  850  Fitness:  0.008408553420319253
+seed  15259  Iteration:  875  Fitness:  0.0009922060442538372
+seed  14573  Iteration:  875  Fitness:  0.001111131851131012
+seed  13213  Iteration:  875  Fitness:  0.006860815600033148
+seed  10598  Iteration:  875  Fitness:  0.0012653466472373103
+seed  10402  Iteration:  900  Fitness:  0.0026338982358431818
+seed  15010  Iteration:  875  Fitness:  0.00924693404743343
+seed  13815  Iteration:  875  Fitness:  0.001980046441882671
+seed  12497  Iteration:  875  Fitness:  0.002962152291997715
+seed  11447  Iteration:  875  Fitness:  0.007443129093435793
+seed  11177  Iteration:  875  Fitness:  0.000991026983725697
+seed  15095  Iteration:  875  Fitness:  0.0009898855637852045
+seed  10859  Iteration:  900  Fitness:  0.012629129253276245
+seed  12129  Iteration:  875  Fitness:  0.0009909350746390762
+seed  13431  Iteration:  875  Fitness:  0.0017225348702465905
+seed  10418  Iteration:  875  Fitness:  0.008408553420319253
+seed  15259  Iteration:  900  Fitness:  0.0009922060442538372
+seed  14573  Iteration:  900  Fitness:  0.001111131851131012
+seed  13213  Iteration:  900  Fitness:  0.006860815600033148
+seed  10598  Iteration:  900  Fitness:  0.0012653466472373103
+seed  10402  Iteration:  925  Fitness:  0.0026338982358431818
+seed  15010  Iteration:  900  Fitness:  0.00924693404743343
+seed  13815  Iteration:  900  Fitness:  0.001980046441882671
+seed  11177  Iteration:  900  Fitness:  0.000991026983725697
+seed  12497  Iteration:  900  Fitness:  0.002962152291997715
+seed  11447  Iteration:  900  Fitness:  0.007443129093435793
+seed  15095  Iteration:  900  Fitness:  0.0009898855637852045
+seed  10859  Iteration:  925  Fitness:  0.012629129253276245
+seed  12129  Iteration:  900  Fitness:  0.0009909350746390762
+seed  13431  Iteration:  900  Fitness:  0.0017225348702465905
+seed  10418  Iteration:  900  Fitness:  0.008408553420319253
+seed  15259  Iteration:  925  Fitness:  0.0009922060442538372
+seed  14573  Iteration:  925  Fitness:  0.001111131851131012
+seed  13213  Iteration:  925  Fitness:  0.006860815600033148
+seed  10598  Iteration:  925  Fitness:  0.0012653466472373103
+seed  10402  Iteration:  950  Fitness:  0.0026338982358431818
+seed  15010  Iteration:  925  Fitness:  0.00924693404743343
+seed  13815  Iteration:  925  Fitness:  0.001980046441882671
+seed  11177  Iteration:  925  Fitness:  0.000991026983725697
+seed  12497  Iteration:  925  Fitness:  0.002962152291997715
+seed  11447  Iteration:  925  Fitness:  0.007443129093435793
+seed  10859  Iteration:  950  Fitness:  0.012629129253276245
+seed  15095  Iteration:  925  Fitness:  0.0009898855637852045
+seed  12129  Iteration:  925  Fitness:  0.0009909350746390762
+seed  13431  Iteration:  925  Fitness:  0.0017225348702465905
+seed  10418  Iteration:  925  Fitness:  0.008408553420319253
+seed  15259  Iteration:  950  Fitness:  0.0009922060442538372
+seed  14573  Iteration:  950  Fitness:  0.001111131851131012
+seed  13213  Iteration:  950  Fitness:  0.006860815600033148
+seed  10598  Iteration:  950  Fitness:  0.0012653466472373103
+seed  10402  Iteration:  975  Fitness:  0.0026338982358431818
+seed  15010  Iteration:  950  Fitness:  0.00924693404743343
+seed  13815  Iteration:  950  Fitness:  0.001980046441882671
+seed  11177  Iteration:  950  Fitness:  0.000991026983725697
+seed  12497  Iteration:  950  Fitness:  0.002962152291997715
+seed  11447  Iteration:  950  Fitness:  0.007443129093435793
+seed  15095  Iteration:  950  Fitness:  0.0009898855637852045
+seed  10859  Iteration:  975  Fitness:  0.012629129253276245
+seed  12129  Iteration:  950  Fitness:  0.0009909350746390762
+seed  13431  Iteration:  950  Fitness:  0.0017225348702465905
+seed  10418  Iteration:  950  Fitness:  0.008408553420319253
+seed  15259  Iteration:  975  Fitness:  0.0009922060442538372
+seed  14573  Iteration:  975  Fitness:  0.001111131851131012
+seed  13213  Iteration:  975  Fitness:  0.006860815600033148
+seed  10598  Iteration:  975  Fitness:  0.0012653466472373103
+seed  10402  Final train fitness: 0.0026338982358431818
+seed  10402  Final test fitness: 0.00759320300780976
+seed  15010  Iteration:  975  Fitness:  0.00924693404743343
+seed  13815  Iteration:  975  Fitness:  0.001980046441882671
+seed  11177  Iteration:  975  Fitness:  0.000991026983725697
+seed  12497  Iteration:  975  Fitness:  0.002962152291997715
+seed  11447  Iteration:  975  Fitness:  0.007443129093435793
+seed  10859  Final train fitness: 0.012629129253276245
+seed  10859  Final test fitness: 0.014618101133061607
+seed  15095  Iteration:  975  Fitness:  0.0009898855637852045
+seed  12129  Iteration:  975  Fitness:  0.0009909350746390762
+seed  13431  Iteration:  975  Fitness:  0.0017225348702465905
+seed  10418  Iteration:  975  Fitness:  0.008408553420319253
+seed  15259  Final train fitness: 0.0009922060442538372
+seed  15259  Final test fitness: 0.007876912894419056
+seed  13213  Final train fitness: 0.006860815600033148
+seed  13213  Final test fitness: 0.019018820277769553
+seed  14573  Final train fitness: 0.001111131851131012
+seed  14573  Final test fitness: 0.004600014067521814
+seed  10598  Final train fitness: 0.0012653466472373103
+seed  10598  Final test fitness: 0.00817859681504804
+seed  15010  Final train fitness: 0.00924693404743343
+seed  15010  Final test fitness: 0.015659725912893836
+seed  13815  Final train fitness: 0.001980046441882671
+seed  13815  Final test fitness: 0.012705151460930604
+seed  12497  Final train fitness: 0.002962152291997715
+seed  12497  Final test fitness: 0.012045756746095607
+seed  11177  Final train fitness: 0.000991026983725697
+seed  11177  Final test fitness: 0.0035472995811114856
+seed  11447  Final train fitness: 0.007443129093435793
+seed  11447  Final test fitness: 0.011211574281505366
+seed  12129  Final train fitness: 0.0009909350746390762
+seed  12129  Final test fitness: 0.007461087876126842
+seed  15095  Final train fitness: 0.0009898855637852045
+seed  15095  Final test fitness: 0.017118935632405716
+seed  13431  Final train fitness: 0.0017225348702465905
+seed  13431  Final test fitness: 0.009939376180898567
+seed  10418  Final train fitness: 0.008408553420319253
+seed  10418  Final test fitness: 0.014767381389479861
+optimizing using following parameter {'data_set': 'soyabean', 'variant': 'mcpso', 'iterations': 1000, 'decomposition': 'layer_factorized', 'seed': 17172, 'seed_index': 2}
+optimizing using following parameter {'data_set': 'soyabean', 'variant': 'mcpso', 'iterations': 1000, 'decomposition': 'layer_factorized', 'seed': 16148, 'seed_index': 0}
+optimizing using following parameter {'data_set': 'soyabean', 'variant': 'mcpso', 'iterations': 1000, 'decomposition': 'layer_factorized', 'seed': 18700, 'seed_index': 9}
+optimizing using following parameter {'data_set': 'soyabean', 'variant': 'mcpso', 'iterations': 1000, 'decomposition': 'layer_factorized', 'seed': 17020, 'seed_index': 1}
+optimizing using following parameter {'data_set': 'soyabean', 'variant': 'mcpso', 'iterations': 1000, 'decomposition': 'layer_factorized', 'seed': 17307, 'seed_index': 5}
+optimizing using following parameter {'data_set': 'soyabean', 'variant': 'mcpso', 'iterations': 1000, 'decomposition': 'layer_factorized', 'seed': 19457, 'seed_index': 12}
+optimizing using following parameter {'data_set': 'soyabean', 'variant': 'mcpso', 'iterations': 1000, 'decomposition': 'layer_factorized', 'seed': 17265, 'seed_index': 3}
+optimizing using following parameter {'data_set': 'soyabean', 'variant': 'mcpso', 'iterations': 1000, 'decomposition': 'layer_factorized', 'seed': 19482, 'seed_index': 13}
+optimizing using following parameter {'data_set': 'soyabean', 'variant': 'mcpso', 'iterations': 1000, 'decomposition': 'layer_factorized', 'seed': 18906, 'seed_index': 10}
+optimizing using following parameter {'data_set': 'soyabean', 'variant': 'mcpso', 'iterations': 1000, 'decomposition': 'layer_factorized', 'seed': 17291, 'seed_index': 4}
+optimizing using following parameter {'data_set': 'soyabean', 'variant': 'mcpso', 'iterations': 1000, 'decomposition': 'layer_factorized', 'seed': 18284, 'seed_index': 8}
+optimizing using following parameter {'data_set': 'soyabean', 'variant': 'mcpso', 'iterations': 1000, 'decomposition': 'layer_factorized', 'seed': 17987, 'seed_index': 7}
+optimizing using following parameter {'data_set': 'soyabean', 'variant': 'mcpso', 'iterations': 1000, 'decomposition': 'layer_factorized', 'seed': 19894, 'seed_index': 14}
+optimizing using following parameter {'data_set': 'soyabean', 'variant': 'mcpso', 'iterations': 1000, 'decomposition': 'layer_factorized', 'seed': 19406, 'seed_index': 11}
+optimizing using following parameter {'data_set': 'soyabean', 'variant': 'mcpso', 'iterations': 1000, 'decomposition': 'layer_factorized', 'seed': 17591, 'seed_index': 6}
+seed  17591  Iteration:  0  Fitness:  0.048524123712821936
+seed  19894  Iteration:  0  Fitness:  0.050700187729903076
+seed  17265  Iteration:  0  Fitness:  0.05111019771144191
+seed  18906  Iteration:  0  Fitness:  0.05005585410398009
+seed  17020  Iteration:  0  Fitness:  0.05151411901925499
+seed  19406  Iteration:  0  Fitness:  0.04922831733772536
+seed  17987  Iteration:  0  Fitness:  0.04966241582266534
+seed  17172  Iteration:  0  Fitness:  0.05001198378984726
+seed  17307  Iteration:  0  Fitness:  0.048779592566095674
+seed  19457  Iteration:  0  Fitness:  0.049912046513263045
+seed  18284  Iteration:  0  Fitness:  0.04821309187917553
+seed  16148  Iteration:  0  Fitness:  0.052197119140073266
+seed  18700  Iteration:  0  Fitness:  0.049173240907006775
+seed  17291  Iteration:  0  Fitness:  0.049844616024597055
+seed  19482  Iteration:  0  Fitness:  0.050885719291213716
+seed  18906  Iteration:  25  Fitness:  0.00843016563447545
+seed  17307  Iteration:  25  Fitness:  0.014009496210095071
+seed  17020  Iteration:  25  Fitness:  0.012949925671432905
+seed  17265  Iteration:  25  Fitness:  0.00836577355062646
+seed  16148  Iteration:  25  Fitness:  0.02154915853583952
+seed  18700  Iteration:  25  Fitness:  0.012555913907503866
+seed  17172  Iteration:  25  Fitness:  0.011629746671698415
+seed  19894  Iteration:  25  Fitness:  0.011720823607255649
+seed  17987  Iteration:  25  Fitness:  0.010482044210634853
+seed  18284  Iteration:  25  Fitness:  0.013187958110948715
+seed  19482  Iteration:  25  Fitness:  0.007246366053729927
+seed  17591  Iteration:  25  Fitness:  0.007611923081228687
+seed  19457  Iteration:  25  Fitness:  0.009880027154663166
+seed  17291  Iteration:  25  Fitness:  0.010383453445232652
+seed  19406  Iteration:  25  Fitness:  0.010606365699428934
+seed  17307  Iteration:  50  Fitness:  0.014009496210095071
+seed  18906  Iteration:  50  Fitness:  0.005115722367317753
+seed  18284  Iteration:  50  Fitness:  0.013187955666262944
+seed  17020  Iteration:  50  Fitness:  0.009182935249431418
+seed  19894  Iteration:  50  Fitness:  0.008320989047509397
+seed  18700  Iteration:  50  Fitness:  0.008190761816952071
+seed  17265  Iteration:  50  Fitness:  0.00586449321109866
+seed  17987  Iteration:  50  Fitness:  0.007648351580754661
+seed  17291  Iteration:  50  Fitness:  0.009046596567499881
+seed  17172  Iteration:  50  Fitness:  0.007658388177613042
+seed  16148  Iteration:  50  Fitness:  0.01376629919034622
+seed  19482  Iteration:  50  Fitness:  0.004304383255175054
+seed  17591  Iteration:  50  Fitness:  0.005482735681713366
+seed  19457  Iteration:  50  Fitness:  0.006164161486677554
+seed  19406  Iteration:  50  Fitness:  0.007164893940206933
+seed  17307  Iteration:  75  Fitness:  0.009939022908820417
+seed  18284  Iteration:  75  Fitness:  0.013187954845798606
+seed  18906  Iteration:  75  Fitness:  0.004549066147982395
+seed  17020  Iteration:  75  Fitness:  0.008369951268392508
+seed  18700  Iteration:  75  Fitness:  0.0061188251698485185
+seed  19406  Iteration:  75  Fitness:  0.00676376208739318
+seed  16148  Iteration:  75  Fitness:  0.01376629919034622
+seed  17591  Iteration:  75  Fitness:  0.005995660028190279
+seed  17265  Iteration:  75  Fitness:  0.005412666946369226
+seed  17291  Iteration:  75  Fitness:  0.008740115273733437
+seed  17987  Iteration:  75  Fitness:  0.006467001119091492
+seed  19482  Iteration:  75  Fitness:  0.0040517638749197425
+seed  19894  Iteration:  75  Fitness:  0.007695135674071251
+seed  17172  Iteration:  75  Fitness:  0.006554242845454663
+seed  19457  Iteration:  75  Fitness:  0.005006557881838269
+seed  17307 Merge swarms :  20  ->  10
+seed  18284 Merge swarms :  20  ->  10
+seed  17020 Merge swarms :  20  ->  10
+seed  18906 Merge swarms :  20  ->  10
+seed  18700 Merge swarms :  20  ->  10
+seed  19482 Merge swarms :  20  ->  10
+seed  16148 Merge swarms :  20  ->  10
+seed  17591 Merge swarms :  20  ->  10
+seed  17291 Merge swarms :  20  ->  10
+seed  19406 Merge swarms :  20  ->  10
+seed  17265 Merge swarms :  20  ->  10
+seed  17987 Merge swarms :  20  ->  10
+seed  19894 Merge swarms :  20  ->  10
+seed  17172 Merge swarms :  20  ->  10
+seed  19457 Merge swarms :  20  ->  10
+seed  17307  Iteration:  100  Fitness:  0.008158292052019032
+seed  18284  Iteration:  100  Fitness:  0.010307051948148875
+seed  17020  Iteration:  100  Fitness:  0.0063630439604023484
+seed  18906  Iteration:  100  Fitness:  0.003674922101728621
+seed  18700  Iteration:  100  Fitness:  0.005558185157897619
+seed  19482  Iteration:  100  Fitness:  0.003495614478628748
+seed  16148  Iteration:  100  Fitness:  0.009872063758384203
+seed  17591  Iteration:  100  Fitness:  0.0043765454668424665
+seed  17987  Iteration:  100  Fitness:  0.0052464452822053795
+seed  19406  Iteration:  100  Fitness:  0.006749019173974246
+seed  17265  Iteration:  100  Fitness:  0.005465954685444448
+seed  17291  Iteration:  100  Fitness:  0.006445001978085571
+seed  19894  Iteration:  100  Fitness:  0.006815853953395382
+seed  17172  Iteration:  100  Fitness:  0.005132905056175964
+seed  19457  Iteration:  100  Fitness:  0.004238718269372616
+seed  17307  Iteration:  125  Fitness:  0.004555526692828386
+seed  18284  Iteration:  125  Fitness:  0.002616504752429985
+seed  17020  Iteration:  125  Fitness:  0.0016101210376457578
+seed  18906  Iteration:  125  Fitness:  0.00239004088673864
+seed  18700  Iteration:  125  Fitness:  0.003093333648318413
+seed  19482  Iteration:  125  Fitness:  0.0029390806239893608
+seed  17591  Iteration:  125  Fitness:  0.0014217003057203832
+seed  16148  Iteration:  125  Fitness:  0.003721840416859759
+seed  19406  Iteration:  125  Fitness:  0.006749019173974246
+seed  17987  Iteration:  125  Fitness:  0.0015535949711122125
+seed  17265  Iteration:  125  Fitness:  0.005444247760874111
+seed  17172  Iteration:  125  Fitness:  0.005038131322735521
+seed  17291  Iteration:  125  Fitness:  0.0023347213084434514
+seed  19457  Iteration:  125  Fitness:  0.001527890482286126
+seed  19894  Iteration:  125  Fitness:  0.003761239785151915
+seed  17307  Iteration:  150  Fitness:  0.003375996432784854
+seed  18284  Iteration:  150  Fitness:  0.0016451354283453143
+seed  18906  Iteration:  150  Fitness:  0.002339604500828401
+seed  17020  Iteration:  150  Fitness:  0.0012872512994689272
+seed  18700  Iteration:  150  Fitness:  0.003093233241330151
+seed  19482  Iteration:  150  Fitness:  0.0029249964358435913
+seed  17591  Iteration:  150  Fitness:  0.0016831908274199656
+seed  16148  Iteration:  150  Fitness:  0.0033106660305880233
+seed  17291  Iteration:  150  Fitness:  0.0019588709523748024
+seed  19406  Iteration:  150  Fitness:  0.006749019173974246
+seed  17987  Iteration:  150  Fitness:  0.001493248541310119
+seed  17172  Iteration:  150  Fitness:  0.005038131322735521
+seed  17265  Iteration:  150  Fitness:  0.005444234648763985
+seed  19457  Iteration:  150  Fitness:  0.0015278871182420654
+seed  19894  Iteration:  150  Fitness:  0.0033671631137308713
+seed  18284  Iteration:  175  Fitness:  0.0014015945377897894
+seed  17307  Iteration:  175  Fitness:  0.0032372554709903696
+seed  18906  Iteration:  175  Fitness:  0.002339124190644378
+seed  17020  Iteration:  175  Fitness:  0.0012202633724278911
+seed  18700  Iteration:  175  Fitness:  0.0030932324218463127
+seed  19482  Iteration:  175  Fitness:  0.0029237683838011534
+seed  17987  Iteration:  175  Fitness:  0.0014928261273084676
+seed  16148  Iteration:  175  Fitness:  0.0027973622899877624
+seed  17591  Iteration:  175  Fitness:  0.0016831908274199656
+seed  17172  Iteration:  175  Fitness:  0.005038131322735521
+seed  17265  Iteration:  175  Fitness:  0.005444233829280147
+seed  17291  Iteration:  175  Fitness:  0.0016961221011664407
+seed  19406  Iteration:  175  Fitness:  0.006749019173974246
+seed  19457  Iteration:  175  Fitness:  0.0015278871182420654
+seed  19894  Iteration:  175  Fitness:  0.003367236732481263
+seed  18284 Merge swarms :  10  ->  5
+seed  17307 Merge swarms :  10  ->  5
+seed  18906 Merge swarms :  10  ->  5
+seed  17020 Merge swarms :  10  ->  5
+seed  18700 Merge swarms :  10  ->  5
+seed  17591 Merge swarms :  10  ->  5
+seed  17987 Merge swarms :  10  ->  5
+seed  16148 Merge swarms :  10  ->  5
+seed  19482 Merge swarms :  10  ->  5
+seed  17172 Merge swarms :  10  ->  5
+seed  17265 Merge swarms :  10  ->  5
+seed  19406 Merge swarms :  10  ->  5
+seed  17291 Merge swarms :  10  ->  5
+seed  19457 Merge swarms :  10  ->  5
+seed  19894 Merge swarms :  10  ->  5
+seed  17307  Iteration:  200  Fitness:  0.002203350757920929
+seed  18284  Iteration:  200  Fitness:  0.0012908094241355114
+seed  18906  Iteration:  200  Fitness:  0.0023391071880556943
+seed  17020  Iteration:  200  Fitness:  0.0012048679677832005
+seed  18700  Iteration:  200  Fitness:  0.0030932324218463127
+seed  17591  Iteration:  200  Fitness:  0.0014101276683297494
+seed  17172  Iteration:  200  Fitness:  0.002154070733122088
+seed  17987  Iteration:  200  Fitness:  0.001493175594050933
+seed  19482  Iteration:  200  Fitness:  0.002923768295239059
+seed  16148  Iteration:  200  Fitness:  0.0027933242016392216
+seed  17265  Iteration:  200  Fitness:  0.005444233829283299
+seed  19406  Iteration:  200  Fitness:  0.006749019173974246
+seed  17291  Iteration:  200  Fitness:  0.0014893860514430322
+seed  19457  Iteration:  200  Fitness:  0.0015278871182420654
+seed  19894  Iteration:  200  Fitness:  0.003367591914589022
+seed  18906  Iteration:  225  Fitness:  0.0023391071880556943
+seed  17307  Iteration:  225  Fitness:  0.0009974681660499273
+seed  18284  Iteration:  225  Fitness:  0.00129037028151207
+seed  17020  Iteration:  225  Fitness:  0.0012054515832474158
+seed  18700  Iteration:  225  Fitness:  0.0030932324218463127
+seed  17987  Iteration:  225  Fitness:  0.001493175594050933
+seed  17591  Iteration:  225  Fitness:  0.0012786364520855787
+seed  17172  Iteration:  225  Fitness:  0.0013136137382513864
+seed  16148  Iteration:  225  Fitness:  0.0027889840764587764
+seed  19406  Iteration:  225  Fitness:  0.006749019173974246
+seed  17265  Iteration:  225  Fitness:  0.005444233829283299
+seed  19482  Iteration:  225  Fitness:  0.002923768295239059
+seed  17291  Iteration:  225  Fitness:  0.0010569534148348945
+seed  19457  Iteration:  225  Fitness:  0.0015278871182420654
+seed  19894  Iteration:  225  Fitness:  0.003367132251310412
+seed  17307  Iteration:  250  Fitness:  0.0009906537014058845
+seed  18284  Iteration:  250  Fitness:  0.0012903380070030984
+seed  18906  Iteration:  250  Fitness:  0.0023391071880556943
+seed  17020  Iteration:  250  Fitness:  0.0012054515832474158
+seed  18700  Iteration:  250  Fitness:  0.0030932324218463127
+seed  16148  Iteration:  250  Fitness:  0.0027889863474504363
+seed  17591  Iteration:  250  Fitness:  0.0012606815198174077
+seed  17987  Iteration:  250  Fitness:  0.001493175594050933
+seed  17172  Iteration:  250  Fitness:  0.0013136137382513864
+seed  19406  Iteration:  250  Fitness:  0.006749019173974246
+seed  17265  Iteration:  250  Fitness:  0.005444233829283299
+seed  19482  Iteration:  250  Fitness:  0.002923768295239059
+seed  17291  Iteration:  250  Fitness:  0.0009920058958202383
+seed  19894  Iteration:  250  Fitness:  0.0033671279475110194
+seed  19457  Iteration:  250  Fitness:  0.0015278871182420654
+seed  18284  Iteration:  275  Fitness:  0.0012903374432005788
+seed  17307  Iteration:  275  Fitness:  0.0009906537014058845
+seed  18906  Iteration:  275  Fitness:  0.002339107085620214
+seed  17020  Iteration:  275  Fitness:  0.0012054515832474158
+seed  18700  Iteration:  275  Fitness:  0.0030932324218463127
+seed  16148  Iteration:  275  Fitness:  0.0027889771287693496
+seed  17591  Iteration:  275  Fitness:  0.0012606815198174077
+seed  17265  Iteration:  275  Fitness:  0.005444233829283299
+seed  17987  Iteration:  275  Fitness:  0.001493175594050933
+seed  17172  Iteration:  275  Fitness:  0.0013136137382513864
+seed  19406  Iteration:  275  Fitness:  0.006749019173974246
+seed  19482  Iteration:  275  Fitness:  0.002923768295239059
+seed  17291  Iteration:  275  Fitness:  0.0009917528840366091
+seed  19457  Iteration:  275  Fitness:  0.0015278871182420654
+seed  19894  Iteration:  275  Fitness:  0.00336712774264006
+seed  17307 Merge swarms :  5  ->  3
+seed  18284 Merge swarms :  5  ->  3
+seed  18906 Merge swarms :  5  ->  3
+seed  17020 Merge swarms :  5  ->  3
+seed  18700 Merge swarms :  5  ->  3
+seed  16148 Merge swarms :  5  ->  3
+seed  17987 Merge swarms :  5  ->  3
+seed  17591 Merge swarms :  5  ->  3
+seed  17265 Merge swarms :  5  ->  3
+seed  17172 Merge swarms :  5  ->  3
+seed  19406 Merge swarms :  5  ->  3
+seed  19482 Merge swarms :  5  ->  3
+seed  17291 Merge swarms :  5  ->  3
+seed  19457 Merge swarms :  5  ->  3
+seed  19894 Merge swarms :  5  ->  3
+seed  18284  Iteration:  300  Fitness:  0.001290337417591709
+seed  18906  Iteration:  300  Fitness:  0.002339107085620214
+seed  17307  Iteration:  300  Fitness:  0.0009906537014058845
+seed  17020  Iteration:  300  Fitness:  0.0012054515832474158
+seed  18700  Iteration:  300  Fitness:  0.0030932324218463127
+seed  16148  Iteration:  300  Fitness:  0.002788976514156471
+seed  17591  Iteration:  300  Fitness:  0.0012606815198174077
+seed  17265  Iteration:  300  Fitness:  0.005444233829283299
+seed  17172  Iteration:  300  Fitness:  0.0012753443145717839
+seed  17987  Iteration:  300  Fitness:  0.001493175594050933
+seed  19406  Iteration:  300  Fitness:  0.006749019173974246
+seed  19482  Iteration:  300  Fitness:  0.002923768295239059
+seed  17291  Iteration:  300  Fitness:  0.0009917527669227098
+seed  19894  Iteration:  300  Fitness:  0.00336712774264006
+seed  19457  Iteration:  300  Fitness:  0.0015278871182420654
+seed  18284  Iteration:  325  Fitness:  0.001290337417591709
+seed  18906  Iteration:  325  Fitness:  0.002339107085620214
+seed  17307  Iteration:  325  Fitness:  0.0009906537014058845
+seed  17020  Iteration:  325  Fitness:  0.0012054515832474158
+seed  18700  Iteration:  325  Fitness:  0.0030932324218463127
+seed  16148  Iteration:  325  Fitness:  0.002788976514156471
+seed  17591  Iteration:  325  Fitness:  0.0012606815198174077
+seed  17265  Iteration:  325  Fitness:  0.005444233829283299
+seed  17172  Iteration:  325  Fitness:  0.0012753441877467009
+seed  17987  Iteration:  325  Fitness:  0.001493175594050933
+seed  19406  Iteration:  325  Fitness:  0.006749019173974246
+seed  19482  Iteration:  325  Fitness:  0.002923768295239059
+seed  17291  Iteration:  325  Fitness:  0.0009917527669227098
+seed  19894  Iteration:  325  Fitness:  0.00336712774264006
+seed  19457  Iteration:  325  Fitness:  0.0015278871182420654
+seed  18284  Iteration:  350  Fitness:  0.001290337417591709
+seed  18906  Iteration:  350  Fitness:  0.002339107085620214
+seed  17307  Iteration:  350  Fitness:  0.0009906537014058845
+seed  17020  Iteration:  350  Fitness:  0.0012054515832474158
+seed  18700  Iteration:  350  Fitness:  0.0030932324218463127
+seed  16148  Iteration:  350  Fitness:  0.002788976514156471
+seed  17591  Iteration:  350  Fitness:  0.0012606815198174077
+seed  17265  Iteration:  350  Fitness:  0.005444233829283299
+seed  17172  Iteration:  350  Fitness:  0.0012753441877467009
+seed  17987  Iteration:  350  Fitness:  0.001493175594050933
+seed  19406  Iteration:  350  Fitness:  0.006749019173974246
+seed  19482  Iteration:  350  Fitness:  0.002923768295239059
+seed  17291  Iteration:  350  Fitness:  0.0009917527669227098
+seed  19894  Iteration:  350  Fitness:  0.00336712774264006
+seed  19457  Iteration:  350  Fitness:  0.0015278871182420654
+seed  18284  Iteration:  375  Fitness:  0.001290337417591709
+seed  18906  Iteration:  375  Fitness:  0.002339107085620214
+seed  17307  Iteration:  375  Fitness:  0.0009906537014058845
+seed  17020  Iteration:  375  Fitness:  0.0012054515832474158
+seed  18700  Iteration:  375  Fitness:  0.0030932324218463127
+seed  16148  Iteration:  375  Fitness:  0.002788976514156471
+seed  17591  Iteration:  375  Fitness:  0.0012606815198174077
+seed  17265  Iteration:  375  Fitness:  0.005444233829283299
+seed  17172  Iteration:  375  Fitness:  0.0012753441877467009
+seed  18906 Merge swarms :  3  ->  2
+seed  18284 Merge swarms :  3  ->  2
+seed  17987  Iteration:  375  Fitness:  0.001493175594050933
+seed  17291  Iteration:  375  Fitness:  0.0009917527669227098
+seed  19482  Iteration:  375  Fitness:  0.002923768295239059
+seed  19406  Iteration:  375  Fitness:  0.006749019173974246
+seed  17307 Merge swarms :  3  ->  2
+seed  17020 Merge swarms :  3  ->  2
+seed  19894  Iteration:  375  Fitness:  0.00336712774264006
+seed  19457  Iteration:  375  Fitness:  0.0015278871182420654
+seed  18700 Merge swarms :  3  ->  2
+seed  16148 Merge swarms :  3  ->  2
+seed  17591 Merge swarms :  3  ->  2
+seed  17172 Merge swarms :  3  ->  2
+seed  17265 Merge swarms :  3  ->  2
+seed  17987 Merge swarms :  3  ->  2
+seed  17291 Merge swarms :  3  ->  2
+seed  19406 Merge swarms :  3  ->  2
+seed  19482 Merge swarms :  3  ->  2
+seed  18284  Iteration:  400  Fitness:  0.001290337417591709
+seed  19894 Merge swarms :  3  ->  2
+seed  18906  Iteration:  400  Fitness:  0.002339107085620214
+seed  19457 Merge swarms :  3  ->  2
+seed  17307  Iteration:  400  Fitness:  0.0009906537014058845
+seed  17020  Iteration:  400  Fitness:  0.0012054515832474158
+seed  17591  Iteration:  400  Fitness:  0.0012606815198174077
+seed  18700  Iteration:  400  Fitness:  0.0030932324218463127
+seed  16148  Iteration:  400  Fitness:  0.002788976514156471
+seed  17172  Iteration:  400  Fitness:  0.0012753441877467009
+seed  17265  Iteration:  400  Fitness:  0.005444233829283299
+seed  17987  Iteration:  400  Fitness:  0.001493175594050933
+seed  19406  Iteration:  400  Fitness:  0.006749019173974246
+seed  19482  Iteration:  400  Fitness:  0.002923768295239059
+seed  17291  Iteration:  400  Fitness:  0.0009917527669227098
+seed  19894  Iteration:  400  Fitness:  0.00336712774264006
+seed  19457  Iteration:  400  Fitness:  0.0015278871182420654
+seed  18284  Iteration:  425  Fitness:  0.001290337417591709
+seed  18906  Iteration:  425  Fitness:  0.002339107085620214
+seed  17307  Iteration:  425  Fitness:  0.0009906537014058845
+seed  17020  Iteration:  425  Fitness:  0.0012054515832474158
+seed  17591  Iteration:  425  Fitness:  0.0012606815198174077
+seed  16148  Iteration:  425  Fitness:  0.002788976514156471
+seed  18700  Iteration:  425  Fitness:  0.0030932324218463127
+seed  17172  Iteration:  425  Fitness:  0.0012753441877467009
+seed  17265  Iteration:  425  Fitness:  0.005444233829283299
+seed  17987  Iteration:  425  Fitness:  0.001493175594050933
+seed  19406  Iteration:  425  Fitness:  0.006749019173974246
+seed  19482  Iteration:  425  Fitness:  0.002923768295239059
+seed  19894  Iteration:  425  Fitness:  0.00336712774264006
+seed  17291  Iteration:  425  Fitness:  0.0009917527669227098
+seed  19457  Iteration:  425  Fitness:  0.0015278871182420654
+seed  18284  Iteration:  450  Fitness:  0.001290337417591709
+seed  18906  Iteration:  450  Fitness:  0.002339107085620214
+seed  17307  Iteration:  450  Fitness:  0.0009906537014058845
+seed  17020  Iteration:  450  Fitness:  0.0012054515832474158
+seed  17591  Iteration:  450  Fitness:  0.0012606815198174077
+seed  16148  Iteration:  450  Fitness:  0.002788976514156471
+seed  18700  Iteration:  450  Fitness:  0.0030932324218463127
+seed  17172  Iteration:  450  Fitness:  0.0012753441877467009
+seed  17987  Iteration:  450  Fitness:  0.001493175594050933
+seed  17265  Iteration:  450  Fitness:  0.005444233829283299
+seed  19894  Iteration:  450  Fitness:  0.00336712774264006
+seed  19406  Iteration:  450  Fitness:  0.006749019173974246
+seed  19482  Iteration:  450  Fitness:  0.002923768295239059
+seed  17291  Iteration:  450  Fitness:  0.0009917527669227098
+seed  19457  Iteration:  450  Fitness:  0.0015278871182420654
+seed  18284  Iteration:  475  Fitness:  0.001290337417591709
+seed  18284 Merge swarms :  2  ->  1
+seed  18906  Iteration:  475  Fitness:  0.002339107085620214
+seed  17591  Iteration:  475  Fitness:  0.0012606815198174077
+seed  17020  Iteration:  475  Fitness:  0.0012054515832474158
+seed  17307  Iteration:  475  Fitness:  0.0009906537014058845
+seed  16148  Iteration:  475  Fitness:  0.002788976514156471
+seed  18906 Merge swarms :  2  ->  1
+seed  17591 Merge swarms :  2  ->  1
+seed  17307 Merge swarms :  2  ->  1
+seed  17020 Merge swarms :  2  ->  1
+seed  18700  Iteration:  475  Fitness:  0.0030932324218463127
+seed  16148 Merge swarms :  2  ->  1
+seed  17172  Iteration:  475  Fitness:  0.0012753441877467009
+seed  18284  Iteration:  500  Fitness:  0.001290337417591709
+seed  18700 Merge swarms :  2  ->  1
+seed  17987  Iteration:  475  Fitness:  0.001493175594050933
+seed  19894  Iteration:  475  Fitness:  0.00336712774264006
+seed  17172 Merge swarms :  2  ->  1
+seed  19482  Iteration:  475  Fitness:  0.002923768295239059
+seed  19406  Iteration:  475  Fitness:  0.006749019173974246
+seed  17265  Iteration:  475  Fitness:  0.005444233829283299
+seed  17291  Iteration:  475  Fitness:  0.0009917527669227098
+seed  17987 Merge swarms :  2  ->  1
+seed  19894 Merge swarms :  2  ->  1
+seed  18906  Iteration:  500  Fitness:  0.002339107085620214
+seed  19406 Merge swarms :  2  ->  1
+seed  19482 Merge swarms :  2  ->  1
+seed  17591  Iteration:  500  Fitness:  0.0012606815198174077
+seed  17307  Iteration:  500  Fitness:  0.0009906537014058845
+seed  17265 Merge swarms :  2  ->  1
+seed  17020  Iteration:  500  Fitness:  0.0012054515832474158
+seed  17291 Merge swarms :  2  ->  1
+seed  16148  Iteration:  500  Fitness:  0.002788976514156471
+seed  19457  Iteration:  475  Fitness:  0.0015278871182420654
+seed  18700  Iteration:  500  Fitness:  0.0030932324218463127
+seed  18284  Iteration:  525  Fitness:  0.001290337417591709
+seed  19457 Merge swarms :  2  ->  1
+seed  17172  Iteration:  500  Fitness:  0.0012753441877467009
+seed  17987  Iteration:  500  Fitness:  0.001493175594050933
+seed  19894  Iteration:  500  Fitness:  0.00336712774264006
+seed  19406  Iteration:  500  Fitness:  0.006749019173974246
+seed  19482  Iteration:  500  Fitness:  0.002923768295239059
+seed  17265  Iteration:  500  Fitness:  0.005444233829283299
+seed  18906  Iteration:  525  Fitness:  0.002339107085620214
+seed  17291  Iteration:  500  Fitness:  0.0009917527669227098
+seed  17307  Iteration:  525  Fitness:  0.0009906537014058845
+seed  17591  Iteration:  525  Fitness:  0.0012606815198174077
+seed  17020  Iteration:  525  Fitness:  0.0012054515832474158
+seed  16148  Iteration:  525  Fitness:  0.002788976514156471
+seed  19457  Iteration:  500  Fitness:  0.0015278871182420654
+seed  18700  Iteration:  525  Fitness:  0.0030932324218463127
+seed  18284  Iteration:  550  Fitness:  0.001290337417591709
+seed  17172  Iteration:  525  Fitness:  0.0012753441877467009
+seed  17987  Iteration:  525  Fitness:  0.001493175594050933
+seed  19894  Iteration:  525  Fitness:  0.00336712774264006
+seed  19406  Iteration:  525  Fitness:  0.006749019173974246
+seed  19482  Iteration:  525  Fitness:  0.002923768295239059
+seed  17265  Iteration:  525  Fitness:  0.005444233829283299
+seed  18906  Iteration:  550  Fitness:  0.002339107085620214
+seed  17307  Iteration:  550  Fitness:  0.0009906537014058845
+seed  17291  Iteration:  525  Fitness:  0.0009917527669227098
+seed  17591  Iteration:  550  Fitness:  0.0012606815198174077
+seed  17020  Iteration:  550  Fitness:  0.0012054515832474158
+seed  16148  Iteration:  550  Fitness:  0.002788976514156471
+seed  19457  Iteration:  525  Fitness:  0.0015278871182420654
+seed  18700  Iteration:  550  Fitness:  0.0030932324218463127
+seed  18284  Iteration:  575  Fitness:  0.001290337417591709
+seed  18284 Merge swarms :  1  ->  1
+seed  17172  Iteration:  550  Fitness:  0.0012753441877467009
+seed  17987  Iteration:  550  Fitness:  0.001493175594050933
+seed  19894  Iteration:  550  Fitness:  0.00336712774264006
+seed  19406  Iteration:  550  Fitness:  0.006749019173974246
+seed  17265  Iteration:  550  Fitness:  0.005444233829283299
+seed  19482  Iteration:  550  Fitness:  0.002923768295239059
+seed  18906  Iteration:  575  Fitness:  0.002339107085620214
+seed  18906 Merge swarms :  1  ->  1
+seed  17591  Iteration:  575  Fitness:  0.0012606815198174077
+seed  17591 Merge swarms :  1  ->  1
+seed  17307  Iteration:  575  Fitness:  0.0009906537014058845
+seed  17307 Merge swarms :  1  ->  1
+seed  17291  Iteration:  550  Fitness:  0.0009917527669227098
+seed  17020  Iteration:  575  Fitness:  0.0012054515832474158
+seed  17020 Merge swarms :  1  ->  1
+seed  16148  Iteration:  575  Fitness:  0.002788976514156471
+seed  16148 Merge swarms :  1  ->  1
+seed  18700  Iteration:  575  Fitness:  0.0030932324218463127
+seed  18700 Merge swarms :  1  ->  1
+seed  19457  Iteration:  550  Fitness:  0.0015278871182420654
+seed  18284  Iteration:  600  Fitness:  0.001290337417591709
+seed  17172  Iteration:  575  Fitness:  0.0012753441877467009
+seed  17172 Merge swarms :  1  ->  1
+seed  17987  Iteration:  575  Fitness:  0.001493175594050933
+seed  17987 Merge swarms :  1  ->  1
+seed  19894  Iteration:  575  Fitness:  0.00336712774264006
+seed  19894 Merge swarms :  1  ->  1
+seed  19406  Iteration:  575  Fitness:  0.006749019173974246
+seed  19406 Merge swarms :  1  ->  1
+seed  17265  Iteration:  575  Fitness:  0.005444233829283299
+seed  17265 Merge swarms :  1  ->  1
+seed  19482  Iteration:  575  Fitness:  0.002923768295239059
+seed  19482 Merge swarms :  1  ->  1
+seed  18906  Iteration:  600  Fitness:  0.002339107085620214
+seed  17591  Iteration:  600  Fitness:  0.0012606815198174077
+seed  17307  Iteration:  600  Fitness:  0.0009906537014058845
+seed  17291  Iteration:  575  Fitness:  0.0009917527669227098
+seed  17291 Merge swarms :  1  ->  1
+seed  17020  Iteration:  600  Fitness:  0.0012054515832474158
+seed  16148  Iteration:  600  Fitness:  0.002788976514156471
+seed  18700  Iteration:  600  Fitness:  0.0030932324218463127
+seed  19457  Iteration:  575  Fitness:  0.0015278871182420654
+seed  19457 Merge swarms :  1  ->  1
+seed  18284  Iteration:  625  Fitness:  0.001290337417591709
+seed  17172  Iteration:  600  Fitness:  0.0012753441877467009
+seed  17987  Iteration:  600  Fitness:  0.001493175594050933
+seed  19894  Iteration:  600  Fitness:  0.00336712774264006
+seed  19406  Iteration:  600  Fitness:  0.006749019173974246
+seed  17265  Iteration:  600  Fitness:  0.005444233829283299
+seed  19482  Iteration:  600  Fitness:  0.002923768295239059
+seed  18906  Iteration:  625  Fitness:  0.002339107085620214
+seed  17591  Iteration:  625  Fitness:  0.0012606815198174077
+seed  17307  Iteration:  625  Fitness:  0.0009906537014058845
+seed  17291  Iteration:  600  Fitness:  0.0009917527669227098
+seed  17020  Iteration:  625  Fitness:  0.0012054515832474158
+seed  16148  Iteration:  625  Fitness:  0.002788976514156471
+seed  18700  Iteration:  625  Fitness:  0.0030932324218463127
+seed  19457  Iteration:  600  Fitness:  0.0015278871182420654
+seed  18284  Iteration:  650  Fitness:  0.001290337417591709
+seed  17172  Iteration:  625  Fitness:  0.0012753441877467009
+seed  17987  Iteration:  625  Fitness:  0.001493175594050933
+seed  19894  Iteration:  625  Fitness:  0.00336712774264006
+seed  19406  Iteration:  625  Fitness:  0.006749019173974246
+seed  17265  Iteration:  625  Fitness:  0.005444233829283299
+seed  19482  Iteration:  625  Fitness:  0.002923768295239059
+seed  18906  Iteration:  650  Fitness:  0.002339107085620214
+seed  17591  Iteration:  650  Fitness:  0.0012606815198174077
+seed  17307  Iteration:  650  Fitness:  0.0009906537014058845
+seed  17291  Iteration:  625  Fitness:  0.0009917527669227098
+seed  17020  Iteration:  650  Fitness:  0.0012054515832474158
+seed  16148  Iteration:  650  Fitness:  0.002788976514156471
+seed  18700  Iteration:  650  Fitness:  0.0030932324218463127
+seed  19457  Iteration:  625  Fitness:  0.0015278871182420654
+seed  18284  Iteration:  675  Fitness:  0.001290337417591709
+seed  17172  Iteration:  650  Fitness:  0.0012753441877467009
+seed  17987  Iteration:  650  Fitness:  0.001493175594050933
+seed  19406  Iteration:  650  Fitness:  0.006749019173974246
+seed  19894  Iteration:  650  Fitness:  0.00336712774264006
+seed  17265  Iteration:  650  Fitness:  0.005444233829283299
+seed  19482  Iteration:  650  Fitness:  0.002923768295239059
+seed  18906  Iteration:  675  Fitness:  0.002339107085620214
+seed  17591  Iteration:  675  Fitness:  0.0012606815198174077
+seed  17307  Iteration:  675  Fitness:  0.0009906537014058845
+seed  17291  Iteration:  650  Fitness:  0.0009917527669227098
+seed  17020  Iteration:  675  Fitness:  0.0012054515832474158
+seed  16148  Iteration:  675  Fitness:  0.002788976514156471
+seed  18700  Iteration:  675  Fitness:  0.0030932324218463127
+seed  18284  Iteration:  700  Fitness:  0.001290337417591709
+seed  19457  Iteration:  650  Fitness:  0.0015278871182420654
+seed  17172  Iteration:  675  Fitness:  0.0012753441877467009
+seed  17987  Iteration:  675  Fitness:  0.001493175594050933
+seed  19406  Iteration:  675  Fitness:  0.006749019173974246
+seed  19894  Iteration:  675  Fitness:  0.00336712774264006
+seed  17265  Iteration:  675  Fitness:  0.005444233829283299
+seed  19482  Iteration:  675  Fitness:  0.002923768295239059
+seed  18906  Iteration:  700  Fitness:  0.002339107085620214
+seed  17307  Iteration:  700  Fitness:  0.0009906537014058845
+seed  17591  Iteration:  700  Fitness:  0.0012606815198174077
+seed  17291  Iteration:  675  Fitness:  0.0009917527669227098
+seed  17020  Iteration:  700  Fitness:  0.0012054515832474158
+seed  16148  Iteration:  700  Fitness:  0.002788976514156471
+seed  18700  Iteration:  700  Fitness:  0.0030932324218463127
+seed  18284  Iteration:  725  Fitness:  0.001290337417591709
+seed  19457  Iteration:  675  Fitness:  0.0015278871182420654
+seed  17172  Iteration:  700  Fitness:  0.0012753441877467009
+seed  17987  Iteration:  700  Fitness:  0.001493175594050933
+seed  19406  Iteration:  700  Fitness:  0.006749019173974246
+seed  19894  Iteration:  700  Fitness:  0.00336712774264006
+seed  17265  Iteration:  700  Fitness:  0.005444233829283299
+seed  18906  Iteration:  725  Fitness:  0.002339107085620214
+seed  19482  Iteration:  700  Fitness:  0.002923768295239059
+seed  17307  Iteration:  725  Fitness:  0.0009906537014058845
+seed  17591  Iteration:  725  Fitness:  0.0012606815198174077
+seed  17291  Iteration:  700  Fitness:  0.0009917527669227098
+seed  17020  Iteration:  725  Fitness:  0.0012054515832474158
+seed  16148  Iteration:  725  Fitness:  0.002788976514156471
+seed  18700  Iteration:  725  Fitness:  0.0030932324218463127
+seed  18284  Iteration:  750  Fitness:  0.001290337417591709
+seed  19457  Iteration:  700  Fitness:  0.0015278871182420654
+seed  17172  Iteration:  725  Fitness:  0.0012753441877467009
+seed  17987  Iteration:  725  Fitness:  0.001493175594050933
+seed  19406  Iteration:  725  Fitness:  0.006749019173974246
+seed  17265  Iteration:  725  Fitness:  0.005444233829283299
+seed  19894  Iteration:  725  Fitness:  0.00336712774264006
+seed  18906  Iteration:  750  Fitness:  0.002339107085620214
+seed  19482  Iteration:  725  Fitness:  0.002923768295239059
+seed  17307  Iteration:  750  Fitness:  0.0009906537014058845
+seed  17591  Iteration:  750  Fitness:  0.0012606815198174077
+seed  17291  Iteration:  725  Fitness:  0.0009917527669227098
+seed  17020  Iteration:  750  Fitness:  0.0012054515832474158
+seed  16148  Iteration:  750  Fitness:  0.002788976514156471
+seed  18700  Iteration:  750  Fitness:  0.0030932324218463127
+seed  18284  Iteration:  775  Fitness:  0.001290337417591709
+seed  19457  Iteration:  725  Fitness:  0.0015278871182420654
+seed  17172  Iteration:  750  Fitness:  0.0012753441877467009
+seed  17987  Iteration:  750  Fitness:  0.001493175594050933
+seed  19406  Iteration:  750  Fitness:  0.006749019173974246
+seed  17265  Iteration:  750  Fitness:  0.005444233829283299
+seed  19894  Iteration:  750  Fitness:  0.00336712774264006
+seed  18906  Iteration:  775  Fitness:  0.002339107085620214
+seed  19482  Iteration:  750  Fitness:  0.002923768295239059
+seed  17307  Iteration:  775  Fitness:  0.0009906537014058845
+seed  17591  Iteration:  775  Fitness:  0.0012606815198174077
+seed  17291  Iteration:  750  Fitness:  0.0009917527669227098
+seed  17020  Iteration:  775  Fitness:  0.0012054515832474158
+seed  16148  Iteration:  775  Fitness:  0.002788976514156471
+seed  18700  Iteration:  775  Fitness:  0.0030932324218463127
+seed  18284  Iteration:  800  Fitness:  0.001290337417591709
+seed  19457  Iteration:  750  Fitness:  0.0015278871182420654
+seed  17172  Iteration:  775  Fitness:  0.0012753441877467009
+seed  17987  Iteration:  775  Fitness:  0.001493175594050933
+seed  19406  Iteration:  775  Fitness:  0.006749019173974246
+seed  17265  Iteration:  775  Fitness:  0.005444233829283299
+seed  19894  Iteration:  775  Fitness:  0.00336712774264006
+seed  18906  Iteration:  800  Fitness:  0.002339107085620214
+seed  19482  Iteration:  775  Fitness:  0.002923768295239059
+seed  17307  Iteration:  800  Fitness:  0.0009906537014058845
+seed  17591  Iteration:  800  Fitness:  0.0012606815198174077
+seed  17020  Iteration:  800  Fitness:  0.0012054515832474158
+seed  17291  Iteration:  775  Fitness:  0.0009917527669227098
+seed  16148  Iteration:  800  Fitness:  0.002788976514156471
+seed  18700  Iteration:  800  Fitness:  0.0030932324218463127
+seed  18284  Iteration:  825  Fitness:  0.001290337417591709
+seed  19457  Iteration:  775  Fitness:  0.0015278871182420654
+seed  17172  Iteration:  800  Fitness:  0.0012753441877467009
+seed  17987  Iteration:  800  Fitness:  0.001493175594050933
+seed  19406  Iteration:  800  Fitness:  0.006749019173974246
+seed  17265  Iteration:  800  Fitness:  0.005444233829283299
+seed  19894  Iteration:  800  Fitness:  0.00336712774264006
+seed  18906  Iteration:  825  Fitness:  0.002339107085620214
+seed  17591  Iteration:  825  Fitness:  0.0012606815198174077
+seed  17307  Iteration:  825  Fitness:  0.0009906537014058845
+seed  19482  Iteration:  800  Fitness:  0.002923768295239059
+seed  17020  Iteration:  825  Fitness:  0.0012054515832474158
+seed  17291  Iteration:  800  Fitness:  0.0009917527669227098
+seed  16148  Iteration:  825  Fitness:  0.002788976514156471
+seed  18700  Iteration:  825  Fitness:  0.0030932324218463127
+seed  18284  Iteration:  850  Fitness:  0.001290337417591709
+seed  19457  Iteration:  800  Fitness:  0.0015278871182420654
+seed  17172  Iteration:  825  Fitness:  0.0012753441877467009
+seed  17987  Iteration:  825  Fitness:  0.001493175594050933
+seed  19406  Iteration:  825  Fitness:  0.006749019173974246
+seed  17265  Iteration:  825  Fitness:  0.005444233829283299
+seed  19894  Iteration:  825  Fitness:  0.00336712774264006
+seed  19482  Iteration:  825  Fitness:  0.002923768295239059
+seed  17307  Iteration:  850  Fitness:  0.0009906537014058845
+seed  17591  Iteration:  850  Fitness:  0.0012606815198174077
+seed  18906  Iteration:  850  Fitness:  0.002339107085620214
+seed  17291  Iteration:  825  Fitness:  0.0009917527669227098
+seed  17020  Iteration:  850  Fitness:  0.0012054515832474158
+seed  16148  Iteration:  850  Fitness:  0.002788976514156471
+seed  18700  Iteration:  850  Fitness:  0.0030932324218463127
+seed  18284  Iteration:  875  Fitness:  0.001290337417591709
+seed  19457  Iteration:  825  Fitness:  0.0015278871182420654
+seed  17172  Iteration:  850  Fitness:  0.0012753441877467009
+seed  17987  Iteration:  850  Fitness:  0.001493175594050933
+seed  17265  Iteration:  850  Fitness:  0.005444233829283299
+seed  19406  Iteration:  850  Fitness:  0.006749019173974246
+seed  19894  Iteration:  850  Fitness:  0.00336712774264006
+seed  19482  Iteration:  850  Fitness:  0.002923768295239059
+seed  17307  Iteration:  875  Fitness:  0.0009906537014058845
+seed  17591  Iteration:  875  Fitness:  0.0012606815198174077
+seed  18906  Iteration:  875  Fitness:  0.002339107085620214
+seed  17291  Iteration:  850  Fitness:  0.0009917527669227098
+seed  17020  Iteration:  875  Fitness:  0.0012054515832474158
+seed  16148  Iteration:  875  Fitness:  0.002788976514156471
+seed  18700  Iteration:  875  Fitness:  0.0030932324218463127
+seed  18284  Iteration:  900  Fitness:  0.001290337417591709
+seed  19457  Iteration:  850  Fitness:  0.0015278871182420654
+seed  17172  Iteration:  875  Fitness:  0.0012753441877467009
+seed  17987  Iteration:  875  Fitness:  0.001493175594050933
+seed  17265  Iteration:  875  Fitness:  0.005444233829283299
+seed  19406  Iteration:  875  Fitness:  0.006749019173974246
+seed  19894  Iteration:  875  Fitness:  0.00336712774264006
+seed  17307  Iteration:  900  Fitness:  0.0009906537014058845
+seed  19482  Iteration:  875  Fitness:  0.002923768295239059
+seed  17591  Iteration:  900  Fitness:  0.0012606815198174077
+seed  18906  Iteration:  900  Fitness:  0.002339107085620214
+seed  17291  Iteration:  875  Fitness:  0.0009917527669227098
+seed  17020  Iteration:  900  Fitness:  0.0012054515832474158
+seed  16148  Iteration:  900  Fitness:  0.002788976514156471
+seed  18700  Iteration:  900  Fitness:  0.0030932324218463127
+seed  18284  Iteration:  925  Fitness:  0.001290337417591709
+seed  19457  Iteration:  875  Fitness:  0.0015278871182420654
+seed  17172  Iteration:  900  Fitness:  0.0012753441877467009
+seed  17987  Iteration:  900  Fitness:  0.001493175594050933
+seed  17265  Iteration:  900  Fitness:  0.005444233829283299
+seed  19406  Iteration:  900  Fitness:  0.006749019173974246
+seed  19894  Iteration:  900  Fitness:  0.00336712774264006
+seed  17307  Iteration:  925  Fitness:  0.0009906537014058845
+seed  17591  Iteration:  925  Fitness:  0.0012606815198174077
+seed  18906  Iteration:  925  Fitness:  0.002339107085620214
+seed  19482  Iteration:  900  Fitness:  0.002923768295239059
+seed  17020  Iteration:  925  Fitness:  0.0012054515832474158
+seed  17291  Iteration:  900  Fitness:  0.0009917527669227098
+seed  16148  Iteration:  925  Fitness:  0.002788976514156471
+seed  18700  Iteration:  925  Fitness:  0.0030932324218463127
+seed  18284  Iteration:  950  Fitness:  0.001290337417591709
+seed  19457  Iteration:  900  Fitness:  0.0015278871182420654
+seed  17172  Iteration:  925  Fitness:  0.0012753441877467009
+seed  17987  Iteration:  925  Fitness:  0.001493175594050933
+seed  17265  Iteration:  925  Fitness:  0.005444233829283299
+seed  19406  Iteration:  925  Fitness:  0.006749019173974246
+seed  19894  Iteration:  925  Fitness:  0.00336712774264006
+seed  17307  Iteration:  950  Fitness:  0.0009906537014058845
+seed  18906  Iteration:  950  Fitness:  0.002339107085620214
+seed  17591  Iteration:  950  Fitness:  0.0012606815198174077
+seed  19482  Iteration:  925  Fitness:  0.002923768295239059
+seed  17020  Iteration:  950  Fitness:  0.0012054515832474158
+seed  17291  Iteration:  925  Fitness:  0.0009917527669227098
+seed  16148  Iteration:  950  Fitness:  0.002788976514156471
+seed  18700  Iteration:  950  Fitness:  0.0030932324218463127
+seed  18284  Iteration:  975  Fitness:  0.001290337417591709
+seed  19457  Iteration:  925  Fitness:  0.0015278871182420654
+seed  17172  Iteration:  950  Fitness:  0.0012753441877467009
+seed  17987  Iteration:  950  Fitness:  0.001493175594050933
+seed  17265  Iteration:  950  Fitness:  0.005444233829283299
+seed  19406  Iteration:  950  Fitness:  0.006749019173974246
+seed  19894  Iteration:  950  Fitness:  0.00336712774264006
+seed  17307  Iteration:  975  Fitness:  0.0009906537014058845
+seed  17591  Iteration:  975  Fitness:  0.0012606815198174077
+seed  18906  Iteration:  975  Fitness:  0.002339107085620214
+seed  19482  Iteration:  950  Fitness:  0.002923768295239059
+seed  17020  Iteration:  975  Fitness:  0.0012054515832474158
+seed  17291  Iteration:  950  Fitness:  0.0009917527669227098
+seed  16148  Iteration:  975  Fitness:  0.002788976514156471
+seed  18700  Iteration:  975  Fitness:  0.0030932324218463127
+seed  18284  Final train fitness: 0.001290337417591709
+seed  18284  Final test fitness: 0.00849796813505405
+seed  19457  Iteration:  950  Fitness:  0.0015278871182420654
+seed  17172  Iteration:  975  Fitness:  0.0012753441877467009
+seed  17987  Iteration:  975  Fitness:  0.001493175594050933
+seed  17265  Iteration:  975  Fitness:  0.005444233829283299
+seed  19406  Iteration:  975  Fitness:  0.006749019173974246
+seed  19894  Iteration:  975  Fitness:  0.00336712774264006
+seed  17307  Final train fitness: 0.0009906537014058845
+seed  17307  Final test fitness: 0.011633367627037913
+seed  17591  Final train fitness: 0.0012606815198174077
+seed  17591  Final test fitness: 0.009343727501825869
+seed  18906  Final train fitness: 0.002339107085620214
+seed  18906  Final test fitness: 0.007363795760128243
+seed  19482  Iteration:  975  Fitness:  0.002923768295239059
+seed  17020  Final train fitness: 0.0012054515832474158
+seed  17020  Final test fitness: 0.013193731215295535
+seed  17291  Iteration:  975  Fitness:  0.0009917527669227098
+seed  16148  Final train fitness: 0.002788976514156471
+seed  16148  Final test fitness: 0.008438816858931487
+seed  18700  Final train fitness: 0.0030932324218463127
+seed  18700  Final test fitness: 0.011462192387668994
+seed  17172  Final train fitness: 0.0012753441877467009
+seed  17172  Final test fitness: 0.005856298733033
+seed  19457  Iteration:  975  Fitness:  0.0015278871182420654
+seed  17265  Final train fitness: 0.005444233829283299
+seed  17265  Final test fitness: 0.00899208377554969
+seed  19406  Final train fitness: 0.006749019173974246
+seed  19406  Final test fitness: 0.008811824901981864
+seed  17987  Final train fitness: 0.001493175594050933
+seed  17987  Final test fitness: 0.005056711799245533
+seed  19894  Final train fitness: 0.00336712774264006
+seed  19894  Final test fitness: 0.012819320780680115
+seed  19482  Final train fitness: 0.002923768295239059
+seed  19482  Final test fitness: 0.010866342559254174
+seed  17291  Final train fitness: 0.0009917527669227098
+seed  17291  Final test fitness: 0.010908536189509831
+seed  19457  Final train fitness: 0.0015278871182420654
+seed  19457  Final test fitness: 0.007786264866735873
